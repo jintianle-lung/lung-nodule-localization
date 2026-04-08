@@ -1,0 +1,19 @@
+# Core dependencies
+torch>=1.12.0
+numpy>=1.21.0
+pandas>=1.4.0
+scikit-learn>=1.0.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# XGBoost baseline
+xgboost>=1.6.0
+shap>=0.41.0
+
+# Utilities
+tqdm>=4.64.0
+scipy>=1.8.0
+opencv-python>=4.5.0
+
+# Optional: CUDA support
+# Install PyTorch with CUDA from https://pytorch.org/get-started/locally/

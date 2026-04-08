@@ -1,0 +1,220 @@
+
+import torch
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+import glob
+import re
+from scipy import ndimage
+from model import KeyframeDetector
+
+class KeyframeInference:
+    def __init__(self, model_path, data_dir, output_dir):
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.model = KeyframeDetector().to(self.device)
+        self.model.load_state_dict(torch.load(model_path, map_location=self.device))
+        self.model.eval()
+        
+        self.data_dir = data_dir
+        self.output_dir = output_dir
+        self.sequence_length = 30
+        self.interp_factor = 5
+        
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+
+    def process_file(self, file_path):
+        try:
+            # 1. Load Data
+            df = pd.read_csv(file_path)
+            mat_cols = [c for c in df.columns if str(c).strip().startswith('MAT_')]
+            if mat_cols:
+                mat_cols.sort(key=lambda x: int(str(x).strip().split('_')[1]))
+                data = df[mat_cols].values
+            else:
+                data = df.iloc[:, -96:].values
+                
+            if len(data) < self.sequence_length:
+                return []
+
+            # 2. Extract Metadata (Size, Depth) from path
+            # Assuming structure: .../Size/Depth/filename.CSV
+            dir_path = os.path.dirname(file_path)
+            depth_str = os.path.basename(dir_path)
+            size_str = os.path.basename(os.path.dirname(dir_path))
+            
+            try:
+                size_val = float(re.search(r"([\d\.]+)", size_str).group(1)) * 10
+                depth_val = float(re.search(r"([\d\.]+)", depth_str).group(1)) * 10
+            except:
+                # print(f"Warning: Could not parse metadata for {file_path}, using defaults.")
+                size_val = 10.0
+                depth_val = 10.0
+                
+            # 3. Sliding Window Inference
+            probs = []
+            frame_indices = []
+            
+            # Prepare batches for speed
+            batch_frames = []
+            batch_meta = []
+            batch_indices = []
+            BATCH_SIZE = 32
+            
+            meta_tensor = torch.tensor([size_val, depth_val], dtype=torch.float32)
+            
+            # Pre-calculate interpolated frames? No, too much memory.
+            # Do it on the fly per batch.
+            
+            # Calculate steps first
+            steps = range(0, len(data) - self.sequence_length, 2)
+            
+            for i in steps: # Stride 2 for speed
+                window = data[i : i+self.sequence_length]
+                batch_frames.append(window)
+                batch_meta.append(meta_tensor)
+                batch_indices.append(i + self.sequence_length // 2)
+                
+                if len(batch_frames) >= BATCH_SIZE:
+                    self._predict_batch(batch_frames, batch_meta, batch_indices, probs, frame_indices)
+                    batch_frames = []
+                    batch_meta = []
+                    batch_indices = []
+            
+            if batch_frames:
+                self._predict_batch(batch_frames, batch_meta, batch_indices, probs, frame_indices)
+            
+            # 4. Find Peaks
+            probs = np.array(probs)
+            frame_indices = np.array(frame_indices)
+            
+            # Filter low probability
+            mask = probs > 0.5
+            if not np.any(mask):
+                return []
+                
+            high_prob_indices = frame_indices[mask]
+            high_probs = probs[mask]
+            
+            # Simple non-maximum suppression (NMS) in time
+            selected = []
+            sorted_idx = np.argsort(high_probs)[::-1]
+            
+            for idx in sorted_idx:
+                frame_idx = high_prob_indices[idx]
+                score = high_probs[idx]
+                
+                is_distinct = True
+                for s in selected:
+                    if abs(s['frame_index'] - frame_idx) < 30: # 30 frames distance
+                        is_distinct = False
+                        break
+                
+                if is_distinct:
+                    selected.append({
+                        'frame_index': frame_idx,
+                        'score': float(score),
+                        'size_label': size_str,
+                        'depth_label': depth_str
+                    })
+                    if len(selected) >= 3:
+                        break
+            
+            # 5. Save Visualizations
+            for item in selected:
+                self.save_visualization(item, data[item['frame_index']], file_path)
+                
+            return selected
+            
+        except Exception as e:
+            print(f"Error processing {file_path}: {e}")
+            return []
+
+    def _predict_batch(self, windows, metas, indices, probs_list, indices_list):
+        # Convert to tensor and interpolate
+        processed_batch = []
+        for window in windows:
+            seq_imgs = []
+            for frame in window:
+                mat = frame.reshape(12, 8)
+                mn, mx = mat.min(), mat.max()
+                if mx - mn > 1e-6:
+                    norm = (mat - mn) / (mx - mn)
+                else:
+                    norm = mat - mn
+                img = ndimage.zoom(norm, self.interp_factor, order=1)
+                seq_imgs.append(img)
+            processed_batch.append(seq_imgs)
+            
+        batch_tensor = torch.tensor(np.array(processed_batch), dtype=torch.float32).to(self.device)
+        meta_tensor = torch.stack(metas).to(self.device)
+        
+        with torch.no_grad():
+            outputs, _ = self.model(batch_tensor, meta_tensor)
+            batch_probs = outputs.cpu().numpy().flatten()
+            
+        probs_list.extend(batch_probs)
+        indices_list.extend(indices)
+
+    def save_visualization(self, item, raw_frame, file_path):
+        mat = raw_frame.reshape(12, 8)
+        mn, mx = mat.min(), mat.max()
+        norm = (mat - mn) / (mx - mn) if mx > mn else mat - mn
+        img = ndimage.zoom(norm, self.interp_factor, order=3) # High quality for save
+        
+        fig, ax = plt.subplots(figsize=(6, 5))
+        im = ax.imshow(img, cmap='jet', vmin=0, vmax=1)
+        plt.colorbar(im, ax=ax, label='Intensity')
+        
+        title = (f"AI Detected Keyframe: {item['frame_index']}\n"
+                 f"Prob: {item['score']:.4f}\n"
+                 f"Label: {item['size_label']} / {item['depth_label']}")
+        
+        ax.set_title(title)
+        ax.axis('off')
+        
+        dir_name = os.path.dirname(file_path)
+        base_name = os.path.basename(file_path).replace('.CSV', '')
+        out_name = f"{base_name}_frame{item['frame_index']}_prob{int(item['score']*100)}.png"
+        save_path = os.path.join(dir_name, out_name)
+        
+        plt.tight_layout()
+        plt.savefig(save_path, dpi=100)
+        plt.close(fig)
+
+    def run(self):
+        all_files = glob.glob(os.path.join(self.data_dir, "**", "*.CSV"), recursive=True)
+        print(f"Starting inference on {len(all_files)} files...")
+        
+        results = []
+        for i, f in enumerate(all_files):
+            try:
+                if i % 10 == 0:
+                    print(f"Processing {i}/{len(all_files)}: {os.path.basename(f)}")
+                
+                res = self.process_file(f)
+                for r in res:
+                    r['file_path'] = f
+                    results.append(r)
+            except KeyboardInterrupt:
+                raise
+            except Exception as e:
+                print(f"Error processing {f}: {e}")
+                
+        # Save summary
+        if results:
+            df = pd.DataFrame(results)
+            out_csv = os.path.join(self.output_dir, "deep_learning_keyframes.csv")
+            df.to_csv(out_csv, index=False)
+            print(f"Inference complete. Saved {len(results)} keyframes to {out_csv}")
+        else:
+            print("No keyframes detected.")
+
+if __name__ == "__main__":
+    MODEL_PATH = r"c:\Users\SWH\Desktop\智能医疗检测系统\核心程序\deep_learning\keyframe_model.pth"
+    DATA_DIR = r"c:\Users\SWH\Desktop\智能医疗检测系统\实验数据\数据集 最新\建表数据"
+    OUTPUT_DIR = r"c:\Users\SWH\Desktop\智能医疗检测系统\实验数据"
+    
+    inference = KeyframeInference(MODEL_PATH, DATA_DIR, OUTPUT_DIR)
+    inference.run()
