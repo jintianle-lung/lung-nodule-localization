@@ -13,6 +13,7 @@ from final_model import DualStreamModel
 FRAME_HEIGHT = 12
 FRAME_WIDTH = 8
 FRAME_SIZE = FRAME_HEIGHT * FRAME_WIDTH
+NUM_CHANNELS = 1
 VISUALIZATION_UPSAMPLE_FACTOR = 5
 BATCH_SIZE = 32
 
@@ -29,7 +30,6 @@ class KeyframeInference:
         self.data_dir = data_dir
         self.output_dir = output_dir
         self.interp_factor = VISUALIZATION_UPSAMPLE_FACTOR
-        self._warned_truncation = False
         
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
@@ -141,12 +141,10 @@ class KeyframeInference:
             seq_raw_reshaped = []
             for frame in window:
                 if frame.size > FRAME_SIZE:
-                    if not self._warned_truncation:
-                        print(
-                            f"Warning: {file_path} has frame dimension {frame.size} > {FRAME_SIZE}; "
-                            f"truncating to the last {FRAME_SIZE} values."
-                        )
-                        self._warned_truncation = True
+                    print(
+                        f"Warning: {file_path} has frame dimension {frame.size} > {FRAME_SIZE}; "
+                        f"truncating to the last {FRAME_SIZE} values."
+                    )
                     frame = frame[-FRAME_SIZE:]
                 if frame.size < FRAME_SIZE:
                     raise ValueError(f"{file_path}: frame dimension {frame.size} < expected {FRAME_SIZE}.")
@@ -159,7 +157,7 @@ class KeyframeInference:
             std_intensity = float(np.std(seq_raw_reshaped))
             intensity_batch.append([avg_intensity, max_intensity, std_intensity])
 
-            seq_norm = np.zeros((self.sequence_length, 1, FRAME_HEIGHT, FRAME_WIDTH), dtype=np.float32)
+            seq_norm = np.zeros((self.sequence_length, NUM_CHANNELS, FRAME_HEIGHT, FRAME_WIDTH), dtype=np.float32)
             for i in range(self.sequence_length):
                 mat = seq_raw_reshaped[i]
                 mn, mx = mat.min(), mat.max()
@@ -174,7 +172,7 @@ class KeyframeInference:
         intensity_tensor = torch.tensor(np.array(intensity_batch), dtype=torch.float32).to(self.device)
         
         with torch.no_grad():
-            # Keyframe selection in this script is based on detection probability only.
+            # Model outputs are (probability, size, depth); this script only ranks keyframes by probability.
             detection_prob, _, _ = self.model(batch_tensor, intensity_tensor)
             batch_probs = detection_prob.cpu().numpy().flatten()
             
