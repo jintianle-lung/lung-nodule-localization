@@ -13,7 +13,7 @@ from final_model import DualStreamModel
 FRAME_HEIGHT = 12
 FRAME_WIDTH = 8
 FRAME_SIZE = FRAME_HEIGHT * FRAME_WIDTH
-INTERP_FACTOR = 5  # visualization upsample factor for clearer heatmap rendering
+VISUALIZATION_UPSAMPLE_FACTOR = 5
 BATCH_SIZE = 32
 
 class KeyframeInference:
@@ -22,17 +22,21 @@ class KeyframeInference:
         self.sequence_length = 10
         self.model = DualStreamModel(seq_len=self.sequence_length).to(self.device)
         payload = torch.load(model_path, map_location=self.device)
-        state_dict = payload["model_state_dict"] if isinstance(payload, dict) and "model_state_dict" in payload else payload
+        state_dict = self._extract_state_dict(payload)
         self.model.load_state_dict(state_dict, strict=True)
         self.model.eval()
         
         self.data_dir = data_dir
         self.output_dir = output_dir
-        self.interp_factor = INTERP_FACTOR
+        self.interp_factor = VISUALIZATION_UPSAMPLE_FACTOR
         self._warned_truncation = False
         
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
+
+    @staticmethod
+    def _extract_state_dict(payload):
+        return payload["model_state_dict"] if isinstance(payload, dict) and "model_state_dict" in payload else payload
 
     def process_file(self, file_path):
         try:
@@ -73,12 +77,12 @@ class KeyframeInference:
                 batch_indices.append(i + self.sequence_length // 2)
                 
                 if len(batch_frames) >= BATCH_SIZE:
-                    self._predict_batch(batch_frames, batch_indices, probs, frame_indices)
+                    self._predict_batch(batch_frames, batch_indices, probs, frame_indices, file_path)
                     batch_frames = []
                     batch_indices = []
             
             if batch_frames:
-                self._predict_batch(batch_frames, batch_indices, probs, frame_indices)
+                self._predict_batch(batch_frames, batch_indices, probs, frame_indices, file_path)
             
             # 4. Find Peaks
             probs = np.array(probs)
@@ -126,7 +130,7 @@ class KeyframeInference:
             print(f"Error processing {file_path}: {e}")
             return []
 
-    def _predict_batch(self, windows, indices, probs_list, indices_list):
+    def _predict_batch(self, windows, indices, probs_list, indices_list, file_path):
         # Align preprocessing with main_gui.py:
         # - reshape to 12x8
         # - per-frame min-max normalization
@@ -138,11 +142,14 @@ class KeyframeInference:
             for frame in window:
                 if frame.size > FRAME_SIZE:
                     if not self._warned_truncation:
-                        print(f"Warning: frame dimension {frame.size} > {FRAME_SIZE}, truncating to the last {FRAME_SIZE} values.")
+                        print(
+                            f"Warning: {file_path} has frame dimension {frame.size} > {FRAME_SIZE}; "
+                            f"truncating to the last {FRAME_SIZE} values."
+                        )
                         self._warned_truncation = True
                     frame = frame[-FRAME_SIZE:]
                 if frame.size < FRAME_SIZE:
-                    raise ValueError(f"Frame dimension {frame.size} < expected {FRAME_SIZE}.")
+                    raise ValueError(f"{file_path}: frame dimension {frame.size} < expected {FRAME_SIZE}.")
                 mat = frame.reshape(FRAME_HEIGHT, FRAME_WIDTH)
                 seq_raw_reshaped.append(mat)
             seq_raw_reshaped = np.array(seq_raw_reshaped, dtype=np.float32)
@@ -167,7 +174,7 @@ class KeyframeInference:
         intensity_tensor = torch.tensor(np.array(intensity_batch), dtype=torch.float32).to(self.device)
         
         with torch.no_grad():
-            # model returns (detection_prob, predicted_size, predicted_depth); only detection is used here
+            # Keyframe selection in this script is based on detection probability only.
             detection_prob, _, _ = self.model(batch_tensor, intensity_tensor)
             batch_probs = detection_prob.cpu().numpy().flatten()
             
