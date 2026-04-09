@@ -27,6 +27,7 @@ class KeyframeInference:
         self.data_dir = data_dir
         self.output_dir = output_dir
         self.interp_factor = 5
+        self._warned_truncation = False
         
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
@@ -136,7 +137,12 @@ class KeyframeInference:
             seq_raw_reshaped = []
             for frame in window:
                 if frame.size > FRAME_SIZE:
+                    if not self._warned_truncation:
+                        print(f"Warning: frame dimension {frame.size} > {FRAME_SIZE}, truncating to the last {FRAME_SIZE} values.")
+                        self._warned_truncation = True
                     frame = frame[-FRAME_SIZE:]
+                if frame.size < FRAME_SIZE:
+                    raise ValueError(f"Frame dimension {frame.size} < expected {FRAME_SIZE}.")
                 mat = frame.reshape(FRAME_HEIGHT, FRAME_WIDTH)
                 seq_raw_reshaped.append(mat)
             seq_raw_reshaped = np.array(seq_raw_reshaped, dtype=np.float32)
@@ -161,6 +167,7 @@ class KeyframeInference:
         intensity_tensor = torch.tensor(np.array(intensity_batch), dtype=torch.float32).to(self.device)
         
         with torch.no_grad():
+            # model returns (detection_prob, predicted_size, predicted_depth); only detection is used here
             prob, _, _ = self.model(batch_tensor, intensity_tensor)
             batch_probs = prob.cpu().numpy().flatten()
             
