@@ -142,8 +142,8 @@ class KeyframeInference:
             for frame in window:
                 if frame.size > FRAME_SIZE:
                     print(
-                        f"Warning: {file_path} has frame dimension {frame.size} > {FRAME_SIZE}; "
-                        f"truncating to the last {FRAME_SIZE} values."
+                        f"Warning: {file_path} has frame dimension {frame.size} exceeding expected {FRAME_SIZE}. "
+                        f"Truncating to the last {FRAME_SIZE} values; this may indicate a data format mismatch."
                     )
                     frame = frame[-FRAME_SIZE:]
                 if frame.size < FRAME_SIZE:
@@ -172,7 +172,8 @@ class KeyframeInference:
         intensity_tensor = torch.tensor(np.array(intensity_batch), dtype=torch.float32).to(self.device)
         
         with torch.no_grad():
-            # Model outputs are (probability, size, depth); this script only ranks keyframes by probability.
+            # Model outputs are (probability, predicted lesion size, predicted lesion depth);
+            # this script ranks keyframes by detection probability only.
             detection_prob, _, _ = self.model(batch_tensor, intensity_tensor)
             batch_probs = detection_prob.cpu().numpy().flatten()
             
