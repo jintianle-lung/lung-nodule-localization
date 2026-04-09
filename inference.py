@@ -13,6 +13,8 @@ from final_model import DualStreamModel
 FRAME_HEIGHT = 12
 FRAME_WIDTH = 8
 FRAME_SIZE = FRAME_HEIGHT * FRAME_WIDTH
+INTERP_FACTOR = 5  # visualization upsample factor for clearer heatmap rendering
+BATCH_SIZE = 32
 
 class KeyframeInference:
     def __init__(self, model_path, data_dir, output_dir):
@@ -26,7 +28,7 @@ class KeyframeInference:
         
         self.data_dir = data_dir
         self.output_dir = output_dir
-        self.interp_factor = 5
+        self.interp_factor = INTERP_FACTOR
         self._warned_truncation = False
         
         if not os.path.exists(output_dir):
@@ -59,8 +61,6 @@ class KeyframeInference:
             # Prepare batches for speed
             batch_frames = []
             batch_indices = []
-            BATCH_SIZE = 32
-            
             # Pre-calculate interpolated frames? No, too much memory.
             # Do it on the fly per batch.
             
@@ -168,8 +168,8 @@ class KeyframeInference:
         
         with torch.no_grad():
             # model returns (detection_prob, predicted_size, predicted_depth); only detection is used here
-            prob, _, _ = self.model(batch_tensor, intensity_tensor)
-            batch_probs = prob.cpu().numpy().flatten()
+            detection_prob, _, _ = self.model(batch_tensor, intensity_tensor)
+            batch_probs = detection_prob.cpu().numpy().flatten()
             
         probs_list.extend(batch_probs)
         indices_list.extend(indices)
