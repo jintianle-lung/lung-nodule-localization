@@ -7,18 +7,20 @@ import os
 import glob
 import re
 from scipy import ndimage
-from model import KeyframeDetector
+from final_model import DualStreamModel
 
 class KeyframeInference:
     def __init__(self, model_path, data_dir, output_dir):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.model = KeyframeDetector().to(self.device)
-        self.model.load_state_dict(torch.load(model_path, map_location=self.device))
+        self.sequence_length = 10
+        self.model = DualStreamModel(seq_len=self.sequence_length).to(self.device)
+        payload = torch.load(model_path, map_location=self.device)
+        state_dict = payload["model_state_dict"] if isinstance(payload, dict) and "model_state_dict" in payload else payload
+        self.model.load_state_dict(state_dict, strict=True)
         self.model.eval()
         
         self.data_dir = data_dir
         self.output_dir = output_dir
-        self.sequence_length = 30
         self.interp_factor = 5
         
         if not os.path.exists(output_dir):
@@ -58,11 +60,8 @@ class KeyframeInference:
             
             # Prepare batches for speed
             batch_frames = []
-            batch_meta = []
             batch_indices = []
             BATCH_SIZE = 32
-            
-            meta_tensor = torch.tensor([size_val, depth_val], dtype=torch.float32)
             
             # Pre-calculate interpolated frames? No, too much memory.
             # Do it on the fly per batch.
@@ -73,17 +72,15 @@ class KeyframeInference:
             for i in steps: # Stride 2 for speed
                 window = data[i : i+self.sequence_length]
                 batch_frames.append(window)
-                batch_meta.append(meta_tensor)
                 batch_indices.append(i + self.sequence_length // 2)
                 
                 if len(batch_frames) >= BATCH_SIZE:
-                    self._predict_batch(batch_frames, batch_meta, batch_indices, probs, frame_indices)
+                    self._predict_batch(batch_frames, batch_indices, probs, frame_indices)
                     batch_frames = []
-                    batch_meta = []
                     batch_indices = []
             
             if batch_frames:
-                self._predict_batch(batch_frames, batch_meta, batch_indices, probs, frame_indices)
+                self._predict_batch(batch_frames, batch_indices, probs, frame_indices)
             
             # 4. Find Peaks
             probs = np.array(probs)
@@ -131,28 +128,44 @@ class KeyframeInference:
             print(f"Error processing {file_path}: {e}")
             return []
 
-    def _predict_batch(self, windows, metas, indices, probs_list, indices_list):
-        # Convert to tensor and interpolate
+    def _predict_batch(self, windows, indices, probs_list, indices_list):
+        # Align preprocessing with main_gui.py:
+        # - reshape to 12x8
+        # - per-frame min-max normalization
+        # - intensity stats: mean/max/std over raw sequence
         processed_batch = []
+        intensity_batch = []
         for window in windows:
-            seq_imgs = []
+            seq_raw_reshaped = []
             for frame in window:
+                if frame.size > 96:
+                    frame = frame[-96:]
                 mat = frame.reshape(12, 8)
+                seq_raw_reshaped.append(mat)
+            seq_raw_reshaped = np.array(seq_raw_reshaped, dtype=np.float32)
+
+            avg_intensity = float(np.mean(seq_raw_reshaped))
+            max_intensity = float(np.max(seq_raw_reshaped))
+            std_intensity = float(np.std(seq_raw_reshaped))
+            intensity_batch.append([avg_intensity, max_intensity, std_intensity])
+
+            seq_norm = np.zeros((self.sequence_length, 1, 12, 8), dtype=np.float32)
+            for i in range(self.sequence_length):
+                mat = seq_raw_reshaped[i]
                 mn, mx = mat.min(), mat.max()
                 if mx - mn > 1e-6:
                     norm = (mat - mn) / (mx - mn)
                 else:
                     norm = mat - mn
-                img = ndimage.zoom(norm, self.interp_factor, order=1)
-                seq_imgs.append(img)
-            processed_batch.append(seq_imgs)
+                seq_norm[i, 0] = norm
+            processed_batch.append(seq_norm)
             
         batch_tensor = torch.tensor(np.array(processed_batch), dtype=torch.float32).to(self.device)
-        meta_tensor = torch.stack(metas).to(self.device)
+        intensity_tensor = torch.tensor(np.array(intensity_batch), dtype=torch.float32).to(self.device)
         
         with torch.no_grad():
-            outputs, _ = self.model(batch_tensor, meta_tensor)
-            batch_probs = outputs.cpu().numpy().flatten()
+            prob, _, _ = self.model(batch_tensor, intensity_tensor)
+            batch_probs = prob.cpu().numpy().flatten()
             
         probs_list.extend(batch_probs)
         indices_list.extend(indices)
@@ -212,7 +225,7 @@ class KeyframeInference:
             print("No keyframes detected.")
 
 if __name__ == "__main__":
-    MODEL_PATH = r"c:\Users\SWH\Desktop\智能医疗检测系统\核心程序\deep_learning\keyframe_model.pth"
+    MODEL_PATH = r"c:\Users\SWH\Desktop\智能医疗检测系统\核心程序\deep_learning\models\best_model.pth"
     DATA_DIR = r"c:\Users\SWH\Desktop\智能医疗检测系统\实验数据\数据集 最新\建表数据"
     OUTPUT_DIR = r"c:\Users\SWH\Desktop\智能医疗检测系统\实验数据"
     
