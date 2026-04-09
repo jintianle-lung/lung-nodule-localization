@@ -6,8 +6,13 @@ import matplotlib.pyplot as plt
 import os
 import glob
 import re
+import argparse
 from scipy import ndimage
 from final_model import DualStreamModel
+
+FRAME_HEIGHT = 12
+FRAME_WIDTH = 8
+FRAME_SIZE = FRAME_HEIGHT * FRAME_WIDTH
 
 class KeyframeInference:
     def __init__(self, model_path, data_dir, output_dir):
@@ -35,7 +40,7 @@ class KeyframeInference:
                 mat_cols.sort(key=lambda x: int(str(x).strip().split('_')[1]))
                 data = df[mat_cols].values
             else:
-                data = df.iloc[:, -96:].values
+                data = df.iloc[:, -FRAME_SIZE:].values
                 
             if len(data) < self.sequence_length:
                 return []
@@ -46,14 +51,6 @@ class KeyframeInference:
             depth_str = os.path.basename(dir_path)
             size_str = os.path.basename(os.path.dirname(dir_path))
             
-            try:
-                size_val = float(re.search(r"([\d\.]+)", size_str).group(1)) * 10
-                depth_val = float(re.search(r"([\d\.]+)", depth_str).group(1)) * 10
-            except:
-                # print(f"Warning: Could not parse metadata for {file_path}, using defaults.")
-                size_val = 10.0
-                depth_val = 10.0
-                
             # 3. Sliding Window Inference
             probs = []
             frame_indices = []
@@ -138,9 +135,9 @@ class KeyframeInference:
         for window in windows:
             seq_raw_reshaped = []
             for frame in window:
-                if frame.size > 96:
-                    frame = frame[-96:]
-                mat = frame.reshape(12, 8)
+                if frame.size > FRAME_SIZE:
+                    frame = frame[-FRAME_SIZE:]
+                mat = frame.reshape(FRAME_HEIGHT, FRAME_WIDTH)
                 seq_raw_reshaped.append(mat)
             seq_raw_reshaped = np.array(seq_raw_reshaped, dtype=np.float32)
 
@@ -149,7 +146,7 @@ class KeyframeInference:
             std_intensity = float(np.std(seq_raw_reshaped))
             intensity_batch.append([avg_intensity, max_intensity, std_intensity])
 
-            seq_norm = np.zeros((self.sequence_length, 1, 12, 8), dtype=np.float32)
+            seq_norm = np.zeros((self.sequence_length, 1, FRAME_HEIGHT, FRAME_WIDTH), dtype=np.float32)
             for i in range(self.sequence_length):
                 mat = seq_raw_reshaped[i]
                 mn, mx = mat.min(), mat.max()
@@ -171,7 +168,7 @@ class KeyframeInference:
         indices_list.extend(indices)
 
     def save_visualization(self, item, raw_frame, file_path):
-        mat = raw_frame.reshape(12, 8)
+        mat = raw_frame.reshape(FRAME_HEIGHT, FRAME_WIDTH)
         mn, mx = mat.min(), mat.max()
         norm = (mat - mn) / (mx - mn) if mx > mn else mat - mn
         img = ndimage.zoom(norm, self.interp_factor, order=3) # High quality for save
@@ -225,9 +222,19 @@ class KeyframeInference:
             print("No keyframes detected.")
 
 if __name__ == "__main__":
-    MODEL_PATH = r"c:\Users\SWH\Desktop\智能医疗检测系统\核心程序\deep_learning\models\best_model.pth"
-    DATA_DIR = r"c:\Users\SWH\Desktop\智能医疗检测系统\实验数据\数据集 最新\建表数据"
-    OUTPUT_DIR = r"c:\Users\SWH\Desktop\智能医疗检测系统\实验数据"
-    
-    inference = KeyframeInference(MODEL_PATH, DATA_DIR, OUTPUT_DIR)
+    parser = argparse.ArgumentParser(description="Run keyframe inference with DualStreamModel.")
+    parser.add_argument(
+        "--model-path",
+        default=os.path.join(os.path.dirname(__file__), "models", "best_model.pth"),
+        help="Path to model checkpoint.",
+    )
+    parser.add_argument("--data-dir", required=True, help="Root directory containing CSV files.")
+    parser.add_argument(
+        "--output-dir",
+        default=os.path.join(os.getcwd(), "outputs"),
+        help="Directory for inference summary output.",
+    )
+    args = parser.parse_args()
+
+    inference = KeyframeInference(args.model_path, args.data_dir, args.output_dir)
     inference.run()
