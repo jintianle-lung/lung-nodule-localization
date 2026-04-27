@@ -10,19 +10,19 @@ from PIL import ImageGrab
 
 
 ROOT = Path(__file__).resolve().parent.parent
-CODE_ARCHIVE = ROOT / "Code_Archive"
+UI_RELEASE = ROOT / "ui_release"
 SAMPLE_CSV = ROOT / "整理好的数据集" / "建表数据" / "0.25cm大" / "0.5cm深" / "1.CSV"
 OUT_PATH = ROOT / "tmp" / "optimized_gui_demo.png"
 
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 
-for p in (ROOT, CODE_ARCHIVE):
+for p in (ROOT, UI_RELEASE, ROOT / "models"):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
 
 def load_module():
-    module_path = CODE_ARCHIVE / "modern_detection_gui_optimized.py"
+    module_path = UI_RELEASE / "modern_detection_gui_optimized.py"
     spec = importlib.util.spec_from_file_location("modern_detection_gui_optimized", module_path)
     module = importlib.util.module_from_spec(spec)
     assert spec and spec.loader

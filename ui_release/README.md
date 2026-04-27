@@ -12,16 +12,10 @@ From the repository root:
 python ui_release/main.py
 ```
 
-This launches `Code_Archive/modern_detection_gui_optimized.py` directly.
-
-The legacy top-level script is still available, but it is not the preferred reviewer entry point:
-
-```bash
-python main_gui.py
-```
+This launches `ui_release/modern_detection_gui_optimized.py` directly.
+The GUI and its checkpoints live under `ui_release/`, so this bundle can run without the archive tree.
 
 ## Notes
 
-- The current GUI uses a legacy-compatible checkpoint path under `Code_Archive/discussion/dualstream_3dcnn_lstm_active.pth`.
-- The checkpoint can be swapped later for the newest weight file without changing the UI entry point.
+- The current GUI loads the paper two-stage pipeline with the hierarchical inverter and current release weights from `ui_release/checkpoints/`.
 - The UI opens even if the serial device is not connected; it can still be used for local CSV playback and layout verification.

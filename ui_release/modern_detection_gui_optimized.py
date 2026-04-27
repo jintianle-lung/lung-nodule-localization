@@ -40,19 +40,62 @@ if sys.platform.startswith('win'):
 # 导入检测器和解析器
 import sys
 import os
-import torch
+from pathlib import Path
 
-# 当前目录已包含所有模块
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+import torch
 from fusion_real_time_detection import FastProtocolParser, EnhancedNoduleDetectionSystem
-from enhanced_stress_detection_system import EnhancedStressNoduleDetectionSystem
-from realtime_detector import RealtimeNoduleDetector
-from final_model import DualStreamModel
-from sequence_dataset import NoduleSequenceDataset
+try:
+    from enhanced_stress_detection_system import EnhancedStressNoduleDetectionSystem
+except ModuleNotFoundError:
+    class EnhancedStressNoduleDetectionSystem:
+        def __init__(self):
+            self.is_trained = False
+            self.training_data = []
+
+        def process_frame(self, frame_data, timestamp):
+            return None
+
+        def add_training_data(self, data, area=None, diameter=None, depth=None, position=None, is_nodule=False):
+            sample = {"data": np.asarray(data), "is_nodule": bool(is_nodule)}
+            if is_nodule:
+                sample.update(
+                    {
+                        "area": area,
+                        "diameter": diameter,
+                        "depth": depth,
+                        "position": position,
+                    }
+                )
+            self.training_data.append(sample)
+            return True
+
+        def train_system(self):
+            positive_count = sum(1 for item in self.training_data if item.get("is_nodule"))
+            negative_count = sum(1 for item in self.training_data if not item.get("is_nodule"))
+            self.is_trained = positive_count > 0 and negative_count > 0
+            return self.is_trained
+
+try:
+    from dualstream_3dcnn_lstm import DualStream3DCNNLSTM
+except Exception:
+    DualStream3DCNNLSTM = None
+from sequence_dataset import NoduleSequenceDataset # 如果需要数据处理工具
+
+THIS_DIR = Path(__file__).resolve().parent
+ROOT_DIR = THIS_DIR.parent
+for p in (ROOT_DIR, THIS_DIR, ROOT_DIR / "models"):
+    if str(p) not in sys.path:
+        sys.path.insert(0, str(p))
+try:
+    from two_stage_inference import TwoStageNoduleInference
+except Exception as _paper_ai_import_error:
+    TwoStageNoduleInference = None
 
 class OptimizedDetectionGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Princess & Pea (豌豆公主) 智能医疗检测系统 (Release v1.0)")
+        self.root.title("高性能肺结节检测系统 - 优化版")
         self.root.geometry("1400x900")
         
         # ... (字体设置等保持不变)
@@ -60,6 +103,14 @@ class OptimizedDetectionGUI:
         # 数据相关
         self.data = None
         self.current_frame = 0
+        self.serial_port = None
+        self.is_serial_connected = False
+        self.is_realtime_processing = False
+        self.data_queue = queue.Queue(maxsize=200)
+        self.frame_counter = 0
+        self.plot_interval = 0.05
+        self.visualization_cache = {}
+        self.cache_size_limit = 50
         
         # ... (串口参数保持不变)
         
@@ -71,31 +122,122 @@ class OptimizedDetectionGUI:
         self.enhanced_detector = EnhancedStressNoduleDetectionSystem()
         self.use_enhanced_detection = False  # 默认使用原有检测器
         
-        
-        # 深度学习检测器 (DualStreamModel)
-        self.dl_model_path = os.path.join(os.path.dirname(__file__), 'models', 'best_model.pth')
+        # 深度学习检测器
+        self.seq_len = 10
         self.dl_model = None
+        self.paper_ai_pipeline = None
+        self.dl_backend = None
+        self.paper_ai_threshold = None
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        
-        try:
-            # 加载新模型 (DualStreamModel - Active Learning Optimized)
-            self.seq_len = 10
-            self.dl_model = DualStreamModel(seq_len=self.seq_len).to(self.device)
-            self.dl_model.load_state_dict(torch.load(self.dl_model_path, map_location=self.device))
-            self.dl_model.eval()
-            print(f"Deep Learning Model (DualStream) loaded successfully from {self.dl_model_path}")
-            self.use_dl_detection = True
-        except Exception as e:
-            print(f"Error loading DL model: {e}")
-            # messagebox.showwarning("警告", f"无法加载深度学习模型: {e}\n智能检测功能将受限。")
+        checkpoint_root = os.path.join(os.path.dirname(__file__), "checkpoints")
+        self.paper_stage2_ckpt_map = {
+            "hierarchical": os.path.join(
+                checkpoint_root,
+                "paper_hierarchical_positive_inverter_best.pth",
+            ),
+        }
+        self.selected_stage2_variant = "hierarchical"
+
+        load_errors = []
+
+        if TwoStageNoduleInference is not None:
+            try:
+                self._load_paper_two_stage_pipeline(self.selected_stage2_variant)
+            except Exception as e:
+                load_errors.append(f"论文两阶段模型加载失败: {e}")
+                print(f"Paper two-stage AI pipeline load failed: {e}")
+        else:
+            load_errors.append("论文两阶段推理模块导入失败")
+
+        # 兼容保留旧模型回退路径
+        dl_model_candidates = [
+            os.path.join(os.path.dirname(__file__), 'discussion', 'dualstream_3dcnn_lstm_active.pth'),
+            os.path.join(os.path.dirname(__file__), 'discussion', 'active_learning_results', 'dualstream_3dcnn_lstm_active.pth'),
+            os.path.join(os.path.dirname(__file__), 'deep_learning', 'active_learning_results', 'dualstream_3dcnn_lstm_active.pth'),
+            os.path.join(os.path.dirname(__file__), 'active_learning_results', 'dualstream_3dcnn_lstm_active.pth'),
+            os.path.join(os.path.dirname(__file__), '重新讨论', 'active_learning_results', 'dualstream_3dcnn_lstm_active.pth'),
+            os.path.join(os.path.dirname(__file__), '重新讨论', 'dualstream_3dcnn_lstm_active.pth'),
+            os.path.join(os.path.dirname(__file__), 'reproduce_active_model', 'outputs', 'dualstream_3dcnn_lstm_active.pth'),
+        ]
+        self.dl_model_path = next((path for path in dl_model_candidates if os.path.exists(path)), dl_model_candidates[0])
+
+        if self.dl_model is None and DualStream3DCNNLSTM is not None:
+            try:
+                self.dl_model = DualStream3DCNNLSTM(seq_len=self.seq_len).to(self.device)
+                self.dl_model.load_state_dict(torch.load(self.dl_model_path, map_location=self.device))
+                self.dl_model.eval()
+                self.dl_backend = "legacy_single_model"
+                self.use_dl_detection = True
+                print(f"Legacy Deep Learning Model loaded successfully from {self.dl_model_path}")
+            except Exception as e:
+                load_errors.append(f"旧版单模型加载失败: {e}")
+                print(f"Error loading legacy DL model: {e}")
+                self.use_dl_detection = False
+        elif self.dl_model is None:
+            load_errors.append("旧版单模型模块缺失")
             self.use_dl_detection = False
-            
+
+        if not self.use_dl_detection and load_errors:
+            messagebox.showwarning(
+                "警告",
+                "无法加载AI模型，智能检测功能将受限。\n\n" + "\n".join(load_errors),
+            )
+        
         self.dl_probability = 0.0
-        self.dl_pred_size = 0.0
-        self.dl_pred_depth = 0.0
+        self.dl_probability_raw = 0.0
+        self.dl_pred_size = None
+        self.dl_pred_depth = None
+        self.dl_pred_size_class_name = None
+        self.dl_pred_depth_label = None
+        self.dl_size_probs = None
+        self.dl_depth_probs = None
+        self.dl_size_confidence = 0.0
+        self.dl_depth_confidence = 0.0
+        self.dl_gate_open = False
+        self.dl_latency_ms = 0.0
+        self.display_prob_alpha = 0.35
+        self.display_gate_low_margin = 0.08
+        self.display_probability_smoothed = None
+        self.prob_history = []
+        self.prob_history_raw = []
+        self.size_conf_history = []
+        self.depth_conf_history = []
+        self.size_reg_history = []
+        self.system_logic_strategy = "baseline_single_window"
+        self.system_logic_enabled = False
+        self.system_logic_name = "baseline_single_window"
+        self.system_gate_threshold = 0.45
+        self.system_gate_margin = 0.0
+        self.system_top_k = 3
+        self.system_cluster_gap = 2
+        self.system_history_horizon = 18
+        self.system_conditional_top_m = 3
+        print(f"System logic strategy initialized: {self.system_logic_name}")
+        self.size_axis_cm = [0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75]
+        self.depth_axis_labels = ["shallow", "middle", "deep"]
+        self.ai_window_records = deque(maxlen=80)
+        self.ai_window_counter = -1
+        self.dl_system_margin = np.nan
+        self.dl_system_cluster_size = 1
+        self.dl_system_selected_frame = None
+        self.dl_system_score = 0.0
+        self.dl_probability_current_window = 0.0
+
+        # 统一初始化可视化轴，避免布局切换后访问不存在属性
+        self.ax_original = None
+        self.ax_feature = None
+        self.ax_detection = None
+        self.ax_contour = None
+        self.ax_prob = None
+        self.ax_prob_gauge = None
+        self.ax_size_dist = None
+        self.ax_depth_dist = None
+        self.ax_heatmap = None
+        self.ax_3d = None
+        self.ax_trend = None
+        self.ax_stats = None
         
         # 帧缓冲区 (用于时序模型)
-        from collections import deque
         self.frame_buffer = deque(maxlen=self.seq_len)
         
         # ... (后续初始化保持不变)
@@ -123,6 +265,432 @@ class OptimizedDetectionGUI:
         
         # 启动性能监控
         self.start_performance_monitor()
+
+    def _load_paper_two_stage_pipeline(self, stage2_variant=None):
+        stage2_variant = stage2_variant or self.selected_stage2_variant
+        inverter_ckpt = self.paper_stage2_ckpt_map.get(stage2_variant)
+        if inverter_ckpt is None:
+            raise ValueError(f"未知Stage2反演模型: {stage2_variant}")
+        self.paper_ai_pipeline = TwoStageNoduleInference(device=self.device, inverter_ckpt=inverter_ckpt)
+        self.dl_model = self.paper_ai_pipeline
+        self.dl_backend = "paper_two_stage"
+        self.use_dl_detection = True
+        self.selected_stage2_variant = stage2_variant
+        self.paper_ai_threshold = float(self.paper_ai_pipeline.threshold)
+        print(
+            "Paper two-stage AI pipeline loaded successfully: "
+            f"detector={self.paper_ai_pipeline.detector_ckpt}, "
+            f"inverter={self.paper_ai_pipeline.inverter_ckpt}, "
+            f"threshold={self.paper_ai_pipeline.threshold:.3f}"
+        )
+
+    def on_ai_inverter_change(self, event=None):
+        if not hasattr(self, "ai_model_var"):
+            return
+        selected = self.ai_model_var.get().strip()
+        if not selected or selected == self.selected_stage2_variant:
+            return
+        if TwoStageNoduleInference is None:
+            messagebox.showwarning("警告", "论文两阶段推理模块不可用，无法切换反演模型。")
+            return
+        try:
+            self._load_paper_two_stage_pipeline(selected)
+            self.frame_buffer.clear()
+            self._reset_ai_outputs(prob=0.0)
+            self.update_ai_output_labels()
+            messagebox.showinfo("切换成功", f"已切换 Stage2 反演模型为: {selected}")
+        except Exception as e:
+            messagebox.showerror("错误", f"切换反演模型失败: {e}")
+            if hasattr(self, "ai_model_var"):
+                self.ai_model_var.set(self.selected_stage2_variant)
+
+    def _coerce_ai_frame_matrix(self, frame):
+        arr = np.asarray(frame, dtype=np.float32)
+        if arr.shape == (12, 8):
+            return arr
+        flat = arr.reshape(-1)
+        if flat.size > 96:
+            flat = flat[-96:]
+        if flat.size < 96:
+            raise ValueError(f"AI输入帧长度不足: {flat.size}")
+        return flat.reshape(12, 8)
+
+    def _reset_ai_outputs(self, prob=0.0):
+        self.dl_probability = float(prob)
+        self.dl_probability_raw = float(prob)
+        self.dl_probability_current_window = float(prob)
+        self.dl_pred_size = None
+        self.dl_pred_depth = None
+        self.dl_pred_size_class_name = None
+        self.dl_pred_depth_label = None
+        self.dl_size_probs = None
+        self.dl_depth_probs = None
+        self.dl_size_confidence = 0.0
+        self.dl_depth_confidence = 0.0
+        self.dl_gate_open = False
+        self.dl_latency_ms = 0.0
+        self.dl_system_margin = np.nan
+        self.dl_system_cluster_size = 1
+        self.dl_system_selected_frame = None
+        self.dl_system_score = float(prob)
+
+    def _reset_ai_timeline_state(self):
+        self.display_probability_smoothed = None
+        self.prob_history = []
+        self.prob_history_raw = []
+        self.size_conf_history = []
+        self.depth_conf_history = []
+        self.size_reg_history = []
+        self.frame_buffer.clear()
+        self.ai_window_records.clear()
+        self.ai_window_counter = -1
+        self._reset_ai_outputs(prob=0.0)
+
+    def _append_prob_history(self, raw_prob, smoothed_prob, frame_index=None):
+        raw_prob = float(raw_prob)
+        smoothed_prob = float(smoothed_prob)
+        if frame_index is None:
+            self.prob_history_raw.append(raw_prob)
+            self.prob_history.append(smoothed_prob)
+            if len(self.prob_history) > 100:
+                self.prob_history.pop(0)
+                self.prob_history_raw.pop(0)
+            return
+
+        while len(self.prob_history) <= int(frame_index):
+            self.prob_history.append(0.0)
+            self.prob_history_raw.append(0.0)
+        self.prob_history[int(frame_index)] = smoothed_prob
+        self.prob_history_raw[int(frame_index)] = raw_prob
+
+    def _append_ai_inversion_history(self, frame_index=None):
+        size_conf = float(getattr(self, 'dl_size_confidence', 0.0) or 0.0)
+        depth_conf = float(getattr(self, 'dl_depth_confidence', 0.0) or 0.0)
+        size_reg = getattr(self, 'dl_pred_size', None)
+        size_reg = float(size_reg) if size_reg is not None else np.nan
+
+        if frame_index is None:
+            self.size_conf_history.append(size_conf)
+            self.depth_conf_history.append(depth_conf)
+            self.size_reg_history.append(size_reg)
+            if len(self.size_conf_history) > 100:
+                self.size_conf_history.pop(0)
+                self.depth_conf_history.pop(0)
+                self.size_reg_history.pop(0)
+            return
+
+        while len(self.size_conf_history) <= int(frame_index):
+            self.size_conf_history.append(0.0)
+            self.depth_conf_history.append(0.0)
+            self.size_reg_history.append(np.nan)
+        self.size_conf_history[int(frame_index)] = size_conf
+        self.depth_conf_history[int(frame_index)] = depth_conf
+        self.size_reg_history[int(frame_index)] = size_reg
+
+    def _weighted_average_probs(self, probs, weights):
+        probs = np.asarray(probs, dtype=np.float32)
+        weights = np.asarray(weights, dtype=np.float32)
+        if probs.ndim != 2 or probs.shape[0] == 0:
+            return None
+        if not np.isfinite(weights).all() or np.sum(weights) <= 1e-8:
+            weights = np.ones((probs.shape[0],), dtype=np.float32)
+        weights = weights / np.sum(weights)
+        return np.sum(probs * weights[:, None], axis=0)
+
+    def _upsert_ai_window_record(self, result, frame_index=None):
+        if frame_index is None:
+            self.ai_window_counter += 1
+            frame_index = self.ai_window_counter
+        else:
+            frame_index = int(frame_index)
+            self.ai_window_counter = max(self.ai_window_counter, frame_index)
+
+        size_probs = result.get("size_probs")
+        depth_probs = result.get("depth_coarse_probs")
+        record = {
+            "frame_index": frame_index,
+            "det_prob_raw": float(result.get("p_det", 0.0)),
+            "size_probs": np.asarray(size_probs, dtype=np.float32) if size_probs is not None else None,
+            "depth_probs": np.asarray(depth_probs, dtype=np.float32) if depth_probs is not None else None,
+            "size_reg_cm_raw": result.get("size_reg_cm_raw", result.get("size_reg_cm")),
+            "size_class_cm": result.get("size_class_cm"),
+            "depth_coarse_index": result.get("depth_coarse_index"),
+            "depth_coarse_display_raw": result.get("depth_coarse_display_raw", result.get("depth_coarse_display")),
+            "latency_ms": float(result.get("latency_ms", 0.0)),
+        }
+        existing = [r for r in self.ai_window_records if int(r["frame_index"]) != frame_index]
+        existing.append(record)
+        existing = sorted(existing, key=lambda x: int(x["frame_index"]))
+        self.ai_window_records = deque(existing[-80:], maxlen=80)
+        return record
+
+    def _compute_system_logic_output(self, current_frame_index):
+        if not self.ai_window_records:
+            return None
+        if current_frame_index is None:
+            current_frame_index = max(int(r["frame_index"]) for r in self.ai_window_records)
+        current_frame_index = int(current_frame_index)
+
+        recent = [
+            r for r in self.ai_window_records
+            if int(r["frame_index"]) <= current_frame_index
+            and int(r["frame_index"]) >= current_frame_index - int(self.system_history_horizon) + 1
+        ]
+        if not recent:
+            return None
+
+        ranked = sorted(recent, key=lambda x: float(x["det_prob_raw"]), reverse=True)[: int(self.system_top_k)]
+        ranked = sorted(ranked, key=lambda x: int(x["frame_index"]))
+        clusters = []
+        current_cluster = [ranked[0]]
+        for rec in ranked[1:]:
+            if int(rec["frame_index"]) - int(current_cluster[-1]["frame_index"]) <= int(self.system_cluster_gap):
+                current_cluster.append(rec)
+            else:
+                clusters.append(current_cluster)
+                current_cluster = [rec]
+        clusters.append(current_cluster)
+
+        cluster_infos = []
+        for cluster in clusters:
+            scores = np.asarray([float(r["det_prob_raw"]) for r in cluster], dtype=np.float32)
+            frames = np.asarray([int(r["frame_index"]) for r in cluster], dtype=np.float32)
+            score = float(np.mean(scores))
+            center = int(np.round(np.average(frames, weights=np.maximum(scores, 1e-6))))
+            cluster_infos.append(
+                {
+                    "score": score,
+                    "center_frame": center,
+                    "cluster_size": len(cluster),
+                    "records": cluster,
+                }
+            )
+        cluster_infos = sorted(cluster_infos, key=lambda x: x["score"], reverse=True)
+        best = cluster_infos[0]
+        second_score = float(cluster_infos[1]["score"]) if len(cluster_infos) > 1 else np.nan
+        margin = float(best["score"] - second_score) if np.isfinite(second_score) else np.nan
+
+        nearest_record = min(recent, key=lambda r: abs(int(r["frame_index"]) - int(best["center_frame"])))
+        support = sorted(recent, key=lambda r: (abs(int(r["frame_index"]) - int(best["center_frame"])), int(r["frame_index"])))[: int(self.system_conditional_top_m)]
+        support_with_outputs = [r for r in support if r.get("size_probs") is not None and r.get("depth_probs") is not None]
+        if not support_with_outputs:
+            support_with_outputs = [r for r in recent if r.get("size_probs") is not None and r.get("depth_probs") is not None]
+            support_with_outputs = sorted(
+                support_with_outputs,
+                key=lambda r: (abs(int(r["frame_index"]) - int(best["center_frame"])), -float(r["det_prob_raw"]))
+            )[: int(self.system_conditional_top_m)]
+
+        agg_size_probs = None
+        agg_depth_probs = None
+        agg_size_cm = None
+        agg_size_idx = None
+        agg_depth_idx = None
+        agg_depth_label = None
+        size_conf = 0.0
+        depth_conf = 0.0
+        if support_with_outputs:
+            weights = np.asarray(
+                [1.0 / (1.0 + abs(int(r["frame_index"]) - int(best["center_frame"]))) for r in support_with_outputs],
+                dtype=np.float32,
+            )
+            size_prob_stack = np.asarray([r["size_probs"] for r in support_with_outputs], dtype=np.float32)
+            depth_prob_stack = np.asarray([r["depth_probs"] for r in support_with_outputs], dtype=np.float32)
+            agg_size_probs = self._weighted_average_probs(size_prob_stack, weights)
+            agg_depth_probs = self._weighted_average_probs(depth_prob_stack, weights)
+            if agg_size_probs is not None:
+                agg_size_idx = int(np.argmax(agg_size_probs))
+                agg_size_cm = float(np.dot(agg_size_probs, np.asarray(self.size_axis_cm, dtype=np.float32)))
+                size_conf = float(np.max(agg_size_probs))
+            if agg_depth_probs is not None:
+                agg_depth_idx = int(np.argmax(agg_depth_probs))
+                agg_depth_label = ["浅层 (0.5-1.0 cm)", "中层 (1.5-2.0 cm)", "深层 (2.5-3.0 cm)"][agg_depth_idx]
+                depth_conf = float(np.max(agg_depth_probs))
+
+        gate_open = bool(float(best["score"]) >= float(self.system_gate_threshold))
+        if np.isfinite(margin):
+            gate_open = gate_open and bool(float(margin) >= float(self.system_gate_margin))
+
+        return {
+            "selected_score": float(best["score"]),
+            "selected_center_frame": int(best["center_frame"]),
+            "selected_cluster_size": int(best["cluster_size"]),
+            "selected_margin": margin,
+            "selected_nearest_record": nearest_record,
+            "gate_open": gate_open,
+            "size_probs": agg_size_probs.tolist() if agg_size_probs is not None else None,
+            "depth_probs": agg_depth_probs.tolist() if agg_depth_probs is not None else None,
+            "size_reg_cm": agg_size_cm,
+            "size_class_cm": self.size_axis_cm[agg_size_idx] if agg_size_idx is not None else None,
+            "depth_coarse_index": agg_depth_idx,
+            "depth_coarse_display": agg_depth_label,
+            "size_conf": float(size_conf),
+            "depth_conf": float(depth_conf),
+        }
+
+    def _set_system_logic_strategy(self, strategy_name):
+        strategy_name = (strategy_name or "baseline_single_window").strip()
+        if strategy_name == "candidate_cluster_mean_k3":
+            self.system_logic_enabled = True
+            self.system_logic_strategy = "candidate_cluster_mean_k3"
+            self.system_logic_name = "candidate_cluster_mean_k3"
+        else:
+            self.system_logic_enabled = False
+            self.system_logic_strategy = "baseline_single_window"
+            self.system_logic_name = "baseline_single_window"
+        self._reset_ai_timeline_state()
+        print(f"System logic strategy switched to: {self.system_logic_name}")
+
+    def on_system_logic_change(self, event=None):
+        if not hasattr(self, "system_logic_var"):
+            return
+        selected = self.system_logic_var.get().strip()
+        self._set_system_logic_strategy(selected)
+        self.update_ai_output_labels()
+
+    def _apply_ai_display_policy(self, result, frame_index=None):
+        raw_prob = float(result.get("p_det", 0.0))
+        self.dl_probability_current_window = raw_prob
+
+        if self.dl_backend == "paper_two_stage" and self.system_logic_enabled:
+            self._upsert_ai_window_record(result, frame_index=frame_index)
+            system_result = self._compute_system_logic_output(frame_index)
+            if system_result is None:
+                self._reset_ai_outputs(prob=0.0)
+                return
+
+            self.dl_probability_raw = raw_prob
+            self.dl_probability = float(system_result["selected_score"])
+            self.dl_system_score = float(system_result["selected_score"])
+            self.dl_gate_open = bool(system_result["gate_open"])
+            self.dl_latency_ms = float(result.get("latency_ms", 0.0))
+            self.dl_system_margin = system_result["selected_margin"]
+            self.dl_system_cluster_size = int(system_result["selected_cluster_size"])
+            self.dl_system_selected_frame = int(system_result["selected_center_frame"])
+
+            self.dl_size_probs = system_result["size_probs"]
+            self.dl_depth_probs = system_result["depth_probs"]
+            self.dl_size_confidence = float(system_result["size_conf"])
+            self.dl_depth_confidence = float(system_result["depth_conf"])
+
+            if self.dl_gate_open:
+                self.dl_pred_size = system_result["size_reg_cm"]
+                self.dl_pred_depth = system_result["depth_coarse_index"]
+                size_class_cm = system_result["size_class_cm"]
+                self.dl_pred_size_class_name = f"{float(size_class_cm):g}cm" if size_class_cm is not None else None
+                self.dl_pred_depth_label = system_result["depth_coarse_display"]
+            else:
+                self.dl_pred_size = None
+                self.dl_pred_depth = None
+                self.dl_pred_size_class_name = None
+                self.dl_pred_depth_label = None
+            return
+
+        threshold_high = float(result.get("threshold", self.paper_ai_threshold or 0.5))
+        threshold_low = max(0.0, threshold_high - float(self.display_gate_low_margin))
+
+        if self.display_probability_smoothed is None:
+            smoothed_prob = raw_prob
+        else:
+            alpha = float(self.display_prob_alpha)
+            smoothed_prob = alpha * raw_prob + (1.0 - alpha) * float(self.display_probability_smoothed)
+        self.display_probability_smoothed = float(smoothed_prob)
+
+        if self.dl_gate_open:
+            gate_open = bool(smoothed_prob >= threshold_low)
+        else:
+            gate_open = bool(smoothed_prob >= threshold_high)
+
+        self.dl_probability_raw = raw_prob
+        self.dl_probability = float(smoothed_prob)
+        self.dl_system_score = float(smoothed_prob)
+        self.dl_gate_open = gate_open
+        self.dl_latency_ms = float(result.get("latency_ms", 0.0))
+        self.dl_size_probs = None
+        self.dl_depth_probs = None
+        self.dl_size_confidence = 0.0
+        self.dl_depth_confidence = 0.0
+
+        size_probs = result.get("size_probs")
+        if size_probs is not None:
+            self.dl_size_probs = [float(x) for x in size_probs]
+            if self.dl_size_probs:
+                self.dl_size_confidence = float(np.max(self.dl_size_probs))
+
+        depth_probs = result.get("depth_coarse_probs")
+        if depth_probs is not None:
+            self.dl_depth_probs = [float(x) for x in depth_probs]
+            if self.dl_depth_probs:
+                self.dl_depth_confidence = float(np.max(self.dl_depth_probs))
+
+        if self.dl_backend == "paper_two_stage":
+            if bool(result.get("gate_open", False)):
+                self.dl_pred_size = result.get("size_reg_cm")
+                self.dl_pred_depth = result.get("depth_coarse")
+                self.dl_pred_size_class_name = result.get("size_class")
+                self.dl_pred_depth_label = result.get("depth_coarse_display")
+            elif not gate_open:
+                self.dl_pred_size = None
+                self.dl_pred_depth = None
+                self.dl_pred_size_class_name = None
+                self.dl_pred_depth_label = None
+        else:
+            self.dl_pred_size = result.get("size_reg_cm")
+            self.dl_pred_depth = result.get("depth_reg_cm")
+            self.dl_pred_size_class_name = None
+            self.dl_pred_depth_label = None
+            if not gate_open:
+                self.dl_pred_size = None
+                self.dl_pred_depth = None
+
+    def _run_ai_sequence_inference(self, seq_raw, frame_index=None):
+        if not self.use_dl_detection or not self.dl_model:
+            self._reset_ai_outputs(prob=0.0)
+            return None
+
+        seq_raw = np.asarray(seq_raw, dtype=np.float32)
+        if seq_raw.shape != (self.seq_len, 12, 8):
+            raise ValueError(f"AI序列形状错误: {seq_raw.shape}")
+
+        try:
+            if self.dl_backend == "paper_two_stage" and self.paper_ai_pipeline is not None:
+                result = self.paper_ai_pipeline.predict_from_frames(seq_raw)
+                self._apply_ai_display_policy(result, frame_index=frame_index)
+                return result
+
+            frame_stats = np.zeros((self.seq_len, 3), dtype=np.float32)
+            for i in range(self.seq_len):
+                fr = seq_raw[i]
+                frame_stats[i] = np.array([np.mean(fr), np.max(fr), np.std(fr)], dtype=np.float32)
+            stats_tensor = torch.tensor(frame_stats).unsqueeze(0).to(self.device)
+
+            seq_norm = np.zeros((self.seq_len, 1, 12, 8), dtype=np.float32)
+            for i in range(self.seq_len):
+                fr = seq_raw[i]
+                mn, mx = fr.min(), fr.max()
+                if mx - mn > 1e-6:
+                    fr = (fr - mn) / (mx - mn)
+                else:
+                    fr = fr - mn
+                seq_norm[i, 0] = fr
+
+            input_tensor = torch.tensor(seq_norm).unsqueeze(0).to(self.device)
+
+            start_time = time.perf_counter()
+            with torch.no_grad():
+                prob, size, depth = self.dl_model(input_tensor, stats_tensor)
+                result = {
+                    "p_det": float(torch.sigmoid(prob).item()),
+                    "gate_open": bool(torch.sigmoid(prob).item() >= 0.5),
+                    "size_reg_cm": float(size.item()),
+                    "depth_reg_cm": float(depth.item()),
+                    "latency_ms": (time.perf_counter() - start_time) * 1000.0,
+                    "threshold": 0.5,
+                }
+            self._apply_ai_display_policy(result, frame_index=frame_index)
+            return result
+        except Exception:
+            self._reset_ai_outputs(prob=0.0)
+            raise
     
     def create_widgets(self):
         """创建界面组件"""
@@ -252,7 +820,6 @@ class OptimizedDetectionGUI:
         ttk.Button(training_frame, text="添加训练数据", command=self.show_training_dialog).pack(side=tk.LEFT, padx=(0, 5))
         ttk.Button(training_frame, text="训练系统", command=self.train_enhanced_system).pack(side=tk.LEFT)
         
-        # 结节参数控制
         nodule_frame = ttk.LabelFrame(control_frame, text="结节参数设置", padding=5)
         nodule_frame.pack(fill=tk.X, pady=(5, 0))
         
@@ -305,6 +872,47 @@ class OptimizedDetectionGUI:
         dl_check = ttk.Checkbutton(dl_frame, text="启用AI关键帧检测",
                                    variable=self.dl_var)
         dl_check.pack(side=tk.LEFT)
+
+        ttk.Label(dl_frame, text="反演模型:").pack(side=tk.LEFT, padx=(12, 4))
+        self.ai_model_var = tk.StringVar(value=self.selected_stage2_variant)
+        self.ai_model_combo = ttk.Combobox(
+            dl_frame,
+            textvariable=self.ai_model_var,
+            values=["hierarchical"],
+            width=10,
+            state="readonly",
+        )
+        self.ai_model_combo.pack(side=tk.LEFT, padx=(0, 6))
+        self.ai_model_combo.bind('<<ComboboxSelected>>', self.on_ai_inverter_change)
+        if self.dl_backend != "paper_two_stage":
+            self.ai_model_combo.configure(state="disabled")
+
+        ttk.Label(dl_frame, text="系统逻辑:").pack(side=tk.LEFT, padx=(8, 4))
+        self.system_logic_var = tk.StringVar(value=self.system_logic_strategy)
+        self.system_logic_combo = ttk.Combobox(
+            dl_frame,
+            textvariable=self.system_logic_var,
+            values=["baseline_single_window", "candidate_cluster_mean_k3"],
+            width=24,
+            state="readonly",
+        )
+        self.system_logic_combo.pack(side=tk.LEFT, padx=(0, 6))
+        self.system_logic_combo.bind('<<ComboboxSelected>>', self.on_system_logic_change)
+        if self.dl_backend != "paper_two_stage":
+            self.system_logic_combo.configure(state="disabled")
+
+        ai_output_frame = ttk.LabelFrame(control_frame, text="AI预测结果", padding=5)
+        ai_output_frame.pack(fill=tk.X, pady=(5, 0))
+        
+        self.ai_prob_var = tk.StringVar(value="结节概率: --")
+        self.ai_size_var = tk.StringVar(value="结节大小: --")
+        self.ai_depth_var = tk.StringVar(value="结节深度: --")
+        self.ai_status_var = tk.StringVar(value="AI状态: --")
+        
+        ttk.Label(ai_output_frame, textvariable=self.ai_prob_var).pack(side=tk.LEFT, padx=(0, 15))
+        ttk.Label(ai_output_frame, textvariable=self.ai_size_var).pack(side=tk.LEFT, padx=(0, 15))
+        ttk.Label(ai_output_frame, textvariable=self.ai_depth_var).pack(side=tk.LEFT, padx=(0, 15))
+        ttk.Label(ai_output_frame, textvariable=self.ai_status_var).pack(side=tk.LEFT)
         
         # 性能参数控制
         perf_frame = ttk.Frame(control_frame)
@@ -566,6 +1174,18 @@ class OptimizedDetectionGUI:
     def update_subplot_layout(self):
         """根据视图模式更新子图布局"""
         self.fig.clear()
+        self.ax_original = None
+        self.ax_feature = None
+        self.ax_detection = None
+        self.ax_contour = None
+        self.ax_prob = None
+        self.ax_prob_gauge = None
+        self.ax_size_dist = None
+        self.ax_depth_dist = None
+        self.ax_heatmap = None
+        self.ax_3d = None
+        self.ax_trend = None
+        self.ax_stats = None
         
         view_mode = self.view_mode_var.get()
         
@@ -578,45 +1198,21 @@ class OptimizedDetectionGUI:
             self.ax_feature = self.fig.add_subplot(2, 3, 2)
             # 3. AI关键帧检测图像 (标记可疑区域)
             self.ax_detection = self.fig.add_subplot(2, 3, 3)
-            # 4. 当前区域出现结节的概率
-            self.ax_prob_gauge = self.fig.add_subplot(2, 3, 4)
+            # 4. 当前区域出现结节的概率历史曲线
+            self.ax_prob = self.fig.add_subplot(2, 3, 4)
+            self.ax_prob_gauge = self.ax_prob
             # 5. 大小概率分布
             self.ax_size_dist = self.fig.add_subplot(2, 3, 5)
             # 6. 深度概率分布
             self.ax_depth_dist = self.fig.add_subplot(2, 3, 6)
-            
-            self.ax_3d = None
-            self.ax_trend = None
-            self.ax_stats = None
         elif view_mode == "原始数据":
             self.ax_original = self.fig.add_subplot(1, 1, 1)
-            self.ax_detection = None
-            self.ax_contour = None
-            self.ax_3d = None
-            self.ax_trend = None
-            self.ax_stats = None
         elif view_mode == "检测结果":
             self.ax_detection = self.fig.add_subplot(1, 1, 1)
-            self.ax_original = None
-            self.ax_contour = None
-            self.ax_3d = None
-            self.ax_trend = None
-            self.ax_stats = None
         elif view_mode == "3D视图":
             self.ax_3d = self.fig.add_subplot(1, 1, 1, projection='3d')
-            self.ax_original = None
-            self.ax_detection = None
-            self.ax_contour = None
-            self.ax_trend = None
-            self.ax_stats = None
         elif view_mode == "热力图":
             self.ax_heatmap = self.fig.add_subplot(1, 1, 1)
-            self.ax_original = None
-            self.ax_detection = None
-            self.ax_contour = None
-            self.ax_3d = None
-            self.ax_trend = None
-            self.ax_stats = None
 
     def on_view_mode_change(self, event=None):
         """视图模式改变事件"""
@@ -650,7 +1246,15 @@ class OptimizedDetectionGUI:
         """应用缩放设置"""
         try:
             # 获取当前所有轴
-            axes = [ax for ax in [self.ax_original, self.ax_detection, self.ax_contour] if ax is not None]
+            axes = [
+                ax for ax in [
+                    getattr(self, 'ax_original', None),
+                    getattr(self, 'ax_feature', None),
+                    getattr(self, 'ax_detection', None),
+                    getattr(self, 'ax_contour', None),
+                    getattr(self, 'ax_heatmap', None),
+                ] if ax is not None
+            ]
             
             for ax in axes:
                 # 获取原始数据范围
@@ -738,7 +1342,13 @@ class OptimizedDetectionGUI:
             self.highlight_artists = []
             
             # 在所有相关轴上添加高亮
-            axes = [self.ax_original, self.ax_detection, self.ax_contour]
+            axes = [
+                getattr(self, 'ax_original', None),
+                getattr(self, 'ax_feature', None),
+                getattr(self, 'ax_detection', None),
+                getattr(self, 'ax_contour', None),
+                getattr(self, 'ax_heatmap', None),
+            ]
             for ax in axes:
                 if ax is not None:
                     # 添加高亮圆圈
@@ -1021,64 +1631,34 @@ class OptimizedDetectionGUI:
             latest_frame = self.parser.get_latest()
             
             if latest_frame is not None:
-                matrix = latest_frame['matrix']
+                raw_matrix = latest_frame['matrix'].astype(float)
+                matrix = raw_matrix
                 timestamp = latest_frame['timestamp']
                 
                 # 应用应力阈值处理
                 matrix = self.apply_stress_threshold(matrix)
                 
-                # AI深度学习检测 (实时处理每一帧)
                 if self.use_dl_detection and self.dl_var.get() and self.dl_model:
                     try:
-                        # 1. Store raw frame in buffer
-                        self.frame_buffer.append(matrix)
-                        
+                        self.frame_buffer.append(self._coerce_ai_frame_matrix(raw_matrix))
+
                         if len(self.frame_buffer) == self.seq_len:
-                            # 2. Prepare Input Tensor
-                            seq_raw = np.array(self.frame_buffer) # (Seq, 12, 8)
-                            
-                            # Intensity Stats
-                            avg_intensity = np.mean(seq_raw)
-                            max_intensity = np.max(seq_raw)
-                            std_intensity = np.std(seq_raw)
-                            intensity_stats = torch.tensor([[avg_intensity, max_intensity, std_intensity]], dtype=torch.float32).to(self.device)
-                            
-                            # Normalize Sequence
-                            seq_norm = np.zeros((self.seq_len, 1, 12, 8), dtype=np.float32)
-                            for i in range(self.seq_len):
-                                fr = seq_raw[i]
-                                mn, mx = fr.min(), fr.max()
-                                if mx - mn > 1e-6:
-                                    fr = (fr - mn) / (mx - mn)
-                                else:
-                                    fr = fr - mn
-                                seq_norm[i, 0] = fr
-                            
-                            # To Tensor: (1, Seq, 1, 12, 8)
-                            input_tensor = torch.tensor(seq_norm).unsqueeze(0).to(self.device)
-                            
-                            # 3. Inference
-                            with torch.no_grad():
-                                prob, size, depth = self.dl_model(input_tensor, intensity_stats)
-                                self.dl_probability = prob.item()
-                                self.dl_pred_size = size.item()
-                                self.dl_pred_depth = depth.item()
-                                
-                        # 记录概率用于曲线显示
-                        if not hasattr(self, 'prob_history'):
-                            self.prob_history = []
-                        self.prob_history.append(self.dl_probability)
-                        if len(self.prob_history) > 100: # 限制长度
-                            self.prob_history.pop(0)
-                            
-                        # 更新概率曲线
+                            seq_raw = np.array(self.frame_buffer)
+                            self._run_ai_sequence_inference(seq_raw, frame_index=None)
+                        else:
+                            self._reset_ai_outputs(prob=0.0)
+
+                        self._append_prob_history(self.dl_probability_raw, self.dl_probability)
+                        self._append_ai_inversion_history()
+
                         self.update_prob_curve()
-                        
+                        self.update_ai_output_labels()
                     except Exception as e:
                         print(f"AI推理错误: {e}")
                         self.dl_probability = 0.0
                 else:
                     self.dl_probability = 0.0
+                    self.update_ai_output_labels()
                 
                 # 计算矩阵哈希用于缓存
                 matrix_hash = hash(matrix.tobytes())
@@ -1323,72 +1903,89 @@ class OptimizedDetectionGUI:
 
     def _update_prob_view(self):
         """4. 当前区域出现结节的概率"""
-        if self.ax_prob_gauge:
-            prob = getattr(self, 'dl_probability', 0.0)
-            self.ax_prob_gauge.clear()
-            
-            # Draw a gauge-like bar
-            self.ax_prob_gauge.barh([0], [prob], color='red' if prob > 0.5 else 'green', height=0.5)
-            self.ax_prob_gauge.set_xlim(0, 1)
-            self.ax_prob_gauge.set_ylim(-0.5, 0.5)
-            self.ax_prob_gauge.set_yticks([])
-            self.ax_prob_gauge.set_xticks([0, 0.5, 1.0])
-            self.ax_prob_gauge.set_title(f'4. 结节概率: {prob:.1%}', fontsize=10, fontweight='bold')
-            
-            # Add threshold line
-            self.ax_prob_gauge.axvline(0.5, color='black', linestyle='--')
+        self.update_prob_curve()
+
+    def _draw_confidence_inset(self, parent_ax, history, color, title):
+        hist = np.asarray(history, dtype=np.float32) if history is not None else np.asarray([], dtype=np.float32)
+        if hist.size == 0:
+            return
+        start = max(0, hist.size - 25)
+        hist = hist[start:]
+        inset = parent_ax.inset_axes([0.58, 0.56, 0.38, 0.28])
+        inset.plot(np.arange(len(hist)), hist, color=color, linewidth=1.4)
+        inset.fill_between(np.arange(len(hist)), hist, color=color, alpha=0.12)
+        inset.set_ylim(0.0, 1.02)
+        inset.set_xticks([])
+        inset.set_yticks([0.0, 1.0])
+        inset.tick_params(labelsize=6)
+        inset.set_title(title, fontsize=6)
+        inset.grid(True, alpha=0.2, linestyle='--')
 
     def _update_dist_views(self):
         """5 & 6. 大小和深度概率分布"""
         # 5. Size
         if self.ax_size_dist:
             self.ax_size_dist.clear()
-            if hasattr(self, 'size_dist_data') and self.size_dist_data:
-                sizes, probs = self.size_dist_data
-                self.ax_size_dist.plot(sizes, probs, 'b-', linewidth=2)
-                self.ax_size_dist.fill_between(sizes, probs, alpha=0.3, color='blue')
-                
-                # Mark prior
-                prior = self.size_var.get()
-                # Find prob at prior
-                idx = (np.abs(sizes - prior)).argmin()
-                prior_prob = probs[idx]
-                
-                self.ax_size_dist.axvline(prior, color='r', linestyle='--', label=f'输入: {prior}mm')
-                self.ax_size_dist.plot(prior, prior_prob, 'ro')
-                self.ax_size_dist.text(prior, prior_prob, f'{prior_prob:.2f}', color='red', fontsize=8)
-                
-                self.ax_size_dist.set_title(f'5. 大小准确率: {prior_prob:.1%}', fontsize=9)
-                self.ax_size_dist.legend(fontsize=6, loc='upper right')
+            size_probs = getattr(self, 'dl_size_probs', None)
+            if size_probs:
+                size_labels = ['0.25', '0.5', '0.75', '1.0', '1.25', '1.5', '1.75']
+                x = np.arange(len(size_probs))
+                top_idx = int(np.argmax(size_probs))
+                colors = ['#A9C7FF'] * len(size_probs)
+                colors[top_idx] = '#1F77B4'
+                self.ax_size_dist.bar(x, size_probs, color=colors, edgecolor='white', linewidth=0.8)
+                self.ax_size_dist.set_xticks(x)
+                self.ax_size_dist.set_xticklabels(size_labels, fontsize=8)
                 self.ax_size_dist.set_ylim(0, 1.05)
-                self.ax_size_dist.grid(True, alpha=0.3)
+                self.ax_size_dist.grid(True, axis='y', alpha=0.25, linestyle='--')
+                size_reg = getattr(self, 'dl_pred_size', None)
+                size_text = f"Top1置信度: {getattr(self, 'dl_size_confidence', 0.0):.1%}"
+                if size_reg is not None:
+                    size_text += f"\n回归: {float(size_reg):.2f} cm"
+                self.ax_size_dist.text(
+                    0.02, 0.95, size_text, transform=self.ax_size_dist.transAxes,
+                    va='top', ha='left', fontsize=8,
+                    bbox=dict(boxstyle='round,pad=0.25', fc='white', ec='#B0B0B0', alpha=0.85)
+                )
+                self.ax_size_dist.set_title('5. 大小预测分布', fontsize=9)
+                self._draw_confidence_inset(self.ax_size_dist, getattr(self, 'size_conf_history', []), '#1F77B4', 'Size conf')
             else:
                 self.ax_size_dist.text(0.5, 0.5, "分析中...", ha='center')
                 self.ax_size_dist.set_title('5. 大小概率分布', fontsize=9)
+                self.ax_size_dist.set_xticks([])
+                self.ax_size_dist.set_yticks([])
 
         # 6. Depth
         if self.ax_depth_dist:
             self.ax_depth_dist.clear()
-            if hasattr(self, 'depth_dist_data') and self.depth_dist_data:
-                depths, probs = self.depth_dist_data
-                self.ax_depth_dist.plot(depths, probs, 'g-', linewidth=2)
-                self.ax_depth_dist.fill_between(depths, probs, alpha=0.3, color='green')
-                
-                prior = self.depth_var.get()
-                idx = (np.abs(depths - prior)).argmin()
-                prior_prob = probs[idx]
-                
-                self.ax_depth_dist.axvline(prior, color='r', linestyle='--', label=f'输入: {prior}mm')
-                self.ax_depth_dist.plot(prior, prior_prob, 'ro')
-                self.ax_depth_dist.text(prior, prior_prob, f'{prior_prob:.2f}', color='red', fontsize=8)
-                
-                self.ax_depth_dist.set_title(f'6. 深度准确率: {prior_prob:.1%}', fontsize=9)
-                self.ax_depth_dist.legend(fontsize=6, loc='upper right')
+            depth_probs = getattr(self, 'dl_depth_probs', None)
+            if depth_probs:
+                depth_labels = ['浅层', '中层', '深层']
+                x = np.arange(len(depth_probs))
+                top_idx = int(np.argmax(depth_probs))
+                colors = ['#B8E0C2'] * len(depth_probs)
+                colors[top_idx] = '#2E8B57'
+                self.ax_depth_dist.bar(x, depth_probs, color=colors, edgecolor='white', linewidth=0.8)
+                self.ax_depth_dist.set_xticks(x)
+                self.ax_depth_dist.set_xticklabels(depth_labels, fontsize=8)
                 self.ax_depth_dist.set_ylim(0, 1.05)
-                self.ax_depth_dist.grid(True, alpha=0.3)
+                self.ax_depth_dist.grid(True, axis='y', alpha=0.25, linestyle='--')
+                depth_text = f"Top1置信度: {getattr(self, 'dl_depth_confidence', 0.0):.1%}"
+                depth_label = getattr(self, 'dl_pred_depth_label', None)
+                if depth_label:
+                    depth_text += f"\n{depth_label}"
+                self.ax_depth_dist.text(
+                    0.02, 0.95, depth_text, transform=self.ax_depth_dist.transAxes,
+                    va='top', ha='left', fontsize=8,
+                    bbox=dict(boxstyle='round,pad=0.25', fc='white', ec='#B0B0B0', alpha=0.85)
+                )
+                self.ax_depth_dist.set_title('6. 深度预测分布', fontsize=9)
+                self._draw_confidence_inset(self.ax_depth_dist, getattr(self, 'depth_conf_history', []), '#2E8B57', 'Depth conf')
             else:
                 self.ax_depth_dist.text(0.5, 0.5, "分析中...", ha='center')
                 self.ax_depth_dist.set_title('6. 深度概率分布', fontsize=9)
+                self.ax_depth_dist.set_xticks([])
+                self.ax_depth_dist.set_yticks([])
 
     def _update_original_view(self, normalized):
         """更新原始数据视图"""
@@ -1571,7 +2168,9 @@ class OptimizedDetectionGUI:
             self.root.update()
             
             total_frames = len(self.data)
+            self._reset_ai_timeline_state()
             self.prob_history = [0.0] * total_frames
+            self.prob_history_raw = [0.0] * total_frames
             
             max_prob = -1.0
             max_frame = 0
@@ -1589,40 +2188,15 @@ class OptimizedDetectionGUI:
                     seq_raw = np.vstack([pad, current_slice])
                 
                 # Preprocess
-                seq_raw_reshaped = []
-                for j in range(10):
-                    fr = seq_raw[j]
-                    if fr.size > 96: fr = fr[-96:]
-                    seq_raw_reshaped.append(fr.reshape(12, 8))
-                seq_raw_reshaped = np.array(seq_raw_reshaped)
+                seq_raw_reshaped = np.array([self._coerce_ai_frame_matrix(seq_raw[j]) for j in range(10)], dtype=np.float32)
+                result = self._run_ai_sequence_inference(seq_raw_reshaped, frame_index=i)
+                prob_val = float(result.get("p_det", 0.0)) if result else 0.0
                 
-                # Stats
-                avg_intensity = np.mean(seq_raw_reshaped)
-                max_intensity = np.max(seq_raw_reshaped)
-                std_intensity = np.std(seq_raw_reshaped)
-                intensity_stats = torch.tensor([[avg_intensity, max_intensity, std_intensity]], dtype=torch.float32).to(self.device)
+                self.prob_history[i] = self.dl_probability
+                self.prob_history_raw[i] = self.dl_probability_raw
                 
-                # Norm
-                seq_norm = np.zeros((10, 1, 12, 8), dtype=np.float32)
-                for j in range(10):
-                    fr = seq_raw_reshaped[j]
-                    mn, mx = fr.min(), fr.max()
-                    if mx - mn > 1e-6:
-                        fr = (fr - mn) / (mx - mn)
-                    else:
-                        fr = fr - mn
-                    seq_norm[j, 0] = fr
-                    
-                input_tensor = torch.tensor(seq_norm).unsqueeze(0).to(self.device)
-                
-                with torch.no_grad():
-                    prob, _, _ = self.dl_model(input_tensor, intensity_stats)
-                    prob_val = prob.item()
-                
-                self.prob_history[i] = prob_val
-                
-                if prob_val > max_prob:
-                    max_prob = prob_val
+                if self.dl_probability > max_prob:
+                    max_prob = self.dl_probability
                     max_frame = i
                 
                 if i % 10 == 0:
@@ -1657,15 +2231,23 @@ class OptimizedDetectionGUI:
             self.ax_prob.set_ylim(-0.05, 1.05)
             self.ax_prob.grid(True, alpha=0.3, linestyle='--')
             
-            # 绘制阈值线
-            self.ax_prob.axhline(y=0.5, color='r', linestyle='--', alpha=0.5, label='阈值 (Threshold 0.5)')
+            if self.dl_backend == "paper_two_stage" and self.system_logic_enabled:
+                threshold_high = float(self.system_gate_threshold)
+                threshold_low = float(self.system_gate_threshold)
+                self.ax_prob.axhline(y=threshold_high, color='r', linestyle='--', alpha=0.6, label=f'系统释放阈值 ({threshold_high:.3f})')
+            else:
+                threshold_high = float(self.paper_ai_threshold or 0.5)
+                threshold_low = max(0.0, threshold_high - float(self.display_gate_low_margin))
+                self.ax_prob.axhline(y=threshold_high, color='r', linestyle='--', alpha=0.6, label=f'进入阈值 ({threshold_high:.3f})')
+                self.ax_prob.axhline(y=threshold_low, color='orange', linestyle='--', alpha=0.5, label=f'退出阈值 ({threshold_low:.3f})')
             
             if hasattr(self, 'prob_history') and self.prob_history:
                 x = np.arange(len(self.prob_history))
-                y = np.array(self.prob_history)
+                y = np.array(self.prob_history, dtype=np.float32)
+                y_raw = np.array(getattr(self, 'prob_history_raw', self.prob_history), dtype=np.float32)
                 
-                # 绘制主曲线
-                self.ax_prob.plot(x, y, 'b-', linewidth=1.5, label='结节概率 (Nodule Prob)')
+                self.ax_prob.plot(x, y_raw, color='#9AA0A6', linewidth=1.0, alpha=0.55, label='原始概率 (Raw)')
+                self.ax_prob.plot(x, y, 'b-', linewidth=1.8, label='平滑概率 (Smoothed)')
                 
                 # 填充曲线下方区域（增加视觉效果）
                 self.ax_prob.fill_between(x, y, alpha=0.1, color='blue')
@@ -1676,7 +2258,7 @@ class OptimizedDetectionGUI:
                     # 高亮当前点
                     if self.current_frame < len(y):
                         curr_prob = y[self.current_frame]
-                        color = 'red' if curr_prob > 0.5 else 'green'
+                        color = 'red' if curr_prob > threshold_high else ('orange' if curr_prob > threshold_low else 'green')
                         self.ax_prob.plot(self.current_frame, curr_prob, 'o', color=color, markersize=6, markeredgecolor='white')
                         
                         # 显示数值标签
@@ -1687,6 +2269,84 @@ class OptimizedDetectionGUI:
                 
         except Exception as e:
             print(f"概率曲线更新错误: {e}")
+
+    def update_ai_output_labels(self):
+        if not hasattr(self, 'ai_prob_var'):
+            return
+        if not self.use_dl_detection or not self.dl_var.get() or not self.dl_model:
+            self.ai_prob_var.set("结节概率: --")
+            self.ai_size_var.set("结节大小: --")
+            self.ai_depth_var.set("结节深度: --")
+            self.ai_status_var.set("AI状态: 未启用")
+            return
+
+        prob = getattr(self, 'dl_probability', 0.0)
+        size_cm = getattr(self, 'dl_pred_size', None)
+        depth_value = getattr(self, 'dl_pred_depth', None)
+        size_class_name = getattr(self, 'dl_pred_size_class_name', None)
+        depth_label = getattr(self, 'dl_pred_depth_label', None)
+        size_conf = float(getattr(self, 'dl_size_confidence', 0.0) or 0.0)
+        depth_conf = float(getattr(self, 'dl_depth_confidence', 0.0) or 0.0)
+        gate_open = bool(getattr(self, 'dl_gate_open', False))
+        latency_ms = float(getattr(self, 'dl_latency_ms', 0.0))
+
+        raw_prob = float(getattr(self, 'dl_probability_raw', prob))
+        self.ai_prob_var.set(f"结节概率: {prob:.2%} (原始 {raw_prob:.2%})")
+        if self.dl_backend == "paper_two_stage":
+            if self.system_logic_enabled:
+                margin = getattr(self, 'dl_system_margin', np.nan)
+                margin_text = "--" if not np.isfinite(margin) else f"{float(margin):.3f}"
+                selected_frame = getattr(self, 'dl_system_selected_frame', None)
+                selected_frame_text = "--" if selected_frame is None else str(int(selected_frame))
+                self.ai_status_var.set(
+                    f"AI状态: 两阶段系统逻辑 | 反演={self.selected_stage2_variant} | "
+                    f"score阈值={self.system_gate_threshold:.3f} | margin={margin_text} | "
+                    f"cluster={int(getattr(self, 'dl_system_cluster_size', 1))} | "
+                    f"选中窗={selected_frame_text} | 延迟={latency_ms:.1f} ms"
+                )
+            else:
+                threshold = float(self.paper_ai_threshold or 0.0)
+                threshold_low = max(0.0, threshold - float(self.display_gate_low_margin))
+                self.ai_status_var.set(
+                    f"AI状态: 两阶段基线逻辑 | 反演={self.selected_stage2_variant} | 阈值={threshold:.3f}/{threshold_low:.3f} | 延迟={latency_ms:.1f} ms"
+                )
+        else:
+            self.ai_status_var.set(f"AI状态: 旧模型 | 延迟={latency_ms:.1f} ms")
+
+        if not gate_open:
+            self.ai_size_var.set("结节大小: --")
+            self.ai_depth_var.set("结节深度: --")
+            return
+
+        if self.dl_backend == "paper_two_stage":
+            if size_cm is None and size_class_name is None:
+                self.ai_size_var.set("结节大小: --")
+            elif size_cm is None:
+                self.ai_size_var.set(f"结节大小: 类别 {size_class_name} | 置信度 {size_conf:.1%}")
+            elif size_class_name is None:
+                self.ai_size_var.set(f"结节大小: {size_cm:.2f} cm ({size_cm * 10:.1f} mm) | 置信度 {size_conf:.1%}")
+            else:
+                self.ai_size_var.set(
+                    f"结节大小: {size_cm:.2f} cm ({size_cm * 10:.1f} mm) | 类别 {size_class_name} | 置信度 {size_conf:.1%}"
+                )
+
+            if depth_label:
+                self.ai_depth_var.set(f"结节深度: {depth_label} | 置信度 {depth_conf:.1%}")
+            elif depth_value is None:
+                self.ai_depth_var.set("结节深度: --")
+            else:
+                self.ai_depth_var.set(f"结节深度: {depth_value} | 置信度 {depth_conf:.1%}")
+            return
+
+        if size_cm is None:
+            self.ai_size_var.set("结节大小: --")
+        else:
+            self.ai_size_var.set(f"结节大小: {size_cm:.2f} cm ({size_cm * 10:.1f} mm)")
+
+        if depth_value is None:
+            self.ai_depth_var.set("结节深度: --")
+        else:
+            self.ai_depth_var.set(f"结节深度: {depth_value:.2f} cm ({depth_value * 10:.1f} mm)")
 
     def save_high_res_plot(self):
         """保存高清图表用于论文"""
@@ -2028,6 +2688,7 @@ class OptimizedDetectionGUI:
                 self.current_frame = 0
                 self.frame_scale.config(to=len(self.data)-1)
                 self.frame_var.set(0)
+                self._reset_ai_timeline_state()
                 
                 # 启用播放按钮
                 if hasattr(self, 'play_btn'):
@@ -2066,59 +2727,24 @@ class OptimizedDetectionGUI:
                         current_slice = self.data[0 : self.current_frame+1]
                         seq_raw = np.vstack([pad, current_slice])
                     
-                    # 预处理数据
-                    # Reshape to (10, 12, 8)
-                    seq_raw_reshaped = []
-                    for i in range(10):
-                        # Ensure 96 elements
-                        fr = seq_raw[i]
-                        if fr.size > 96: fr = fr[-96:]
-                        seq_raw_reshaped.append(fr.reshape(12, 8))
-                    seq_raw_reshaped = np.array(seq_raw_reshaped)
-                    
-                    # Intensity Stats
-                    avg_intensity = np.mean(seq_raw_reshaped)
-                    max_intensity = np.max(seq_raw_reshaped)
-                    std_intensity = np.std(seq_raw_reshaped)
-                    intensity_stats = torch.tensor([[avg_intensity, max_intensity, std_intensity]], dtype=torch.float32).to(self.device)
-                    
-                    # Normalize Sequence
-                    seq_norm = np.zeros((10, 1, 12, 8), dtype=np.float32)
-                    for i in range(10):
-                        fr = seq_raw_reshaped[i]
-                        mn, mx = fr.min(), fr.max()
-                        if mx - mn > 1e-6:
-                            fr = (fr - mn) / (mx - mn)
-                        else:
-                            fr = fr - mn
-                        seq_norm[i, 0] = fr
-                        
-                    # To Tensor: (1, Seq, 1, 12, 8)
-                    input_tensor = torch.tensor(seq_norm).unsqueeze(0).to(self.device)
-                    
-                    # Inference
-                    with torch.no_grad():
-                        prob, size, depth = self.dl_model(input_tensor, intensity_stats)
-                        self.dl_probability = prob.item()
-                        self.dl_pred_size = size.item()
-                        self.dl_pred_depth = depth.item()
+                    seq_raw_reshaped = np.array(
+                        [self._coerce_ai_frame_matrix(seq_raw[i]) for i in range(10)],
+                        dtype=np.float32,
+                    )
+                    self._run_ai_sequence_inference(seq_raw_reshaped, frame_index=self.current_frame)
                 except Exception as e:
                     print(f"文件回放AI推理错误: {e}")
-                    self.dl_probability = 0.0
+                    self._reset_ai_outputs(prob=0.0)
                 
                 # 记录概率用于曲线显示
-                if not hasattr(self, 'prob_history'):
-                    self.prob_history = []
-                
-                # 暂时只做实时追加，为了平滑显示
-                if len(self.prob_history) > self.current_frame:
-                    self.prob_history[self.current_frame] = self.dl_probability
-                else:
-                    self.prob_history.append(self.dl_probability)
+                self._append_prob_history(self.dl_probability_raw, self.dl_probability, frame_index=self.current_frame)
+                self._append_ai_inversion_history(frame_index=self.current_frame)
                 
                 self.update_prob_curve()
+                self.update_ai_output_labels()
             else:
                 self.dl_probability = 0.0
+                self.update_ai_output_labels()
             
             # 执行检测
             if self.use_enhanced_detection and self.enhanced_detector.is_trained:
