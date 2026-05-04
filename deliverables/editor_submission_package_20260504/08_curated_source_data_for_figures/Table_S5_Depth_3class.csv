@@ -1,0 +1,4 @@
+﻿True depth,Gate,Exact,Adj./exact,Top-2,Under/Over,Most common pred.
+Shallow 0.5-1.0 cm,465/499,63.9%,79.8%,97.2%,0/168,shallow (297)
+Middle 1.5-2.0 cm,472/518,65.0%,100.0%,87.3%,115/50,middle (307)
+Deep 2.5-3.0 cm,345/368,51.9%,75.9%,66.1%,166/0,deep (179)

@@ -1,0 +1,7 @@
+{
+  "full_significance_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\论文result文件夹\\00_raw_prior_analysis\\all_feature_significance_full.csv",
+  "significant_table_fdr005": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\论文result文件夹\\00_raw_prior_analysis\\all_significant_features_fdr005.csv",
+  "effect_ranking_figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\论文result文件夹\\00_raw_prior_analysis\\all_significant_features_effect_ranking.png",
+  "boxplot_grid_figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\论文result文件夹\\00_raw_prior_analysis\\all_significant_features_boxplot_grid.png",
+  "significant_feature_count": 24
+}

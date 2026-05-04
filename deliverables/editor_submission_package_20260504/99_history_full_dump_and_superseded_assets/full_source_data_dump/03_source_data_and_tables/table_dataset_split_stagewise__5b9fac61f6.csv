@@ -1,0 +1,4 @@
+﻿Stage,Label Scope,Train N,Val N,Test N,Train Pos,Val Pos,Test Pos
+Stage 1 (Detection),All windows,5737,1124,3678,1639,292,1149
+Stage 2 (Size),Positive windows only,947,578,958,947,578,958
+Stage 3 (Depth),Positive windows only,947,578,958,947,578,958

@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "probe": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\v5_latent_descriptor_probe.csv",
+    "perturbation": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\v5_targeted_perturbation_response.csv",
+    "overall_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\table_based_error_analysis_20260503\\overall_readout_summary_table.csv",
+    "size_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\table_based_error_analysis_20260503\\size_7class_by_true_size_table.csv",
+    "depth_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\table_based_error_analysis_20260503\\depth_3class_by_true_depth_table.csv",
+    "error_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\table_based_error_analysis_20260503\\failure_case_explanation_table.csv"
+  },
+  "outputs": [
+    "panel_F_mechanistic_explainability_closure",
+    "panel_G_table_readout_summary",
+    "panel_H_failure_case_explanation",
+    "Fig5_remaining_explainability_and_failure_block"
+  ],
+  "interpretation": "F closes the learned-feature mechanism; G summarizes readout without AUC curves; H explains residual errors with dataset-level evidence."
+}

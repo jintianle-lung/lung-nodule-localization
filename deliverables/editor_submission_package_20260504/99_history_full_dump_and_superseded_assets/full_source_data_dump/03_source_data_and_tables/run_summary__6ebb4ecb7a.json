@@ -1,0 +1,130 @@
+{
+  "detector_run": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\shared_cnn_mstcn_cascade_file3_20260426_active_best",
+  "residual_run": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\residual_tune_R5_hybrid_20260427",
+  "threshold": 0.463,
+  "device": "cuda",
+  "n_train_val": 7009,
+  "n_train_val_positive": 1968,
+  "n_test": 3749,
+  "n_test_positive": 1385,
+  "feature_targets": [
+    {
+      "column": "center_border_contrast_center",
+      "label": "Center-border\ncontrast"
+    },
+    {
+      "column": "raw_max_mean",
+      "label": "Peak\nintensity"
+    },
+    {
+      "column": "center_border_contrast_last",
+      "label": "Late center-border\ncontrast"
+    },
+    {
+      "column": "window_raw_global_std",
+      "label": "Temporal\nfluctuation"
+    },
+    {
+      "column": "hotspot_radius_max",
+      "label": "Max hotspot\nradius"
+    },
+    {
+      "column": "second_moment_spread_max",
+      "label": "Max spatial\nspread"
+    }
+  ],
+  "output_alignment_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_sig6_20260504\\v5_output_descriptor_alignment.csv",
+  "latent_probe_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_sig6_20260504\\v5_latent_descriptor_probe.csv",
+  "perturbation_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_sig6_20260504\\v5_targeted_perturbation_response.csv",
+  "figure_png": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_sig6_20260504\\figure5_v5_learned_features_candidate.png",
+  "figure_pdf": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_sig6_20260504\\figure5_v5_learned_features_candidate.pdf",
+  "top_probe_relationships": [
+    {
+      "embedding_label": "Frozen detector\nembedding",
+      "feature_label": "Temporal\nfluctuation",
+      "spearman_rho": 0.9284050201309857,
+      "q": 0.0,
+      "test_r2": 0.8515455689659195
+    },
+    {
+      "embedding_label": "Fused inversion\nembedding",
+      "feature_label": "Temporal\nfluctuation",
+      "spearman_rho": 0.9068697841532296,
+      "q": 0.0,
+      "test_r2": 0.8122825493095549
+    },
+    {
+      "embedding_label": "Frozen detector\nembedding",
+      "feature_label": "Peak\nintensity",
+      "spearman_rho": 0.8934111583408232,
+      "q": 0.0,
+      "test_r2": 0.789186009814823
+    },
+    {
+      "embedding_label": "Frozen detector\nembedding",
+      "feature_label": "Max spatial\nspread",
+      "spearman_rho": 0.881300946272503,
+      "q": 0.0,
+      "test_r2": 0.7284938164297005
+    },
+    {
+      "embedding_label": "Frozen detector\nembedding",
+      "feature_label": "Max hotspot\nradius",
+      "spearman_rho": 0.8797848912577103,
+      "q": 0.0,
+      "test_r2": 0.7429911965080456
+    },
+    {
+      "embedding_label": "Fused inversion\nembedding",
+      "feature_label": "Peak\nintensity",
+      "spearman_rho": 0.8778010542609529,
+      "q": 0.0,
+      "test_r2": 0.7491906001931787
+    },
+    {
+      "embedding_label": "Frozen detector\nembedding",
+      "feature_label": "Center-border\ncontrast",
+      "spearman_rho": 0.8526991424355798,
+      "q": 0.0,
+      "test_r2": 0.7862795891406759
+    },
+    {
+      "embedding_label": "Fused inversion\nembedding",
+      "feature_label": "Center-border\ncontrast",
+      "spearman_rho": 0.8438257125629309,
+      "q": 0.0,
+      "test_r2": 0.752081313532322
+    }
+  ],
+  "perturbation_mean_deltas": [
+    {
+      "perturbation_label": "Blur hotspot\nmorphology",
+      "delta_depth_conf": -0.046670611930339834,
+      "delta_depth_expected": 0.08730493639151758,
+      "delta_det_prob": -0.16241257778381968,
+      "delta_size_cm": -0.2169956135071012
+    },
+    {
+      "perturbation_label": "Drop center-border\ncontrast",
+      "delta_depth_conf": -0.003166220303444706,
+      "delta_depth_expected": 0.20882921072609317,
+      "delta_det_prob": -0.09193307340331085,
+      "delta_size_cm": -0.2125680287384578
+    },
+    {
+      "perturbation_label": "Flatten\nhotspot",
+      "delta_depth_conf": 0.01507705984733034,
+      "delta_depth_expected": 0.210196248809823,
+      "delta_det_prob": -0.0662928078317791,
+      "delta_size_cm": -0.10463733206301137
+    },
+    {
+      "perturbation_label": "Shuffle temporal\norder",
+      "delta_depth_conf": 0.000802165748734556,
+      "delta_depth_expected": -0.02200059592051693,
+      "delta_det_prob": -0.001130936251787611,
+      "delta_size_cm": -0.0003657914035591804
+    }
+  ],
+  "interpretation_boundary": "These are post-hoc representational and perturbation tests on the frozen V5/R5 model. They support descriptor encoding and task-specific reliance, but should not be written as proof of a unique causal tissue law."
+}

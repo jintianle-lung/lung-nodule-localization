@@ -1,0 +1,33 @@
+{
+  "task_name": "stage1_locked_mainline_detection_roc",
+  "device": "cuda",
+  "summary_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage1_dualstream_mstcn_detection_raw_only_lite_20260402_run1\\paper_stage1_dualstream_mstcn_summary.json",
+  "checkpoint_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage1_dualstream_mstcn_detection_raw_only_lite_20260402_run1\\paper_stage1_dualstream_mstcn_best.pth",
+  "split_manifest_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage1_dualstream_mstcn_detection_raw_only_lite_20260402_run1\\paper_stage1_dualstream_mstcn_split_manifest.json",
+  "file3_labels_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\整理好的数据集\\建表数据\\manual_keyframe_labels_file3.backup_before_restore_20260407.json",
+  "data_root": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\整理好的数据集\\建表数据",
+  "sample_count": 3678,
+  "positive_count": 1149,
+  "negative_count": 2529,
+  "sklearn_auc": 0.8311059077623847,
+  "repo_auc": 0.8311303414766429,
+  "locked_summary_test_auc": 0.8311382566235154,
+  "auc_abs_delta_vs_locked_summary": 7.915146872483625e-06,
+  "threshold_metrics": {
+    "threshold": 0.28,
+    "tp": 1023,
+    "tn": 1623,
+    "fp": 906,
+    "fn": 126,
+    "accuracy": 0.7194127243066885,
+    "precision": 0.5303265940902022,
+    "recall": 0.8903394255874674,
+    "specificity": 0.641755634638197,
+    "f1": 0.6647173489278754
+  },
+  "artifacts": {
+    "roc_png": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\analysis\\outputs\\stage1_locked_roc_20260425\\stage1_locked_mainline_roc.png",
+    "roc_points_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\analysis\\outputs\\stage1_locked_roc_20260425\\stage1_locked_mainline_roc_points.csv",
+    "predictions_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\analysis\\outputs\\stage1_locked_roc_20260425\\stage1_locked_mainline_test_predictions.csv"
+  }
+}

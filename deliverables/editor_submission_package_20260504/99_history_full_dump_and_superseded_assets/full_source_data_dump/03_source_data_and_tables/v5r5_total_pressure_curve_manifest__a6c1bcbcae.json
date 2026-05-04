@@ -1,0 +1,15 @@
+{
+  "source_labels": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\整理好的数据集\\建表数据\\manual_keyframe_labels_file3.json",
+  "file_split": "File3 held-out records only",
+  "total_pressure_definition": "sum of MAT_0..MAT_95 per frame, then 3rd-97th percentile normalized within each CSV",
+  "positive_trace_count": 140,
+  "nonpositive_trace_count": 25,
+  "records": 42,
+  "pre_frames": 40,
+  "post_frames": 140,
+  "negative_guard_frames": 30,
+  "smoothing": {
+    "window": 25,
+    "passes": 2
+  }
+}

@@ -1,0 +1,13 @@
+﻿perturbation,cue_family,metric,task,loss_rate,loss_percent,ci95_percent,n_evaluable,n_baseline_correct,n_lost
+amplitude_mask,Stress hotspot,gate_loss,Gate,0.06474258970358815,6.4742589703588145,1.3512736410555848,1282,1282,83
+amplitude_mask,Stress hotspot,size_gatepos_loss,Size|gate+,0.314410480349345,31.4410480349345,3.0014077665383896,916,973,288
+amplitude_mask,Stress hotspot,depth_gatepos_loss,Depth|gate+,0.3177441540577717,31.77441540577717,3.3770048549971587,727,783,231
+contrast_mask,Boundary contrast,gate_loss,Gate,0.17238689547581904,17.238689547581902,2.066881830782029,1282,1282,221
+contrast_mask,Boundary contrast,size_gatepos_loss,Size|gate+,0.3694344163658243,36.94344163658243,3.274620289035984,831,973,307
+contrast_mask,Boundary contrast,depth_gatepos_loss,Depth|gate+,0.39692307692307693,39.69230769230769,3.7507312624813673,650,783,258
+spread_contract,Spatial spread,gate_loss,Gate,0.13962558502340094,13.962558502340094,1.8975306560765473,1282,1282,179
+spread_contract,Spatial spread,size_gatepos_loss,Size|gate+,0.5809178743961353,58.091787439613526,3.3532787902721526,828,973,481
+spread_contract,Spatial spread,depth_gatepos_loss,Depth|gate+,0.44461077844311375,44.461077844311376,3.757740354388015,668,783,297
+temporal_ctrl,Temporal control,gate_loss,Gate,0.0039001560062402497,0.39001560062402496,0.3715306880393845,1282,1282,5
+temporal_ctrl,Temporal control,size_gatepos_loss,Size|gate+,0.02268041237113402,2.268041237113402,0.9538640011124467,970,973,22
+temporal_ctrl,Temporal control,depth_gatepos_loss,Depth|gate+,0.04469987228607918,4.469987228607918,1.4609055049091262,783,783,35

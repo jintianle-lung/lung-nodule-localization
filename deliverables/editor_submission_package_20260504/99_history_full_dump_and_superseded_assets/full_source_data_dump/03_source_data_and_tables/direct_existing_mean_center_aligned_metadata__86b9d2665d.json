@@ -1,0 +1,10 @@
+{
+  "source_json": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\Fig1_positive_frame_aligned_heatmaps_percell_rawbars_boardfit_interp_v1.json",
+  "global_preview": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig3_panelC_direct_existing_mean_center_aligned_global_preview.png",
+  "cellnorm_preview": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig3_panelC_direct_existing_mean_center_aligned_cellnorm_preview.png",
+  "original_style_preview": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig3_panelC_direct_existing_mean_center_aligned_original_style_preview.png",
+  "summary": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\direct_existing_mean_center_aligned_summary.csv",
+  "single_panels": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\direct_existing_mean_center_aligned",
+  "method": "directly re-center each existing all-positive-frame condition mean, then interpolate for visualization",
+  "note": "No frame re-selection was performed in this version."
+}

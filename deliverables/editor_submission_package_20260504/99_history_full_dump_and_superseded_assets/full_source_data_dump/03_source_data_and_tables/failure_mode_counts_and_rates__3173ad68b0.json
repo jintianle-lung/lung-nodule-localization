@@ -1,0 +1,32 @@
+{
+  "threshold": 0.463,
+  "detection": {
+    "TP": 1282,
+    "FN": 103,
+    "TN": 1723,
+    "FP": 641
+  },
+  "size": {
+    "Exact": 973,
+    "Adjacent": 158,
+    "Severe": 151
+  },
+  "depth": {
+    "Exact": 783,
+    "Adjacent": 322,
+    "Non-adjacent": 177
+  },
+  "metrics": {
+    "detection_sensitivity": 0.9256317689530686,
+    "detection_specificity": 0.7288494077834179,
+    "size_exact": 0.7589703588143526,
+    "size_adjacent_or_exact": 0.8822152886115444,
+    "size_top2_contains_true": 0.905616224648986,
+    "depth_exact": 0.6107644305772231,
+    "depth_adjacent_or_exact": 0.8619344773790951,
+    "depth_top2_contains_true": 0.8517940717628705,
+    "n_all": 3749,
+    "n_positive": 1385,
+    "n_gated_positive": 1282
+  }
+}

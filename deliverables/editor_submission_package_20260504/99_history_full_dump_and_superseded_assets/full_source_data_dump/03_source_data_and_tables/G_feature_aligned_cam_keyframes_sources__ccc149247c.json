@@ -1,0 +1,42 @@
+[
+  {
+    "panel": "Correct: focal contrast cue",
+    "task_cam": "detection",
+    "group_key": "1cm大|1.0cm深|3.CSV",
+    "end_row": 175,
+    "pred_p_det": 0.9020734429359436,
+    "pred_size_reg_cm": 1.0031472444534302,
+    "pred_depth": "shallow",
+    "caption": "Src: 1.0 cm / shallow, end 175\nGT: 1.0 cm shallow | Pred: 1.00 cm shallow\nCAM follows the focal high-contrast peak.\nFeature link: contrast + peak intensity."
+  },
+  {
+    "panel": "Detection FP: pseudo-hotspot",
+    "task_cam": "detection",
+    "group_key": "1.5cm大|2.0cm深|3.CSV",
+    "end_row": 583,
+    "pred_p_det": 0.8829441666603088,
+    "pred_size_reg_cm": 1.500562071800232,
+    "pred_depth": "middle",
+    "caption": "Src: 1.5 cm / 2.0 cm file, end 583\nGT: negative window | Pred: P=0.88, 1.5 cm middle\nA heterogeneous hotspot activates detection.\nCross-check with size/depth can exclude."
+  },
+  {
+    "panel": "Size error: deformed footprint",
+    "task_cam": "size",
+    "group_key": "1.25cm大|1.5cm深|3.CSV",
+    "end_row": 249,
+    "pred_p_det": 0.8797099590301514,
+    "pred_size_reg_cm": 1.4902554750442505,
+    "pred_depth": "middle",
+    "caption": "Src: 1.25 cm / middle, end 249\nGT: 1.25 cm | Pred: 1.49 -> 1.5 cm\nCAM expands over a broad deformed footprint.\nFeature link: morphology + late contrast."
+  },
+  {
+    "panel": "Depth error: weak spread cue",
+    "task_cam": "depth",
+    "group_key": "0.5cm大|3.0cm深|3.CSV",
+    "end_row": 259,
+    "pred_p_det": 0.9383811950683594,
+    "pred_size_reg_cm": 0.5127589106559753,
+    "pred_depth": "middle",
+    "caption": "Src: 0.5 cm / deep, end 259\nGT: 0.5 cm deep | Pred: 0.51 cm middle\nSparse shifted CAM marks weak depth separability.\nDetection and size remain reliable."
+  }
+]

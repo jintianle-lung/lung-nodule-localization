@@ -1,0 +1,10 @@
+﻿section,metric,value,note
+detection,AUC,0.9038240271,locked_like reviewed labels
+detection,Average precision,0.845393563,locked_like reviewed labels
+detection,F1,0.7616737417,threshold=0.499
+detection,Recall,0.9134545455,threshold=0.499
+size,Top-1,0.6503378378,reviewed active positive windows
+size,Top-2,0.8217905405,reviewed active positive windows
+size,MAE cm,0.1393538574,reviewed active positive windows
+depth,Soft-route balanced accuracy,0.5575477922,exploratory coarse depth
+depth,GT-route balanced accuracy,0.5898829977,oracle size route diagnostic

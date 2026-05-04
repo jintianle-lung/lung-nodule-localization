@@ -1,0 +1,5 @@
+﻿panel,source_group_key,end_row,gt_label,gt_size_cm,gt_depth,pred_p_det,pred_size_reg_cm,pred_size_bin_cm,pred_depth,task_cam,interpretation
+Correct,1cm大|1.0cm深|3.CSV,175,1,1.0,shallow,0.902073,1.003147,1.0,shallow,detection,Successful positive
+Detection FP,1.5cm大|2.0cm深|3.CSV,583,0,,,0.882944,1.500562,1.5,middle,detection,Heterogeneous false positive
+Size error,1.25cm大|1.5cm深|3.CSV,249,1,1.25,middle,0.879710,1.490255,1.5,middle,size,Deformation size error
+Depth error,0.5cm大|3.0cm深|3.CSV,259,1,0.5,deep,0.938381,0.512759,0.5,middle,depth,Depth sliding/separability error

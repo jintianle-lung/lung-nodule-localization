@@ -1,0 +1,17 @@
+{
+  "label_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\整理好的数据集\\建表数据\\manual_keyframe_labels_file3.backup_before_restore_20260407.json",
+  "data_root": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\整理好的数据集\\建表数据",
+  "label_entries": 41,
+  "csv_files_found": 41,
+  "missing_csv_files": [],
+  "total_positive_frames": 5646,
+  "total_segments": 130,
+  "clipped_segments": 0,
+  "empty_segments": 0,
+  "mean_raw_min": 0.17820687210857022,
+  "mean_raw_max": 68.3297368562099,
+  "mean_raw_global_mean": 30.418671060974884,
+  "mean_norm_min": 0.0011603002178473144,
+  "mean_norm_max": 0.6710013105668289,
+  "mean_norm_global_mean": 0.3109080133670865
+}

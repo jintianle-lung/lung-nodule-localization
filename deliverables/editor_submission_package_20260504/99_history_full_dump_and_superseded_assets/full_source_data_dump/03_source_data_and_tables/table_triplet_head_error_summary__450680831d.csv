@@ -1,0 +1,4 @@
+﻿Error metric,Mean,Median,Std,Min,Max
+Detection head error |1-p_det|,0.245,0.231,0.053,0.169,0.486
+Size head absolute error (cm),0.217,0.133,0.246,0.001,0.906
+Depth head absolute error (cm),0.721,0.434,0.542,0.156,1.946

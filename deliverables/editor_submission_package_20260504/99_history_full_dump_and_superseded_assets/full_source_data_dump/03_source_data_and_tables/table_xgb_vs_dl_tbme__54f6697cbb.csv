@@ -1,0 +1,7 @@
+﻿Task,Method,Metric 1,Metric 2,Metric 3,Metric 4,Metric 5,Notes
+Detection,XGBoost,F1=0.619,AUC=0.820,AP=0.506,Precision=0.490,Recall=0.838,structured descriptors
+Detection,Deep learning,F1=0.665,AUC=0.831,AP=0.607,Precision=0.530,Recall=0.890,Stage1 selected line
+Size,XGBoost,Top1=0.670,Top2=0.802,MAE=0.147 cm,MedAE=0.105 cm,--,positive-window subset
+Size,Deep learning,Top1=0.664,Top2=0.822,MAE=0.134 cm,MedAE=0.040 cm,--,Stage2 selected line
+Coarse depth,XGBoost,Acc=0.515,BAcc=0.514,--,--,--,positive-window subset
+Coarse depth,Deep learning,Acc=0.614,BAcc=0.625,--,--,--,Stage3 GT-size route analysis

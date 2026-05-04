@@ -1,0 +1,14 @@
+{
+  "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\FigC_normalized_3d_nodular_vs_non_nodular_turbo_rawcontrast_v1.png",
+  "nodular_condition": [
+    1.25,
+    1.0
+  ],
+  "non_nodular_condition": [
+    0.5,
+    2.0
+  ],
+  "shared_raw_max": 108.57806396484375,
+  "nodular_n": 398,
+  "non_nodular_n": 2798
+}

@@ -1,0 +1,13 @@
+﻿Task,Feature,Statistic,FDR-adjusted p,Trend
+Positive vs negative,Peak intensity,Effect=1.106,6.63e-164,Positive > Negative
+Positive vs negative,Integrated temporal fluctuation,Effect=1.025,2.92e-168,Positive > Negative
+Positive vs negative,Center pressure,Effect=0.975,7.48e-180,Positive > Negative
+Positive vs negative,Center-border contrast,Effect=0.940,4.76e-181,Positive > Negative
+Size association,Late center-border contrast,Spearman rho=0.801,1.05e-214,increasing
+Size association,Center-border contrast,Spearman rho=0.784,5.49e-200,increasing
+Size association,Normalized temporal fluctuation,Spearman rho=0.784,7.25e-200,increasing
+Size association,Integrated temporal fluctuation,Spearman rho=0.777,5.66e-194,increasing
+Depth association,Border pressure,Spearman rho=0.212,8.06e-10,increasing
+Depth association,Rise-to-peak time,Spearman rho=-0.197,9.43e-09,decreasing
+Depth association,Max hotspot radius,Spearman rho=0.189,2.08e-08,increasing
+Depth association,Max spatial spread,Spearman rho=0.189,2.08e-08,increasing

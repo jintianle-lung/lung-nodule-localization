@@ -1,0 +1,5 @@
+﻿Claim,Dataset evidence,Bounded interpretation
+Detection FP resembles hard heterogeneous contact,FP n=641; median P95 77.2 vs TN 3.0; median contrast 20.4 vs TN 0.2.,Consistent with non-nodule hard/heterogeneous objects mimicking a focal hotspot; not direct anatomic proof.
+Secondary morphology can help triage detection FP,FP morphology differs from nominal size or depth Top-2 in 24.2% of FP windows.,"Use size/depth/shape as a surgeon-facing cross-check with CT and operative view, not as automatic FP removal."
+Size errors concentrate in deformation-prone larger contacts,"Exact size: small<=0.75 cm 90.0%, >=1.0 cm 61.6%; overall Top-2 90.6%; MAE 0.11 cm.",Large nodules are more deformation-prone; most errors remain clinically nearby rather than arbitrary.
+Depth errors reflect weak/coupled physics and possible sliding,"Depth exact 61.1%, Top-2 85.2%; spread-depth rho=0.14, radius-depth rho=0.14.",Depth is an exploratory aid because depth cues are weak and may be perturbed by sliding/displacement during palpation.

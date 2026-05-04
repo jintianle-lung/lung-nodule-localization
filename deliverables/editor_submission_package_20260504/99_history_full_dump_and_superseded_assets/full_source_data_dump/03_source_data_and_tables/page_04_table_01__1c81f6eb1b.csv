@@ -1,0 +1,3 @@
+﻿A 10-frame tactile window Detection gate detector moudle close FrameEncoder2D MS-TCN Temporal mean pooling open Feature fusion Residual morphology branch Detailed Module Architecture Frame-wise CNN encoder MS-TCN temporal encoder Residual morphology encoder Feature fusion Input window Input:  ×10×32  ×   ×  ×   ×  Time-distributed (shared) CNN,,
+B,C F,D
+,,

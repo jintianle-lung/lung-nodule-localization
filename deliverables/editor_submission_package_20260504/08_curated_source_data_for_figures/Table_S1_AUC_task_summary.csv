@@ -1,0 +1,6 @@
+﻿Task,DG-TIN AUC,Best feature baseline,Best baseline AUC,AUC gain
+Detection,0.903,XGBoost,0.879,0.024
+Size 7-class,0.957,RF,0.94,0.017
+Size 3-bin,0.947,RF,0.924,0.024
+Depth 3-class,0.792,XGBoost,0.762,0.03
+Deep vs rest,0.746,RBF-SVM,0.736,0.01

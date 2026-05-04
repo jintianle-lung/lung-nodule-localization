@@ -1,0 +1,57 @@
+﻿perturbation,perturbation_label,metric,mean_delta,sem,ci95,n_gated_positive
+hotspot_flatten,"Flatten
+hotspot",delta_det_prob,-0.0662928078317791,0.0030996273551977807,0.00607526961618765,1282
+hotspot_flatten,"Flatten
+hotspot",delta_size_pred_prob,-0.28794611050121127,0.01001640631155719,0.019632156370652094,1282
+hotspot_flatten,"Flatten
+hotspot",delta_size_conf,-0.04986694682964855,0.00559564861452064,0.010967471284460455,1282
+hotspot_flatten,"Flatten
+hotspot",delta_size_cm,-0.10463733206301137,0.007396866602732833,0.014497858541356351,1282
+hotspot_flatten,"Flatten
+hotspot",delta_depth_pred_prob,-0.2939189768362901,0.012235654872251157,0.023981883549612268,1282
+hotspot_flatten,"Flatten
+hotspot",delta_depth_conf,0.01507705984733034,0.004420849895221032,0.008664865794633223,1282
+hotspot_flatten,"Flatten
+hotspot",delta_depth_expected,0.210196248809823,0.021977495127512084,0.04307589044992368,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_det_prob,-0.09193307340331085,0.003926605359551511,0.00769614650472096,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_size_pred_prob,-0.34023386362050884,0.010562174912717956,0.020701862828927192,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_size_conf,-0.05548281033120921,0.0054751272098168225,0.010731249331240972,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_size_cm,-0.2125680287384578,0.009241353036798744,0.018113051952125536,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_depth_pred_prob,-0.3372129362059086,0.012312769651856816,0.02413302851763936,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_depth_conf,-0.003166220303444706,0.0047344306377876105,0.009279484050063716,1282
+center_contrast_drop,"Drop center-border
+contrast",delta_depth_expected,0.20882921072609317,0.022673253901696836,0.0444395776473258,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_det_prob,-0.16727751821233033,0.004091037884891872,0.00801843425438807,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_size_pred_prob,-0.5379526382559175,0.010736688392573806,0.02104390924944466,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_size_conf,-0.07158287127564739,0.006484522636592052,0.012709664367720423,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_size_cm,-0.3174989286711361,0.011813124661839357,0.02315372433720514,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_depth_pred_prob,-0.3390865142278478,0.012896164765963903,0.02527648294128925,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_depth_conf,0.031675345672646106,0.004128696216034381,0.008092244583427386,1282
+peripheral_spread_drop,"Suppress peripheral
+spread",delta_depth_expected,-0.5053709873367476,0.020090157762219004,0.03937670921394925,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_det_prob,-0.001130936251787611,0.00028376142142967175,0.0005561723860021566,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_size_pred_prob,-0.014706425717486978,0.0027477327243802434,0.005385556139785277,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_size_conf,-0.0037530227542481444,0.00227948295215526,0.004467786586224309,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_size_cm,-0.0003657914035591804,0.0017188262189653028,0.0033688993891719935,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_depth_pred_prob,-0.031377393514057404,0.0041392402658513225,0.008112910921068592,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_depth_conf,0.000802165748734556,0.0023880860316382174,0.004680648622010906,1282
+temporal_shuffle,"Shuffle temporal
+order",delta_depth_expected,-0.02200059592051693,0.006265872545727148,0.01228111018962521,1282

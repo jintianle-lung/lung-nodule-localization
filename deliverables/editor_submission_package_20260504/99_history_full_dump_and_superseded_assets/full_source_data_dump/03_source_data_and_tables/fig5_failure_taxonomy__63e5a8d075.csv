@@ -1,0 +1,6 @@
+category,count,percentage_of_positive_windows,interpretation
+complete correct readout,649,46.86,Gate opened and both size and depth were correct
+gate missed positive,103,7.44,Positive window below detection threshold
+size error only,133,9.6,"Gate opened, depth correct, size incorrect"
+depth error only,324,23.39,"Gate opened, size correct, depth incorrect"
+size + depth error,176,12.71,Gate opened but both readouts were incorrect

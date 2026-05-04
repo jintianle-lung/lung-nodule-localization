@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-05-04T14:16:38",
+  "package_root": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504",
+  "source_pdf": "C:\\Users\\SWH\\WPSDrive\\1755855549\\WPS企业云盘\\四川大学WPS\\我的企业文档\\应用\\输出为PDF\\肺结节实时检测系统设计与实现(1)_20260504140751.pdf",
+  "page_svg_count": 5,
+  "preferred_figure_svg_count": 14,
+  "available_svg_count_in_history": 163,
+  "converted_or_wrapped_svg_count_in_history": 12,
+  "audited_png_pdf_asset_count": 74,
+  "curated_source_data_count": 15,
+  "full_source_data_count_in_history": 1068,
+  "script_count": 15,
+  "directories": {
+    "original": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\00_original_pdf",
+    "page_svg": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\01_pdf_pages_as_svg",
+    "scripts": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\04_generation_scripts",
+    "docs": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\05_captions_SI_references",
+    "preferred_figures": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\07_preferred_main_and_si_figures",
+    "curated_source_data": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\08_curated_source_data_for_figures",
+    "integrity_audit": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\09_integrity_audit",
+    "original_supporting_documents": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\10_original_supporting_documents",
+    "history": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\99_history_full_dump_and_superseded_assets"
+  },
+  "key_docs": [
+    "05_captions_SI_references\\figure_captions_draft.md",
+    "05_captions_SI_references\\supplementary_information_draft.md",
+    "05_captions_SI_references\\figure_logic_and_reconstructed_prompts.md",
+    "05_captions_SI_references\\references_seed_expanded.bib",
+    "05_captions_SI_references\\uncertain_items_for_user_confirmation.md"
+  ]
+}

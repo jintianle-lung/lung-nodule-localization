@@ -1,0 +1,15 @@
+{
+  "output": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig5_results_page_vivid_20260427.png",
+  "quadrants": {
+    "top_left": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\results_page_vivid_20260427\\A_top_left_average_maps.png",
+    "top_right": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\results_page_vivid_20260427\\B_top_right_depth_check.png",
+    "bottom_left": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\results_page_vivid_20260427\\C_bottom_left_size_check.png",
+    "bottom_right": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\results_page_vivid_20260427\\D_bottom_right_cam_grid.png"
+  },
+  "sources": {
+    "top_left": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\reviewed_size_depth_positive_maps_20260426\\average_positive_maps_reviewed_active.png",
+    "top_right": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\reviewed_size_depth_positive_maps_20260426\\depth_confusion_reviewed_active_soft_route.png",
+    "bottom_left": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\reviewed_size_depth_positive_maps_20260426\\size_confusion_reviewed_active_stage2.png",
+    "bottom_right": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\residual_gated_inversion_v2_true_frozen_20260427\\cam_candidate_948_scorecam_taskguided_highres_full.png"
+  }
+}

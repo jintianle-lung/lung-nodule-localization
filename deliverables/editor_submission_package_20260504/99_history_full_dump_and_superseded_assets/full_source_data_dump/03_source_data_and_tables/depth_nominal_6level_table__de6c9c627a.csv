@@ -1,0 +1,7 @@
+﻿Nominal depth,Coarse true,Gate,Exact coarse,Top-2,Most common pred.
+0.5 cm,shallow,224/234,66.1%,97.8%,shallow (148)
+1 cm,shallow,241/265,61.8%,96.7%,shallow (149)
+1.5 cm,middle,203/219,65.5%,79.8%,middle (133)
+2 cm,middle,269/299,64.7%,92.9%,middle (174)
+2.5 cm,deep,175/184,68.0%,86.9%,deep (119)
+3 cm,deep,170/184,35.3%,44.7%,deep (60)

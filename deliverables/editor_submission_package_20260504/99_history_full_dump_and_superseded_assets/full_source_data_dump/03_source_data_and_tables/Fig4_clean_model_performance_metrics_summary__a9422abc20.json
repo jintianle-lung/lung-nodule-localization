@@ -1,0 +1,95 @@
+{
+  "created": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig4_clean_model_performance_metrics_topjournal.png",
+  "single_panels": [
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\model_performance\\Fig4_metric_panel_A_detection.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\model_performance\\Fig4_metric_panel_B_size_classification.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\model_performance\\Fig4_metric_panel_C_size_error.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\model_performance\\Fig4_metric_panel_D_depth_auxiliary.png"
+  ],
+  "metrics": {
+    "detection": {
+      "title": "Detection",
+      "labels": [
+        "F1",
+        "AUC",
+        "AP"
+      ],
+      "xgb": [
+        0.619,
+        0.82,
+        0.506
+      ],
+      "deep": [
+        0.665,
+        0.831,
+        0.607
+      ],
+      "ylabel": "Score",
+      "note": "File-3 held-out test",
+      "ylim": [
+        0,
+        1.02
+      ]
+    },
+    "size": {
+      "title": "Size classification",
+      "labels": [
+        "Top-1",
+        "Top-2"
+      ],
+      "xgb": [
+        0.67,
+        0.802
+      ],
+      "deep": [
+        0.664,
+        0.822
+      ],
+      "ylabel": "Score",
+      "note": "Positive windows only",
+      "ylim": [
+        0,
+        1.02
+      ]
+    },
+    "size_error": {
+      "title": "Size error",
+      "labels": [
+        "MAE"
+      ],
+      "xgb": [
+        0.147
+      ],
+      "deep": [
+        0.134
+      ],
+      "ylabel": "cm",
+      "note": "Lower is better",
+      "ylim": [
+        0,
+        0.2
+      ]
+    },
+    "depth": {
+      "title": "Auxiliary depth",
+      "labels": [
+        "Acc.",
+        "BAcc."
+      ],
+      "xgb": [
+        0.515,
+        0.514
+      ],
+      "deep": [
+        0.614,
+        0.625
+      ],
+      "ylabel": "Score",
+      "note": "GT-size-routed deep result",
+      "ylim": [
+        0,
+        1.02
+      ]
+    }
+  }
+}

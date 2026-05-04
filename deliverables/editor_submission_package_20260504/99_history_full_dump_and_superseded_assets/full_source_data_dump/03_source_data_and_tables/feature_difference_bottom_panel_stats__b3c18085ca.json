@@ -1,0 +1,62 @@
+[
+  {
+    "task": "Detection",
+    "feature": "center_border_contrast_center",
+    "title": "Center-border contrast",
+    "statistic": 26.076387867331505,
+    "p_value": 1.0107717834939768e-19,
+    "q_fdr_within_task": 1.0107717834939768e-19,
+    "n": 126,
+    "test": "paired Wilcoxon on per-condition medians"
+  },
+  {
+    "task": "Detection",
+    "feature": "raw_max_mean",
+    "title": "Peak intensity",
+    "statistic": 59.67499923706055,
+    "p_value": 4.058577779296702e-21,
+    "q_fdr_within_task": 8.117155558593404e-21,
+    "n": 126,
+    "test": "paired Wilcoxon on per-condition medians"
+  },
+  {
+    "task": "Size",
+    "feature": "center_border_contrast_last",
+    "title": "Late center-border contrast",
+    "statistic": 0.7891309531946763,
+    "p_value": 5.10209136748122e-28,
+    "q_fdr_within_task": 5.10209136748122e-28,
+    "n": 126,
+    "test": "partial Spearman on positive condition-repetition medians"
+  },
+  {
+    "task": "Size",
+    "feature": "window_raw_global_std",
+    "title": "Temporal fluctuation",
+    "statistic": 0.8527385261398874,
+    "p_value": 8.876808861693358e-37,
+    "q_fdr_within_task": 1.7753617723386715e-36,
+    "n": 126,
+    "test": "partial Spearman on positive condition-repetition medians"
+  },
+  {
+    "task": "Depth",
+    "feature": "hotspot_radius_max",
+    "title": "Max hotspot radius",
+    "statistic": 0.2898280490578555,
+    "p_value": 0.0009953448889984,
+    "q_fdr_within_task": 0.0009953448889984,
+    "n": 126,
+    "test": "partial Spearman on positive condition-repetition medians"
+  },
+  {
+    "task": "Depth",
+    "feature": "second_moment_spread_max",
+    "title": "Max spatial spread",
+    "statistic": 0.2898280490578555,
+    "p_value": 0.0009953448889984,
+    "q_fdr_within_task": 0.0009953448889984,
+    "n": 126,
+    "test": "partial Spearman on positive condition-repetition medians"
+  }
+]

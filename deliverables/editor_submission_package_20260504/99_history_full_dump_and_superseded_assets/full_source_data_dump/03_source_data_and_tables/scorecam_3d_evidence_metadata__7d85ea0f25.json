@@ -1,0 +1,34 @@
+{
+  "sample_index": 1155,
+  "sample": {
+    "group_key": "1.75cm大|2.5cm深|3.CSV",
+    "base_group": "1.75cm大|2.5cm深",
+    "end_row": 203,
+    "true_size_cm": 1.75,
+    "true_depth_cm": 2.5
+  },
+  "prediction": {
+    "p_det": 0.848609983921051,
+    "size_idx": 6,
+    "size_cm": 1.75,
+    "size_conf": 0.9968032836914062,
+    "size_reg_cm": 1.75,
+    "depth_idx": 2,
+    "depth_name": "deep",
+    "depth_conf": 0.9186552166938782
+  },
+  "cam_source": "frozen detector FrameEncoder2D raw_encoder.net[5], before global average pooling",
+  "surface_height": "window-minmax normalized tactile response",
+  "surface_color": "task-specific Score-CAM evidence",
+  "outputs": [
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_task_evidence.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_temporal_stack_detection.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_temporal_stack_size.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_temporal_stack_depth.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_dpanel_clean.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_front_stack_clean.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_front_stack_detection.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_front_stack_size.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\figures\\scorecam_3d_front_stack_depth.png"
+  ]
+}

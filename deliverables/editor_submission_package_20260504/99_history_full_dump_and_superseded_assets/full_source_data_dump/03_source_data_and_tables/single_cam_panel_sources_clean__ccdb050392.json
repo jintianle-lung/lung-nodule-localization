@@ -1,0 +1,104 @@
+[
+  {
+    "panel_key": "A",
+    "file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels\\G_cam_A_detection_hotspot",
+    "clean_file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels_clean\\G_cam_A_detection_hotspot_clean",
+    "title": "Detection: hotspot",
+    "task_cam": "detection",
+    "group_key": "1cm大|1.0cm深|3.CSV",
+    "end_row": 175,
+    "frames": [
+      8,
+      9,
+      10
+    ],
+    "peak_frame": 10,
+    "gt_pred": "GT 1.0 cm shallow | Pred 1.00 cm shallow",
+    "short_annotation": "Cue: focal high-response hotspot"
+  },
+  {
+    "panel_key": "B",
+    "file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels\\G_cam_B_size_contour",
+    "clean_file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels_clean\\G_cam_B_size_contour_clean",
+    "title": "Size: contour",
+    "task_cam": "size",
+    "group_key": "1.75cm大|2.5cm深|3.CSV",
+    "end_row": 203,
+    "frames": [
+      7,
+      9,
+      10
+    ],
+    "peak_frame": 9,
+    "gt_pred": "GT 1.75 cm deep | Pred 1.75 cm deep",
+    "short_annotation": "Cue: footprint / contour"
+  },
+  {
+    "panel_key": "C",
+    "file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels\\G_cam_C_depth_diffusion",
+    "clean_file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels_clean\\G_cam_C_depth_diffusion_clean",
+    "title": "Depth: diffusion",
+    "task_cam": "depth",
+    "group_key": "1.75cm大|2.5cm深|3.CSV",
+    "end_row": 203,
+    "frames": [
+      8,
+      9,
+      10
+    ],
+    "peak_frame": 10,
+    "gt_pred": "GT deep | Pred deep",
+    "short_annotation": "Cue: broader spread / position"
+  },
+  {
+    "panel_key": "D",
+    "file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels\\G_cam_D_detection_heterogeneity",
+    "clean_file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels_clean\\G_cam_D_detection_heterogeneity_clean",
+    "title": "Detection error",
+    "task_cam": "detection",
+    "group_key": "1.75cm大|2cm深|3.CSV",
+    "end_row": 123,
+    "frames": [
+      1,
+      2,
+      3
+    ],
+    "peak_frame": 1,
+    "gt_pred": "GT negative | Pred 1.25 cm",
+    "short_annotation": "Error cue: heterogeneous pseudo-hotspot"
+  },
+  {
+    "panel_key": "E",
+    "file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels\\G_cam_E_size_deformation",
+    "clean_file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels_clean\\G_cam_E_size_deformation_clean",
+    "title": "Size error",
+    "task_cam": "size",
+    "group_key": "1.25cm大|1.5cm深|3.CSV",
+    "end_row": 249,
+    "frames": [
+      8,
+      9,
+      10
+    ],
+    "peak_frame": 10,
+    "gt_pred": "GT 1.25 cm | Pred 1.49 cm",
+    "short_annotation": "Error cue: deformed footprint"
+  },
+  {
+    "panel_key": "F",
+    "file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels\\G_cam_F_depth_weak_separability",
+    "clean_file_stem": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels_clean\\G_cam_F_depth_weak_separability_clean",
+    "title": "Depth error",
+    "task_cam": "depth",
+    "group_key": "0.5cm大|3.0cm深|3.CSV",
+    "end_row": 259,
+    "frames": [
+      1,
+      3,
+      4
+    ],
+    "peak_frame": 3,
+    "gt_pred": "GT 0.5 cm deep | Pred middle",
+    "short_annotation": "Error cue: weak spread separability"
+  }
+]

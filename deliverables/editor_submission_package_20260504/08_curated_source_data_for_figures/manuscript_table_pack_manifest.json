@@ -1,0 +1,65 @@
+{
+  "created": "2026-05-04",
+  "tables": [
+    {
+      "id": "Table_S1",
+      "sheet": "T1_AUC_summary",
+      "title": "Task-level AUC summary",
+      "csv": "csv/Table_S1_AUC_task_summary.csv",
+      "placement": "Main or supplementary table; not embedded in Figure 5.",
+      "note": "DG-TIN compared with the best feature baseline under the same held-out File-3 protocol.",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "id": "Table_S2",
+      "sheet": "T2_AUC_models",
+      "title": "Full AUC model comparison",
+      "csv": "csv/Table_S2_AUC_full_model_comparison.csv",
+      "placement": "Supplementary table or extended model comparison.",
+      "note": "Rows are tasks; columns are DG-TIN and feature baselines.",
+      "rows": 5,
+      "columns": 7
+    },
+    {
+      "id": "Table_S3",
+      "sheet": "T3_Readout",
+      "title": "Readout-level performance summary",
+      "csv": "csv/Table_S3_Readout_summary.csv",
+      "placement": "Main table candidate near model performance text.",
+      "note": "Detection, size and depth readouts with clinical tolerance metrics.",
+      "rows": 3,
+      "columns": 5
+    },
+    {
+      "id": "Table_S4",
+      "sheet": "T4_Size_7class",
+      "title": "Size 7-class performance by true size",
+      "csv": "csv/Table_S4_Size_7class.csv",
+      "placement": "Supplementary table; supports size-adjacent error discussion.",
+      "note": "Exact, adjacent/exact and Top-2 behavior by size bin.",
+      "rows": 7,
+      "columns": 8
+    },
+    {
+      "id": "Table_S5",
+      "sheet": "T5_Depth_3class",
+      "title": "Depth 3-class performance by true depth",
+      "csv": "csv/Table_S5_Depth_3class.csv",
+      "placement": "Supplementary table; supports depth limitation discussion.",
+      "note": "Depth is treated as auxiliary guidance because deep response is physically weaker.",
+      "rows": 3,
+      "columns": 7
+    },
+    {
+      "id": "Table_S6",
+      "sheet": "T6_Failure",
+      "title": "Failure mechanism summary",
+      "csv": "csv/Table_S6_Failure_mechanism_summary.csv",
+      "placement": "Main text or supplementary explanation table.",
+      "note": "Maps error type to evidence, physical mechanism and clinical handling.",
+      "rows": 4,
+      "columns": 4
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+﻿family,comparison,meaning,feature,column,n_failure,n_reference,failure_mean,reference_mean,hedges_g_failure_minus_reference
+Detection FP,FP vs TN,false positive minus true negative,Amplitude,raw_p95_mean,641,1723,77.77135410770053,12.229756409593156,2.0092032454293034
+Detection FP,FP vs TN,false positive minus true negative,Center contrast,center_border_contrast_center,641,1723,33.50711361154937,2.9840505890607956,1.6762437503097953
+Detection FP,FP vs TN,false positive minus true negative,Temporal fluct.,window_raw_global_std,641,1723,27.36248555123899,4.172444556048978,2.084335956207876
+Detection FP,FP vs TN,false positive minus true negative,Spatial spread,second_moment_spread_max,641,1723,9.984826534289093,12.189039977618725,-0.5705408691044253
+Detection FP,FP vs TN,false positive minus true negative,Hotspot radius,hotspot_radius_max,641,1723,3.129385618449373,3.4238504804087047,-0.47005672891358247
+Detection FP,FP vs TN,false positive minus true negative,Entropy,spatial_entropy_mean,641,1723,0.8630047003955067,0.743118878796662,0.6733886389917954
+Detection FP,FP vs TN,false positive minus true negative,Centroid drift,centroid_drift,641,1723,0.06845619055542759,0.128041233544106,-0.39055420890336795
+Detection FP,FP vs TN,false positive minus true negative,Persistence,peak_persistence_ratio,641,1723,0.7659757818884183,0.7221443771937097,0.11981923589068273
+Detection FN,FN vs TP,false negative minus true positive,Amplitude,raw_p95_mean,103,1282,43.64034630036325,76.60176842000666,-0.8645934287276774
+Detection FN,FN vs TP,false negative minus true positive,Center contrast,center_border_contrast_center,103,1282,14.973081955089441,31.324867640196253,-0.6469964124262384
+Detection FN,FN vs TP,false negative minus true positive,Temporal fluct.,window_raw_global_std,103,1282,14.550974065817675,26.06731332241094,-0.840854611937197
+Detection FN,FN vs TP,false negative minus true positive,Spatial spread,second_moment_spread_max,103,1282,12.184716972332556,10.139763280493607,0.7265138710233707
+Detection FN,FN vs TP,false negative minus true positive,Hotspot radius,hotspot_radius_max,103,1282,3.463236080790029,3.1522375875255806,0.6906848941691663
+Detection FN,FN vs TP,false negative minus true positive,Entropy,spatial_entropy_mean,103,1282,0.8222319443249008,0.8835953740452456,-0.9202090712706746
+Detection FN,FN vs TP,false negative minus true positive,Centroid drift,centroid_drift,103,1282,0.0986842641480339,0.030965725404926633,0.9883233972002367
+Detection FN,FN vs TP,false negative minus true positive,Persistence,peak_persistence_ratio,103,1282,0.7415934658653104,0.8961283213233292,-0.5867913106688513
+Size error,Size error vs exact,wrong size bin minus exact size bin,Amplitude,raw_p95_mean,309,973,86.43958977511014,73.477527105796,0.3549573034365694
+Size error,Size error vs exact,wrong size bin minus exact size bin,Center contrast,center_border_contrast_center,309,973,36.83845372300318,29.57389323157617,0.28705892315475323
+Size error,Size error vs exact,wrong size bin minus exact size bin,Temporal fluct.,window_raw_global_std,309,973,29.717979684230965,24.907954734741477,0.36010387098132507
+Size error,Size error vs exact,wrong size bin minus exact size bin,Spatial spread,second_moment_spread_max,309,973,8.880946134672195,10.539531521047374,-0.6133051521159923
+Size error,Size error vs exact,wrong size bin minus exact size bin,Hotspot radius,hotspot_radius_max,309,973,2.9534008055443133,3.2153830814949655,-0.5992529733719689
+Size error,Size error vs exact,wrong size bin minus exact size bin,Entropy,spatial_entropy_mean,309,973,0.8550911221689391,0.8926475979196327,-0.662812952826232
+Size error,Size error vs exact,wrong size bin minus exact size bin,Centroid drift,centroid_drift,309,973,0.04196269096939256,0.027473369434299733,0.2458752813596223
+Size error,Size error vs exact,wrong size bin minus exact size bin,Persistence,peak_persistence_ratio,309,973,0.8954898032567934,0.8963310983865967,-0.003331135860658337
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Amplitude,raw_p95_mean,166,179,84.78057220183223,62.96909800588086,0.5913006764826899
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Center contrast,center_border_contrast_center,166,179,36.085508786770234,25.03596375774405,0.4573526519524844
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Temporal fluct.,window_raw_global_std,166,179,29.435876975576562,21.151949755972325,0.6106512186534659
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Spatial spread,second_moment_spread_max,166,179,9.696019373744367,11.322842240999531,-0.6747413362049453
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Hotspot radius,hotspot_radius_max,166,179,3.094004546303347,3.3387342578205983,-0.6278077943414216
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Entropy,spatial_entropy_mean,166,179,0.8814516440931573,0.9073522896740024,-0.44972599180576245
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Centroid drift,centroid_drift,166,179,0.04348309192924296,0.023753043103510434,0.2881065771544665
+Deep under-call,Deep under-call vs deep exact,deep predicted shallower minus deep exact,Persistence,peak_persistence_ratio,166,179,0.8604991394148022,0.9452513966480446,-0.35469503060915797

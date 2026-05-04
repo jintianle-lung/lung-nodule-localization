@@ -1,0 +1,58 @@
+[
+  {
+    "feature": "center_border_contrast_center",
+    "family": "detection",
+    "test": "paired Wilcoxon on group-level positive vs negative medians",
+    "n_units": 126,
+    "q_value": 1.0107717834939767e-19,
+    "median_difference": 26.076387867331505,
+    "median_difference_ci95": [
+      19.10416740179062,
+      31.819446563720696
+    ]
+  },
+  {
+    "feature": "raw_max_mean",
+    "family": "detection",
+    "test": "paired Wilcoxon on group-level positive vs negative medians",
+    "n_units": 126,
+    "q_value": 8.117155558593404e-21,
+    "median_difference": 59.67499923706055,
+    "median_difference_ci95": [
+      48.203174114227295,
+      72.09999942779541
+    ]
+  },
+  {
+    "feature": "center_border_contrast_last",
+    "family": "size",
+    "test": "partial Spearman for size_cm, controlling the orthogonal physical factor and file id",
+    "n_units": 126,
+    "partial_rho": 0.7891309531946761,
+    "q_value": 2.2284991224522664e-27
+  },
+  {
+    "feature": "window_raw_global_std",
+    "family": "size",
+    "test": "partial Spearman for size_cm, controlling the orthogonal physical factor and file id",
+    "n_units": 126,
+    "partial_rho": 0.8527385261398872,
+    "q_value": 1.260948386139092e-35
+  },
+  {
+    "feature": "hotspot_radius_max",
+    "family": "depth",
+    "test": "partial Spearman for depth_cm, controlling the orthogonal physical factor and file id",
+    "n_units": 126,
+    "partial_rho": 0.28982804905785553,
+    "q_value": 0.0011475196418176316
+  },
+  {
+    "feature": "second_moment_spread_max",
+    "family": "depth",
+    "test": "partial Spearman for depth_cm, controlling the orthogonal physical factor and file id",
+    "n_units": 126,
+    "partial_rho": 0.28982804905785553,
+    "q_value": 0.0011475196418176316
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "global_preview": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig3_panelC_topk_center_aligned_positive_frames_global_preview.png",
+  "cellnorm_preview": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig3_panelC_topk_center_aligned_positive_frames_cellnorm_preview.png",
+  "selection_log": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\topk_center_aligned_positive_frame_selection_log.csv",
+  "summary": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\topk_center_aligned_positive_frame_summary.csv",
+  "top_frames_per_repetition": 6,
+  "alignment": "hotspot centroid translated to sensor center; no rotation/scaling",
+  "interpolation": "cubic interpolation for visualization only"
+}

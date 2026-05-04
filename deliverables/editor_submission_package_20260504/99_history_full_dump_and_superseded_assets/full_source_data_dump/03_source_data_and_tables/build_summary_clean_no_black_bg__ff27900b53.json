@@ -1,0 +1,15 @@
+{
+  "clean_dir": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\gemini_clean_no_black_20260430_2120",
+  "clean_docx": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\gemini_clean_no_black_20260430_2120\\Gemini_深度研究材料总包_清洁版_无黑底图.docx",
+  "clean_zip": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\gemini_clean_no_black_20260430_2120.zip",
+  "old_zip_deleted": true,
+  "removed_black_background_images": 172,
+  "remaining_images": 194,
+  "remaining_black_candidates": 0,
+  "manifest_rows": 638,
+  "docx_size_mb": 82.86,
+  "zip_size_mb": 297.0,
+  "zip_files": 641,
+  "copy_errors": [],
+  "slipped_deleted_on_copy": []
+}

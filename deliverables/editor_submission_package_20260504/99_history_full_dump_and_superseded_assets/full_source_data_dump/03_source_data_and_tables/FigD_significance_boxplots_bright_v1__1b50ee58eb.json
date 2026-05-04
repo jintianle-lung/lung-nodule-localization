@@ -1,0 +1,48 @@
+{
+  "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\FigD_significance_boxplots_bright_v1.png",
+  "selected_panels": [
+    {
+      "feature": "center_border_contrast_center",
+      "display_name": "Center-border contrast",
+      "mode": "det",
+      "stars": "****"
+    },
+    {
+      "feature": "center_border_contrast_last",
+      "display_name": "Late center-border contrast",
+      "mode": "size",
+      "stars": "****"
+    },
+    {
+      "feature": "hotspot_radius_max",
+      "display_name": "Max hotspot radius",
+      "mode": "depth",
+      "stars": "****"
+    },
+    {
+      "feature": "raw_max_mean",
+      "display_name": "Peak intensity",
+      "mode": "det",
+      "stars": "****"
+    },
+    {
+      "feature": "window_raw_global_std",
+      "display_name": "Temporal fluctuation",
+      "mode": "size",
+      "stars": "****"
+    },
+    {
+      "feature": "second_moment_spread_max",
+      "display_name": "Max spatial spread",
+      "mode": "depth",
+      "stars": "****"
+    }
+  ],
+  "sources": {
+    "det_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_mainline_aligned_20260414_sigstrict_fix05_v2\\xgb_aligned_feature_table_test_det.csv",
+    "pos_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_mainline_aligned_20260414_sigstrict_fix05_v2\\xgb_aligned_feature_table_test_pos.csv",
+    "det_sig": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_feature_significance_strong_20260407\\compact25_feature_significance_table_test.csv",
+    "size_sig": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_size_depth_feature_significance_compact25_20260407\\size_feature_significance_compact25_test.csv",
+    "depth_sig": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_size_depth_feature_significance_compact25_20260407\\depth_feature_significance_compact25_test.csv"
+  }
+}

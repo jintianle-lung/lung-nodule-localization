@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-05-04T17:17:09",
+  "package_root": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504",
+  "preferred_figure_count": 14,
+  "preferred_figure_missing": [],
+  "curated_source_data_count": 15,
+  "curated_source_data_missing": [],
+  "all_svg_count": 193,
+  "svg_parse_errors": [],
+  "curated_csv_read_errors": [],
+  "total_file_count": 1307,
+  "total_size_bytes": 386230037,
+  "total_size_mb": 368.34,
+  "zip_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\_local_zip_archives_not_for_git_20260504\\editor_submission_package_20260504.zip",
+  "zip_size_bytes": 152749726,
+  "zip_size_mb": 145.67,
+  "zip_sha256": "5054a3c5ca86e910fd72fffbddc5e1a959613e123f2b2f1f05c64f1c39914132",
+  "git_note": "ZIP may exceed preferred GitHub size. Commit folder assets and audit files; keep ZIP local unless explicitly needed."
+}

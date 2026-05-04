@@ -1,0 +1,10 @@
+{
+  "threshold": 0.463,
+  "n_all": 3749,
+  "n_positive": 1385,
+  "n_gated_positive": 1282,
+  "TP": 1282,
+  "FN": 103,
+  "TN": 1723,
+  "FP": 641
+}

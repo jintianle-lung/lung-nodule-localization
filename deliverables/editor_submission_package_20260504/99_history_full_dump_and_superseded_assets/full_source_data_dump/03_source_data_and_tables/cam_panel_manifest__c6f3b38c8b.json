@@ -1,0 +1,22 @@
+{
+  "generated": [
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig5_cam_interpretability_topjournal.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\cam_interpretability\\stage1_detection_cam_overlay_cropped.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\cam_interpretability\\stage2_size_cam_overlay_cropped.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\cam_interpretability\\stage3_depth_cam_overlay_cropped.png"
+  ],
+  "sources": [
+    {
+      "label": "Stage 1 detection",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_unified_stage123_cam_20260404\\stage1\\stage1_detection_cam_overlay_on_raw_10frames.png"
+    },
+    {
+      "label": "Stage 2 size",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_unified_stage123_cam_20260404\\stage2\\stage2_size_cam_overlay_on_raw_10frames.png"
+    },
+    {
+      "label": "Stage 3 depth",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_unified_stage123_cam_20260404\\stage3\\stage3_depth_scorecam_10frames.png"
+    }
+  ]
+}

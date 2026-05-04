@@ -1,0 +1,12 @@
+{
+  "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_system_upgrade_20260430\\fig5_system_operating_envelope_quick.png",
+  "figure_pdf": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_system_upgrade_20260430\\fig5_system_operating_envelope_quick.pdf",
+  "tables": [
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_system_upgrade_20260430\\fig5_system_metrics_table.csv",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_system_upgrade_20260430\\fig5_operating_envelope_by_size_depth.csv",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_system_upgrade_20260430\\fig5_failure_taxonomy.csv",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_system_upgrade_20260430\\fig5_confidence_coverage.csv"
+  ],
+  "source_summary": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\residual_tune_R5_hybrid_20260427\\summary.json",
+  "source_predictions": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\residual_tune_R5_hybrid_20260427\\test_positive_predictions.csv"
+}

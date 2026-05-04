@@ -1,0 +1,55 @@
+﻿feature,feature_label,output,output_label,subset,rho,p,n,q
+raw_max_mean,"Peak
+intensity",det_prob,"Detection
+probability",all,0.7309621829278249,0.0,3749,0.0
+raw_max_mean,"Peak
+intensity",size_reg_cm,"Size
+estimate",positive,0.6469210224565624,5.044041619287299e-165,1385,9.079274914717139e-165
+raw_max_mean,"Peak
+intensity",depth_expected,"Depth
+expected",positive,-0.16103988158312285,1.668641083095055e-09,1385,1.766796440924176e-09
+center_border_contrast_center,"Center-border
+contrast",det_prob,"Detection
+probability",all,0.6929888529635527,0.0,3749,0.0
+center_border_contrast_center,"Center-border
+contrast",size_reg_cm,"Size
+estimate",positive,0.7268670904455811,6.122049618157909e-228,1385,1.3774611640855296e-227
+center_border_contrast_center,"Center-border
+contrast",depth_expected,"Depth
+expected",positive,-0.16640868832774092,4.637687137050102e-10,1385,5.217398029181365e-10
+raw_p95_mean,"High-response
+amplitude",det_prob,"Detection
+probability",all,0.7251499032360734,0.0,3749,0.0
+raw_p95_mean,"High-response
+amplitude",size_reg_cm,"Size
+estimate",positive,0.6759727476899053,1.4089014417632777e-185,1385,2.8178028835265557e-185
+raw_p95_mean,"High-response
+amplitude",depth_expected,"Depth
+expected",positive,-0.14523200896695218,5.672753315802796e-08,1385,5.6727533158027956e-08
+center_border_contrast_center,"Center contrast
+(size)",det_prob,"Detection
+probability",all,0.6929888529635527,0.0,3749,0.0
+center_border_contrast_center,"Center contrast
+(size)",size_reg_cm,"Size
+estimate",positive,0.7268670904455811,6.122049618157909e-228,1385,1.3774611640855296e-227
+center_border_contrast_center,"Center contrast
+(size)",depth_expected,"Depth
+expected",positive,-0.16640868832774092,4.637687137050102e-10,1385,5.217398029181365e-10
+hotspot_radius_max,"Max hotspot
+radius",det_prob,"Detection
+probability",all,-0.2828163146139805,6.791143020854285e-70,3749,1.0186714531281427e-69
+hotspot_radius_max,"Max hotspot
+radius",size_reg_cm,"Size
+estimate",positive,-0.7894407002131009,2.0016073469259086e-295,1385,6.004822040777726e-295
+hotspot_radius_max,"Max hotspot
+radius",depth_expected,"Depth
+expected",positive,0.29078270848104765,2.1547312053575556e-28,1385,2.770368692602571e-28
+second_moment_spread_max,"Max spatial
+spread",det_prob,"Detection
+probability",all,-0.2828163146139805,6.791143020854285e-70,3749,1.0186714531281427e-69
+second_moment_spread_max,"Max spatial
+spread",size_reg_cm,"Size
+estimate",positive,-0.7894407002131009,2.0016073469259086e-295,1385,6.004822040777726e-295
+second_moment_spread_max,"Max spatial
+spread",depth_expected,"Depth
+expected",positive,0.29078270848104765,2.1547312053575556e-28,1385,2.770368692602571e-28

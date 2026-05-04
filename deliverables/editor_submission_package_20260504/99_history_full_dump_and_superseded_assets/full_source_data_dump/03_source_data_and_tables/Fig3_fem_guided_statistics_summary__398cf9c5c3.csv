@@ -1,0 +1,7 @@
+family,feature,median_difference,median_difference_ci95,n_units,partial_rho,q_value,test
+detection,center_border_contrast_center,26.076387867331505,"[19.10416740179062, 31.819446563720696]",126,,1.0107717834939767e-19,paired Wilcoxon on group-level positive vs negative medians
+detection,raw_max_mean,59.67499923706055,"[48.203174114227295, 72.09999942779541]",126,,8.117155558593404e-21,paired Wilcoxon on group-level positive vs negative medians
+size,center_border_contrast_last,,,126,0.7891309531946761,2.2284991224522664e-27,"partial Spearman for size_cm, controlling the orthogonal physical factor and file id"
+size,window_raw_global_std,,,126,0.8527385261398872,1.260948386139092e-35,"partial Spearman for size_cm, controlling the orthogonal physical factor and file id"
+depth,hotspot_radius_max,,,126,0.28982804905785553,0.0011475196418176316,"partial Spearman for depth_cm, controlling the orthogonal physical factor and file id"
+depth,second_moment_spread_max,,,126,0.28982804905785553,0.0011475196418176316,"partial Spearman for depth_cm, controlling the orthogonal physical factor and file id"

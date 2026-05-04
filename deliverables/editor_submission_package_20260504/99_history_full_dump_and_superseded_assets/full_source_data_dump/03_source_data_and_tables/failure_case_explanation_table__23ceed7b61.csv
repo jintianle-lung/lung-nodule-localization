@@ -1,0 +1,5 @@
+﻿Failure type,Representative source,GT -> Pred,Dataset-level evidence,Interpretation,Use in surgery
+Detection FP,size 1.75 cm / depth 2 cm / end 111,negative window -> P=0.63,FPs show higher amplitude/fluctuation than TNs.,Hard non-nodule or heterogeneous contact can mimic a focal hotspot.,Cross-check with visual field and predicted size/depth before acting.
+Detection FN,size 0.25 cm / depth 2 cm / end 303,0.25 cm / middle -> P=0.03,FNs show weaker amplitude/contrast and larger drift than TPs.,Weak or sliding contact can suppress the focal response.,Repeat palpation sweep when CT prior suggests a target nearby.
+Size adjacent-bin error,size 1.25 cm / depth 2 cm / end 97,1.25 cm -> 1.5 cm,Size Top-2 retains true class in 90.6% of gated positives.,Compression can decouple contact amplitude from footprint geometry.,Report a nearby size range rather than a hard single bin.
+Depth under-call,size 1.5 cm / depth 2.5 cm / end 329,deep -> shallow,Deep under-calls show lower spread/radius and higher fluctuation.,Depth cue is weak and sensitive to sliding or changing compression.,"Use depth as auxiliary guidance, not a rigid decision label."

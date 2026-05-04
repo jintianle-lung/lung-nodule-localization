@@ -1,0 +1,73 @@
+﻿perturbation,perturbation_label,feature,feature_label,mean_z_delta,sem,ci95,n_gated_positive,domain
+amplitude_mask,"Amplitude
+mask",raw_max_mean,"Peak
+intensity",-2.591774292845374,0.0345304701337648,0.067679721462179,1282,normalized_input
+amplitude_mask,"Amplitude
+mask",center_border_contrast_center,"Center-border
+contrast",-0.397829686867298,0.009751124469486247,0.019112203960193044,1282,normalized_input
+amplitude_mask,"Amplitude
+mask",raw_p95_mean,"High-response
+amplitude",-1.0641470064305854,0.014148427740400519,0.027730918371185017,1282,normalized_input
+amplitude_mask,"Amplitude
+mask",center_border_contrast_center,"Center contrast
+(size)",-0.397829686867298,0.009751124469486247,0.019112203960193044,1282,normalized_input
+amplitude_mask,"Amplitude
+mask",hotspot_radius_max,"Max hotspot
+radius",0.2267086604545404,0.0046104508395677255,0.009036483645552741,1282,normalized_input
+amplitude_mask,"Amplitude
+mask",second_moment_spread_max,"Max spatial
+spread",0.22184418956840415,0.0044659627565527635,0.008753287002843417,1282,normalized_input
+contrast_mask,"Contrast
+mask",raw_max_mean,"Peak
+intensity",-1.45762196297893,0.044991538635712626,0.08818341572599675,1282,normalized_input
+contrast_mask,"Contrast
+mask",center_border_contrast_center,"Center-border
+contrast",-1.2876131296850464,0.019315442446279706,0.03785826719470822,1282,normalized_input
+contrast_mask,"Contrast
+mask",raw_p95_mean,"High-response
+amplitude",-1.1851246315850197,0.025548618056273315,0.05007529139029569,1282,normalized_input
+contrast_mask,"Contrast
+mask",center_border_contrast_center,"Center contrast
+(size)",-1.2876131296850464,0.019315442446279706,0.03785826719470822,1282,normalized_input
+contrast_mask,"Contrast
+mask",hotspot_radius_max,"Max hotspot
+radius",0.47292087139288547,0.0056968858481125555,0.011165896262300608,1282,normalized_input
+contrast_mask,"Contrast
+mask",second_moment_spread_max,"Max spatial
+spread",0.480828598338802,0.005073051070736581,0.009943180098643698,1282,normalized_input
+spread_contract,"Spread
+contract",raw_max_mean,"Peak
+intensity",0.0,0.0,0.0,1282,normalized_input
+spread_contract,"Spread
+contract",center_border_contrast_center,"Center-border
+contrast",-0.1950715843279758,0.01391337542230271,0.02727021582771331,1282,normalized_input
+spread_contract,"Spread
+contract",raw_p95_mean,"High-response
+amplitude",0.0,0.0,0.0,1282,normalized_input
+spread_contract,"Spread
+contract",center_border_contrast_center,"Center contrast
+(size)",-0.1950715843279758,0.01391337542230271,0.02727021582771331,1282,normalized_input
+spread_contract,"Spread
+contract",hotspot_radius_max,"Max hotspot
+radius",-0.6117232203000277,0.015275308747782103,0.02993960514565292,1282,normalized_input
+spread_contract,"Spread
+contract",second_moment_spread_max,"Max spatial
+spread",-0.6090596281223576,0.015748317168723932,0.030866701650698904,1282,normalized_input
+temporal_ctrl,"Temporal
+ctrl.",raw_max_mean,"Peak
+intensity",0.0,0.0,0.0,1282,normalized_input
+temporal_ctrl,"Temporal
+ctrl.",center_border_contrast_center,"Center-border
+contrast",-0.06629625254257862,0.009024220829806102,0.01768747282641996,1282,normalized_input
+temporal_ctrl,"Temporal
+ctrl.",raw_p95_mean,"High-response
+amplitude",0.0,0.0,0.0,1282,normalized_input
+temporal_ctrl,"Temporal
+ctrl.",center_border_contrast_center,"Center contrast
+(size)",-0.06629625254257862,0.009024220829806102,0.01768747282641996,1282,normalized_input
+temporal_ctrl,"Temporal
+ctrl.",hotspot_radius_max,"Max hotspot
+radius",0.0,0.0,0.0,1282,normalized_input
+temporal_ctrl,"Temporal
+ctrl.",second_moment_spread_max,"Max spatial
+spread",0.0,0.0,0.0,1282,normalized_input

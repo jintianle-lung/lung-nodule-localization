@@ -1,0 +1,228 @@
+[
+  {
+    "name": "Detection XGBoost",
+    "count": 3747,
+    "accuracy": 0.7349879903923139,
+    "balanced_accuracy": 0.7686191848195938,
+    "matrix": [
+      [
+        1949,
+        837
+      ],
+      [
+        156,
+        805
+      ]
+    ],
+    "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\baselines\\outputs_xgboost_baselines\\xgboost_baseline_summary.json"
+  },
+  {
+    "name": "Detection DL",
+    "count": 3678,
+    "accuracy": 0.7194127243066885,
+    "balanced_accuracy": 0.7660475301128322,
+    "matrix": [
+      [
+        1623,
+        906
+      ],
+      [
+        126,
+        1023
+      ]
+    ],
+    "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\analysis\\outputs\\stage1_locked_roc_20260425\\stage1_locked_mainline_metrics.json"
+  },
+  {
+    "name": "Size XGBoost",
+    "count": 961,
+    "accuracy": 0.6701352757544224,
+    "balanced_accuracy": 0.6462170472277996,
+    "matrix": [
+      [
+        109,
+        4,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        166,
+        9,
+        19,
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        9,
+        68,
+        10,
+        6,
+        26,
+        5
+      ],
+      [
+        4,
+        3,
+        3,
+        69,
+        7,
+        28,
+        0
+      ],
+      [
+        0,
+        3,
+        9,
+        7,
+        9,
+        61,
+        23
+      ],
+      [
+        0,
+        2,
+        24,
+        7,
+        0,
+        108,
+        3
+      ],
+      [
+        0,
+        1,
+        18,
+        1,
+        7,
+        9,
+        115
+      ]
+    ],
+    "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\baselines\\outputs_xgboost_explainability\\size_confusion_matrix.png"
+  },
+  {
+    "name": "Size DL",
+    "count": 975,
+    "accuracy": 0.6646153846153846,
+    "balanced_accuracy": 0.6454111258856312,
+    "matrix": [
+      [
+        151,
+        0,
+        0,
+        2,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        140,
+        49,
+        9,
+        6,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        64,
+        18,
+        7,
+        11,
+        9
+      ],
+      [
+        0,
+        4,
+        20,
+        34,
+        52,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        13,
+        2,
+        53,
+        48,
+        11
+      ],
+      [
+        0,
+        0,
+        12,
+        3,
+        11,
+        117,
+        5
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        2,
+        17,
+        89
+      ]
+    ],
+    "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_tbme_final_docx_longform_20260412\\figures\\candidates_20260412\\source_reruns\\stage2_main\\stage2_cam_attention_manifest.json"
+  },
+  {
+    "name": "Depth XGBoost",
+    "count": 961,
+    "accuracy": 0.5150884495317378,
+    "balanced_accuracy": 0.5137746367587025,
+    "matrix": [
+      [
+        144,
+        98,
+        62
+      ],
+      [
+        96,
+        207,
+        27
+      ],
+      [
+        57,
+        126,
+        144
+      ]
+    ],
+    "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\baselines\\outputs_xgboost_baselines\\xgboost_baseline_summary.json"
+  },
+  {
+    "name": "Depth DL",
+    "count": 958,
+    "accuracy": 0.6137787056367432,
+    "balanced_accuracy": 0.62514758214282,
+    "matrix": [
+      [
+        187,
+        33,
+        110
+      ],
+      [
+        84,
+        198,
+        79
+      ],
+      [
+        21,
+        43,
+        203
+      ]
+    ],
+    "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\docs\\REPRODUCIBILITY.md"
+  }
+]

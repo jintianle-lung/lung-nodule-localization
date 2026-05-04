@@ -1,0 +1,4 @@
+﻿Readout,Evaluation set,Primary metric,Clinical tolerance,Counts
+Detection,All windows (n=3749),Sensitivity 92.6%,Specificity 72.9%,TP 1282 / FP 641 / FN 103
+Size,Detected positive windows (n=1282),Exact 75.9%,Adj./exact 88.2%; Top-2 90.6%,Exact 973 / Adj. 158 / Severe 151
+Depth,Detected positive windows (n=1282),Exact 61.1%,Adj./exact 86.2%; Top-2 85.2%,Exact 783 / Adj. 322 / Far 177

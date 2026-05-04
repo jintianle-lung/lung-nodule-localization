@@ -1,0 +1,13 @@
+metric,value,source
+Detection threshold,0.463,validation-selected operating point
+File3 detection AUC,0.903,frozen detector
+Detection recall,0.926,File3 test windows
+Detection specificity,0.729,File3 test windows
+Detection F1,0.775,File3 test windows
+Positive-window gate coverage,1282/1385 (92.6%),R5 positive test predictions
+Gated size Top-1,0.759,R5 positive gated windows
+Gated size Top-2,0.906,R5 positive gated windows
+Gated size MAE,0.105 cm,R5 positive gated windows
+Gated depth accuracy,0.610,R5 positive gated windows
+Gated depth Top-2,0.852,R5 positive gated windows
+Complete readout success,649/1385 (46.9%),gate + size + depth all correct

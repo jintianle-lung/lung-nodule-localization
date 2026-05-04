@@ -1,0 +1,11 @@
+{
+  "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\FigC_normalized_3d_nodular_vs_non_nodular_turbo_v1.png",
+  "selected_size_cm": 1.25,
+  "selected_depth_cm": 1.0,
+  "positive_n": 269,
+  "negative_n": 526,
+  "positive_peak": 1.0,
+  "negative_peak": 0.7020548582077026,
+  "positive_base_group": "1.25cm大|1cm深",
+  "negative_base_group": "1.25cm大|1cm深"
+}

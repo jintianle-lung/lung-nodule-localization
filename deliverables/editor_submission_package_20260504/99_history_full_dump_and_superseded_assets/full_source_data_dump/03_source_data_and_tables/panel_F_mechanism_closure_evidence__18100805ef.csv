@@ -1,0 +1,5 @@
+﻿Evidence block,Result,Closure
+Latent probe,"V5/R5 latents recover high response, hotspot radius, spatial spread and temporal fluctuation (rho = 0.85-0.93).",The learned state carries the same physical cues observed in FEM and phantom tests.
+Output alignment,Detection and size outputs track center-border contrast (rho = 0.69 and 0.73).,The model does not rely only on frame index; it reads the tactile contrast field.
+Counterfactual,"Blurring, contrast removal and hotspot flattening reduce P by 0.07-0.16 and size by 0.10-0.22 cm.",Perturbing the physical cues changes the model decision in the expected direction.
+Readout behavior,"Size remains mostly ordinal, while depth is the weakest axis.",This matches deformation/sliding limits rather than random failure.

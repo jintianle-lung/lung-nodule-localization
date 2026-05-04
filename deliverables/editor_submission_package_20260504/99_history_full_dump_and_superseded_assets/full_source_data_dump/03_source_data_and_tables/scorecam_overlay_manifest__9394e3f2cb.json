@@ -1,0 +1,76 @@
+{
+  "method": "Task-guided Score-CAM from raw_encoder.net[5] (last spatial activation layer before adaptive pooling), raw-response gated and task-guided, displayed as a magma CAM heatmap over a grayscale tactile response map.",
+  "threshold": 0.463,
+  "residual_run": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\residual_tune_R5_hybrid_20260427",
+  "detector_run": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\shared_cnn_mstcn_cascade_file3_20260426_active_best",
+  "cases": [
+    {
+      "case_type": "Successful positive",
+      "group_key": "1.75cm大|2.5cm深|3.CSV",
+      "end_row": 203,
+      "label": 1,
+      "prediction": {
+        "p_det": 0.848609983921051,
+        "size_idx": 6,
+        "size_cm": 1.75,
+        "size_conf": 0.9968032836914062,
+        "size_reg_cm": 1.75,
+        "depth_idx": 2,
+        "depth_name": "deep",
+        "depth_conf": 0.9186552166938782
+      },
+      "depth_target_idx": 2
+    },
+    {
+      "case_type": "False positive",
+      "group_key": "1.5cm大|2.0cm深|3.CSV",
+      "end_row": 583,
+      "label": 0,
+      "prediction": {
+        "p_det": 0.8829441666603088,
+        "size_idx": 5,
+        "size_cm": 1.5,
+        "size_conf": 0.9910297393798828,
+        "size_reg_cm": 1.500562071800232,
+        "depth_idx": 1,
+        "depth_name": "middle",
+        "depth_conf": 0.9951967597007751
+      },
+      "depth_target_idx": 1
+    },
+    {
+      "case_type": "False negative",
+      "group_key": "0.25cm大|2.0cm深|3.CSV",
+      "end_row": 303,
+      "label": 1,
+      "prediction": {
+        "p_det": 0.027302240952849388,
+        "size_idx": 0,
+        "size_cm": 0.25,
+        "size_conf": 0.907706618309021,
+        "size_reg_cm": 0.25,
+        "depth_idx": 1,
+        "depth_name": "middle",
+        "depth_conf": 0.9999983310699463
+      },
+      "depth_target_idx": 1
+    },
+    {
+      "case_type": "Size-boundary failure",
+      "group_key": "1.25cm大|1.5cm深|3.CSV",
+      "end_row": 67,
+      "label": 1,
+      "prediction": {
+        "p_det": 0.8303502202033997,
+        "size_idx": 1,
+        "size_cm": 0.5,
+        "size_conf": 0.6925386786460876,
+        "size_reg_cm": 0.702796995639801,
+        "depth_idx": 1,
+        "depth_name": "middle",
+        "depth_conf": 0.9993380904197693
+      },
+      "depth_target_idx": 1
+    }
+  ]
+}

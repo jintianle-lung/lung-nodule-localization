@@ -1,0 +1,7 @@
+﻿Model,Detection F1,Precision,Recall,Size MAE (cm),Depth BAcc
+Dummy prior,0.408,0.256,1.000,0.451,0.333
+LogReg (balanced),0.624,0.471,0.926,0.168,0.360
+Linear SVM,0.618,0.469,0.908,0.161,0.378
+Random forest,0.617,0.485,0.848,0.186,0.578
+XGBoost (mainline),0.619,0.490,0.838,0.147,0.514
+Deep learning (mainline),0.665,0.530,0.890,0.134,0.625

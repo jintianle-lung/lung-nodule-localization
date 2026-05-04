@@ -1,0 +1,5 @@
+﻿Failure mode,Held-out evidence,Physical explanation,Clinical use
+Detection false positive,"641 FPs; median contrast 20.4 vs 0.2 in TN, and P95 77.2 vs 3.0.","Bronchus, tissue edge or heterogeneous contact can create a local peak.",CT-prior plus repeat palpation; use size/depth plausibility.
+Detection false negative,"103 FNs; median contrast 5.3 vs 24.5 in TP, with drift 0.044 vs 0.017.","Tangential touch, attenuation and local slip suppress center-border contrast.",Resweep CT-marked region; do not exclude on one low-P frame.
+Size adjacent-bin error,"Overall size Top-2 = 90.6%; the hardest exact bin is 1.25 cm (36.4% exact, 67.3% Top-2).","Larger, around-1-cm nodules deform under pressure, so amplitude and footprint do not scale perfectly.",Report an adjacent interval or Top-2 range instead of a single exact size class.
+Depth under-call,"Deep exact = 51.9%, deep Top-2 = 66.1%; overall depth Top-2 = 85.2%.",Deep responses are attenuated and can shift when the nodule slides inside the phantom/tissue.,"Use depth as auxiliary guidance, not as a hard exclusion boundary."

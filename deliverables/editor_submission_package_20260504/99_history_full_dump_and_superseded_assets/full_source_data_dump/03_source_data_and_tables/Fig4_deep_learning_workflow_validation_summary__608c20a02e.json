@@ -1,0 +1,97 @@
+{
+  "composite_png": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig4_deep_learning_workflow_validation_topjournal.png",
+  "composite_svg": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\Fig4_deep_learning_workflow_validation_topjournal.svg",
+  "single_panel_pngs": [
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_A_labeling_protocol.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_B_leakage_safe_split.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_C_window_tensor_construction.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_D_staged_architecture.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_E_heldout_validation.png",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_F_model_sanity_checks.png"
+  ],
+  "single_panel_svgs": [
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_A_labeling_protocol.svg",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_B_leakage_safe_split.svg",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_C_window_tensor_construction.svg",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_D_staged_architecture.svg",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_E_heldout_validation.svg",
+    "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\paper_figure_completion_20260425\\final_figures\\single_panels\\deep_learning_workflow\\Fig4_workflow_panel_F_model_sanity_checks.svg"
+  ],
+  "positioning": {
+    "primary_claims": [
+      "nodule presence detection",
+      "size estimation"
+    ],
+    "secondary_claim": "coarse depth estimation",
+    "label_rule": "window overlaps positive segment; soft target is positive-frame fraction",
+    "split_rule": "File 3 held-out; group-level splitting only; no frame-level random split"
+  },
+  "metrics_used": {
+    "detection": {
+      "title": "Detection",
+      "note": "File-3 held-out, n=3678 windows",
+      "items": [
+        [
+          "F1",
+          0.665,
+          "#2563EB"
+        ],
+        [
+          "AUC",
+          0.831,
+          "#2563EB"
+        ],
+        [
+          "Recall",
+          0.89,
+          "#2563EB"
+        ]
+      ],
+      "baseline": "XGB F1 0.619"
+    },
+    "size": {
+      "title": "Size estimation",
+      "note": "Positive windows, n=958",
+      "items": [
+        [
+          "Top-1",
+          0.664,
+          "#16A34A"
+        ],
+        [
+          "Top-2",
+          0.822,
+          "#16A34A"
+        ],
+        [
+          "MAE",
+          0.134,
+          "#16A34A"
+        ]
+      ],
+      "baseline": "XGB MAE 0.147 cm"
+    },
+    "depth": {
+      "title": "Coarse depth",
+      "note": "Auxiliary, size-conditioned",
+      "items": [
+        [
+          "Acc.",
+          0.614,
+          "#F97316"
+        ],
+        [
+          "BAcc.",
+          0.625,
+          "#F97316"
+        ],
+        [
+          "Role",
+          NaN,
+          "#F97316"
+        ]
+      ],
+      "baseline": "secondary analysis"
+    }
+  }
+}

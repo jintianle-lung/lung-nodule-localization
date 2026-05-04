@@ -1,0 +1,7 @@
+task,feature,title,statistic,p_value,q_fdr_within_task,n,test
+Detection,center_border_contrast_center,Center-border contrast,26.076387867331505,1.0107717834939768e-19,1.0107717834939768e-19,126,paired Wilcoxon on per-condition medians
+Detection,raw_max_mean,Peak intensity,59.67499923706055,4.058577779296702e-21,8.117155558593404e-21,126,paired Wilcoxon on per-condition medians
+Size,center_border_contrast_last,Late center-border contrast,0.7891309531946763,5.10209136748122e-28,5.10209136748122e-28,126,partial Spearman on positive condition-repetition medians
+Size,window_raw_global_std,Temporal fluctuation,0.8527385261398874,8.876808861693358e-37,1.7753617723386715e-36,126,partial Spearman on positive condition-repetition medians
+Depth,hotspot_radius_max,Max hotspot radius,0.2898280490578555,0.0009953448889984,0.0009953448889984,126,partial Spearman on positive condition-repetition medians
+Depth,second_moment_spread_max,Max spatial spread,0.2898280490578555,0.0009953448889984,0.0009953448889984,126,partial Spearman on positive condition-repetition medians

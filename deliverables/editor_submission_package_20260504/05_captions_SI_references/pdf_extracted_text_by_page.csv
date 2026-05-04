@@ -1,0 +1,198 @@
+﻿page,text
+1,"Pre-operative CT Scan
+Alignment Difficulties
+Challenge: 3D Body
+After Lung Collapse
+(3D Body Plan)
+Thoracoscopic
+Surgery
+X
+Existing Method: traditional Method:
+Manual Palpation
+Limitation
+Invasive Risk
+High prices
+Gas residue experience of dependence
+Flexible Sensor + Deep Learning Algorithm for Nodule Characterization
+SOFTWARE (LAPTOP) USB CONTROL
+PCB MODULELUNG TISSUE
+FLEXIBLE  TACTILE SENSOR  HEAD
+Main 6il All-Rode Breakdoon
+3 8. Seseriration Nontnepielined2 Factore Entrestior. Potarselteodl
+4. Agoin Invitation Bistr/tuition3. Gere Predistion Erele bech loAl Rudels Prabability Trace
+8880
+1- 800 Corr 1-db
+Trond Indre
+DGLL
+A
+Saat rea
+1.0 1.0 1.0 LLAD0.0 0.8 0.8
+0.0 0.6 : CO0.6
+0.6 0.4 0.4 500
+8.2 C.2 0.2 CHO
+0,0 K
+20 250 40 4000060.0 1301.55175 0.0 8 A
+0 00
+Raw data format: 
+12×8-point 
+pressure matrix
+Detection&Software-layer runtime outputsHardware component: Utilizes existing commercial sensors
+Data Capture & PreprocessingActive Pressing & Sliding
+Real-time
+.12. 1 ≥4$9#?Đ1·#234$
+3000
+?
+Deep Learning Detection  Stack
+Pretrained 
+inference engine
+Visualization 
+prob，size，depth
+ouput1：Heatmap
+output2：
+if model exsits
+Real-time Nodule Detection Interface
+input
+Train the neural network
+Detection & Inversion
+Nodule Size&DepthObtain the weight model
+Load model
+A
+C
+B
+a b
+c
+ Intraoperative detection workflow
+Preoperative CT 
+determines the 
+approximate 
+location
+patient
+Flexible Array Sensor
+Image workstation
+Data Analysis and Real-time 
+Processing
+"
+2,"0.25cm 1.75cm
+B
+Nodule implantation Prepared sampleLiver specimen Depth probe
+A
+2 41
+ 3 4
+G
+Encapsulated
+sensing head
+interface-converter
+Flexible FPC cable
+C
+Signal-conditioning
+Bottom electrode 
+sensing layer
+readout layer
+Piezoresistive
++ ADC board
+PDMS mesh
+Protective shell
+Applied stress b
+ADC
+I2C
+Electrical signal
+12*8 matrix
+D E
+F
+H I
+lung tissue 
+pulmonary 
+nodule
+Sensor contact layer
+nodosity Non-nodular 
+ 
+0.25mm 0.5mm 0.75mm
+ 5mm 10mm
+Applied stress
+"
+3,"Experimental and Preliminary Data Analysis 
+100
+80
+20
+60
+40
+0
+Raw stress (Pa)
+100
+80
+20
+60
+40
+0
+Original 12x8 stress map Interpolated rendering 
+ nodosity Non-nodular
+A
+Data records and label tags
+Nodule Detection*3
+experimental procedure  
+Data analysis and Dataset partitioning
+Design Matrix: 6 Sizes (0.25-1.75cm)
+x 7 Depths (0.5-3.0cm) = 42 Groups
+Repetition 3
+Repetition 2
+Repetition 1
+Exp 2 Data
+Exp 3 Data
+Exp 1 Data
+Cotton swabs control the burial depth
+B dataset&data sequence
+C
+G
+Dataset partition
+experiment-wise split
+avoid data leakage
+(42 groups)
+(42 groups)
+(42 groups)
+Exp 3
+Exp 2
+Exp 1
+(100%)
+Train
+(70%)
+(30%)
+Test
+Val
+D
+0.25cm 1.75cm0.50cm 0.75cm 1.00cm 1.25cm 1.50cm
+0.5cm
+1.0cm
+1.5cm
+2.0cm
+2.5cm
+3.0cm
+Size
+Depth
+E
+ F"
+4,"A
+open
+close
+Residual morphology branch
+Feature fusion
+FrameEncoder2D MS-TCN
+mean pooling
+Temporal
+Detection gatedetector  moudle10-frame tactile window
+Detailed Module Architecture
+B
+F G
+Input window
+? × ?? × ? × ?? × ?
+Time-distributed (shared) CNN
+Frame-wise CNN encoder MS-TCN temporal encoder
+Input: ? × 10 × 32
+ Residual morphology encoder  Feature fusion
+C D
+E G"
+5,"A B
+D E
+C
+GF
+H I
+ F"

@@ -1,0 +1,129 @@
+{
+  "inputs": {
+    "alignment_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_final6_20260504\\v5_output_descriptor_alignment.csv",
+    "perturbation_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_final6_20260504\\v5_targeted_perturbation_response.csv",
+    "failure_effects_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\failure_mode_analysis_20260503\\failure_mode_effect_sizes.csv",
+    "cam_dir": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\cam_feature_alignment_20260504\\single_cam_panels"
+  },
+  "overall_explainability": {
+    "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_intuitive_explainability_20260504\\Fig5_overall_explainability_story.png",
+    "rows": [
+      {
+        "task": "Detection",
+        "cue": "Focal hotspot",
+        "cue2": "peak intensity +\ncenter contrast",
+        "badges": [
+          "rho(Pdet, peak) = 0.73",
+          "rho(Pdet, contrast) = 0.69"
+        ],
+        "cam": "hotspot",
+        "readout": "localize the high-response focus"
+      },
+      {
+        "task": "Size",
+        "cue": "Footprint / contour",
+        "cue2": "high-response amplitude +\ncenter contrast",
+        "badges": [
+          "rho(size, amplitude) = 0.68",
+          "rho(size, contrast) = 0.73"
+        ],
+        "cam": "contour",
+        "readout": "estimate a nearby size band"
+      },
+      {
+        "task": "Depth",
+        "cue": "Diffusion / spread",
+        "cue2": "max radius +\nmax spread",
+        "badges": [
+          "rho(depth, radius) = 0.29",
+          "rho(depth, spread) = 0.29"
+        ],
+        "cam": "diffuse",
+        "readout": "provide auxiliary depth guidance"
+      }
+    ]
+  },
+  "failure_modes": {
+    "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\fig5_intuitive_explainability_20260504\\Fig5_failure_mode_visual_cards.png",
+    "cards": [
+      {
+        "title": "False detection",
+        "color": "#D55E00",
+        "cam": "False detection",
+        "source": "Negative window -> predicted nodule",
+        "mechanism": "Heterogeneous solid contact can mimic a compact hotspot.",
+        "use": "Cross-check with visual field and predicted size/depth.",
+        "signature": [
+          [
+            "Amp.",
+            2.0092032454293034
+          ],
+          [
+            "Fluct.",
+            2.084335956207876
+          ],
+          [
+            "Contrast",
+            1.676243750309795
+          ],
+          [
+            "Spread",
+            -0.5705408691044253
+          ]
+        ]
+      },
+      {
+        "title": "Size bin error",
+        "color": "#0B7FAB",
+        "cam": "Size bin error",
+        "source": "1.25 cm -> 1.5 cm nearby bin",
+        "mechanism": "Compression changes the footprint-amplitude relation.",
+        "use": "Report a nearby range; true size remains in Top-2 in 90.6%.",
+        "signature": [
+          [
+            "Amp.",
+            0.3549573034365694
+          ],
+          [
+            "Fluct.",
+            0.360103870981325
+          ],
+          [
+            "Spread",
+            -0.6133051521159923
+          ],
+          [
+            "Radius",
+            -0.5992529733719689
+          ]
+        ]
+      },
+      {
+        "title": "Depth error",
+        "color": "#009E73",
+        "cam": "Depth error",
+        "source": "Deep target -> shallower/middle readout",
+        "mechanism": "Depth spread is weak and sensitive to sliding/contact state.",
+        "use": "Use depth as auxiliary guidance; repeat palpation when needed.",
+        "signature": [
+          [
+            "Spread",
+            -0.6747413362049453
+          ],
+          [
+            "Radius",
+            -0.6278077943414216
+          ],
+          [
+            "Fluct.",
+            0.6106512186534659
+          ],
+          [
+            "Drift",
+            0.2881065771544665
+          ]
+        ]
+      }
+    ]
+  }
+}

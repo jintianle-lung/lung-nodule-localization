@@ -1,0 +1,253 @@
+{
+  "updated_at": "2026-05-04T16:58:14",
+  "package_root": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504",
+  "preferred_figure_count": 0,
+  "preferred_figure_missing": [
+    {
+      "file": "Main_Figure_1_clinical_system_overview.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504\\01_pdf_pages_as_svg\\MainFigure_page_01.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Current composed PDF page for Figure 1."
+    },
+    {
+      "file": "Main_Figure_2_sensor_and_phantom_platform.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504\\01_pdf_pages_as_svg\\MainFigure_page_02.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Current composed PDF page for Figure 2."
+    },
+    {
+      "file": "Main_Figure_3_dataset_and_feature_characterization.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504\\01_pdf_pages_as_svg\\MainFigure_page_03.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Current composed PDF page for Figure 3."
+    },
+    {
+      "file": "Main_Figure_4_model_architecture_and_performance.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504\\01_pdf_pages_as_svg\\MainFigure_page_04.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Current composed PDF page for Figure 4."
+    },
+    {
+      "file": "Main_Figure_5_interpretability_and_errors.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504\\01_pdf_pages_as_svg\\MainFigure_page_05.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Current composed PDF page for Figure 5."
+    },
+    {
+      "file": "Fig5F_feature_guided_gated_ablation_bar.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\fig5_causal_intervention_20260504\\Fig5F_feature_guided_gated_ablation_bar.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Preferred F panel for feature-guided gated counterfactual ablation."
+    },
+    {
+      "file": "Fig5G_CAM_mechanism_error_sixpack.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\cam_feature_alignment_20260504\\G_cam_mechanism_error_sixpack.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Preferred CAM mechanism/error sixpack."
+    },
+    {
+      "file": "Fig5_error_mechanism_global_summary.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\error_mechanism_global_20260504\\Fig_error_mechanism_global_summary.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Global dataset-level error mechanism summary."
+    },
+    {
+      "file": "SI_Error_detection_FP_hard_hotspot.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\error_mechanism_global_20260504\\Error_detection_FP_hard_hotspot.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Split error panel for detection false positives."
+    },
+    {
+      "file": "SI_Error_size_larger_deformable_contacts.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\error_mechanism_global_20260504\\Error_size_larger_deformable_contacts.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Split error panel for size errors."
+    },
+    {
+      "file": "SI_Error_depth_weak_diffusion_cue.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\error_mechanism_global_20260504\\Error_depth_weak_diffusion_cue.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Split error panel for depth errors."
+    },
+    {
+      "file": "SI_Fig5_overall_explainability_story.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\fig5_intuitive_explainability_20260504\\Fig5_overall_explainability_story.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Intuitive task-cue-readout explainability summary."
+    },
+    {
+      "file": "SI_Fig5_failure_mode_visual_cards.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\fig5_intuitive_explainability_20260504\\Fig5_failure_mode_visual_cards.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Intuitive failure-mode card summary."
+    },
+    {
+      "file": "SI_V5_learned_features_candidate.svg",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\v5_feature_learning_final6_20260504\\figure5_v5_learned_features_candidate.svg",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "V5 feature-learning alignment candidate."
+    }
+  ],
+  "curated_source_data_count": 0,
+  "curated_source_data_missing": [
+    {
+      "file": "Fig3_physical_prior_feature_significance.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\figure_backup_rawprior_20260416\\raw_prior_analysis\\physical_prior_feature_significance.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Experimental/FEM-guided physical-prior feature significance."
+    },
+    {
+      "file": "Fig3_all_significant_features_fdr005.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\figure_backup_rawprior_20260416\\raw_prior_analysis\\all_significant_features_fdr005.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "All significant features under FDR 0.05."
+    },
+    {
+      "file": "Fig5_v5_output_descriptor_alignment.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\v5_feature_learning_final6_20260504\\v5_output_descriptor_alignment.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Correlation between V5 outputs and tactile descriptors."
+    },
+    {
+      "file": "Fig5_v5_latent_descriptor_probe.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\v5_feature_learning_final6_20260504\\v5_latent_descriptor_probe.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Latent probe results for descriptor encoding."
+    },
+    {
+      "file": "Fig5_v5_targeted_perturbation_response.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\v5_feature_learning_final6_20260504\\v5_targeted_perturbation_response.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Targeted perturbation response by output metric."
+    },
+    {
+      "file": "Fig5F_gated_mechanism_closure.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\fig5_causal_intervention_20260504\\Fig5F_gated_mechanism_closure.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Feature-guided gated counterfactual ablation source data."
+    },
+    {
+      "file": "Fig5G_cam_mechanism_error_sixpack_sources.json",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\cam_feature_alignment_20260504\\G_cam_mechanism_error_sixpack_sources.json",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "CAM panel source cases and labels."
+    },
+    {
+      "file": "Fig5_error_mechanism_global_summary.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\error_mechanism_global_20260504\\global_error_mechanism_summary.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Dataset-level error mechanism source data."
+    },
+    {
+      "file": "Table_S1_AUC_task_summary.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\csv\\Table_S1_AUC_task_summary.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Task-level AUC summary."
+    },
+    {
+      "file": "Table_S2_AUC_full_model_comparison.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\csv\\Table_S2_AUC_full_model_comparison.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Full AUC model comparison."
+    },
+    {
+      "file": "Table_S3_Readout_summary.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\csv\\Table_S3_Readout_summary.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Readout-level performance summary."
+    },
+    {
+      "file": "Table_S4_Size_7class.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\csv\\Table_S4_Size_7class.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Size seven-class performance by true size."
+    },
+    {
+      "file": "Table_S5_Depth_3class.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\csv\\Table_S5_Depth_3class.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Depth three-class performance by true depth."
+    },
+    {
+      "file": "Table_S6_Failure_mechanism_summary.csv",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\csv\\Table_S6_Failure_mechanism_summary.csv",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Failure mechanism summary."
+    },
+    {
+      "file": "manuscript_table_pack_manifest.json",
+      "source_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\manuscript_table_pack_20260504\\manifest.json",
+      "status": "missing",
+      "size_bytes": "",
+      "sha256": "",
+      "note": "Manifest for table pack."
+    }
+  ],
+  "all_svg_count": 0,
+  "svg_parse_errors": [],
+  "curated_csv_read_errors": [],
+  "total_file_count": 5,
+  "total_size_bytes": 8510,
+  "total_size_mb": 0.01,
+  "zip_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\editor_submission_package_20260504\\deliverables\\editor_submission_package_20260504.zip",
+  "zip_size_bytes": 3391,
+  "zip_size_mb": 0.0,
+  "zip_sha256": "b4f3699a2878a180fcaf39e74655975454b00ec28e05b51f15416d9b21b37da6",
+  "git_note": "ZIP may exceed preferred GitHub size. Commit folder assets and audit files; keep ZIP local unless explicitly needed."
+}

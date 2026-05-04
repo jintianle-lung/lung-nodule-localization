@@ -1,0 +1,260 @@
+{
+  "source_feature_table": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_baselines_v1\\xgboost_window_feature_table.csv",
+  "retrained_with_same_protocol": true,
+  "detection_threshold": 0.40900000000000003,
+  "detection_test_metrics": {
+    "threshold": 0.40900000000000003,
+    "tp": 927,
+    "tn": 1650,
+    "fp": 1136,
+    "fn": 34,
+    "precision": 0.4493456131846825,
+    "recall": 0.9646201873048907,
+    "specificity": 0.5922469490308686,
+    "accuracy": 0.6877502001601281,
+    "f1": 0.6130952380952381
+  },
+  "gt_positive_test_metrics": {
+    "count": 961,
+    "size_top1": 0.6701352757544224,
+    "size_top2": 0.8022892819979188,
+    "size_mae": 0.14715115187939695,
+    "size_median_ae": 0.10541725158691406,
+    "depth_accuracy": 0.5150884495317378,
+    "depth_balanced_accuracy": 0.5137746367587025,
+    "depth_confusion_matrix": [
+      [
+        144,
+        98,
+        62
+      ],
+      [
+        96,
+        207,
+        27
+      ],
+      [
+        57,
+        126,
+        144
+      ]
+    ]
+  },
+  "depth_balanced_accuracy": 0.5137746367587025,
+  "top_detection_features": [
+    "raw_max_mean",
+    "center_border_contrast_last",
+    "raw_p95_mean",
+    "meanframe_norm_border_mean",
+    "meanframe_raw_raw_max",
+    "center_mean_last",
+    "center_mean_center",
+    "border_mean_first",
+    "raw_p95_first",
+    "meanframe_norm_raw_mean",
+    "raw_p95_last",
+    "raw_p95_min"
+  ],
+  "top_size_features": [
+    "center_border_contrast_max",
+    "meanframe_norm_center_border_contrast",
+    "raw_max_max",
+    "anisotropy_ratio_min",
+    "deltaframe_centroid_col",
+    "maxframe_raw_center_border_contrast",
+    "spatial_entropy_max",
+    "window_norm_global_std",
+    "centroid_row_last",
+    "centroid_row_min",
+    "maxframe_raw_centroid_col",
+    "hotspot_radius_min"
+  ],
+  "top_size_regression_features": [
+    "window_raw_global_std",
+    "window_norm_global_std",
+    "raw_p95_max",
+    "spatial_entropy_max",
+    "meanframe_norm_raw_p95",
+    "maxframe_raw_hotspot_radius",
+    "maxframe_raw_raw_p95",
+    "deltaframe_hotspot_radius",
+    "center_border_contrast_max",
+    "deltaframe_spatial_entropy",
+    "meanframe_norm_center_mean",
+    "hotspot_radius_min"
+  ],
+  "top_depth_features": [
+    "hotspot_radius_max",
+    "maxframe_raw_centroid_row",
+    "centroid_row_min",
+    "raw_max_max",
+    "deltaframe_centroid_row",
+    "anisotropy_ratio_min",
+    "peak_count_min",
+    "anisotropy_ratio_last",
+    "meanframe_raw_hotspot_radius",
+    "second_moment_spread_max",
+    "hotspot_radius_min",
+    "window_norm_global_std"
+  ],
+  "top_depth_families": [
+    {
+      "family": "deformation_position",
+      "mean_abs_contrib": 0.12961328029632568,
+      "share": 0.32306790351867676
+    },
+    {
+      "family": "shape_contrast",
+      "mean_abs_contrib": 0.11191759258508682,
+      "share": 0.2789604663848877
+    },
+    {
+      "family": "spread_extent",
+      "mean_abs_contrib": 0.10001030564308167,
+      "share": 0.2492809295654297
+    },
+    {
+      "family": "amplitude_response",
+      "mean_abs_contrib": 0.04825379326939583,
+      "share": 0.1202751100063324
+    },
+    {
+      "family": "temporal_phase",
+      "mean_abs_contrib": 0.010178622789680958,
+      "share": 0.025370750576257706
+    },
+    {
+      "family": "other",
+      "mean_abs_contrib": 0.0012215698370710015,
+      "share": 0.0030448269098997116
+    }
+  ],
+  "top_depth_concepts": [
+    {
+      "concept": "centroid_row",
+      "mean_abs_contrib": 0.10013166815042496,
+      "share": 0.249583438038826
+    },
+    {
+      "concept": "hotspot_radius",
+      "mean_abs_contrib": 0.06008221209049225,
+      "share": 0.14975807070732117
+    },
+    {
+      "concept": "anisotropy_ratio",
+      "mean_abs_contrib": 0.05050749331712723,
+      "share": 0.12589257955551147
+    },
+    {
+      "concept": "center_border_contrast",
+      "mean_abs_contrib": 0.029657181352376938,
+      "share": 0.07392208278179169
+    },
+    {
+      "concept": "centroid_col",
+      "mean_abs_contrib": 0.029481610283255577,
+      "share": 0.07348445802927017
+    },
+    {
+      "concept": "raw_max",
+      "mean_abs_contrib": 0.026960354298353195,
+      "share": 0.06720009446144104
+    },
+    {
+      "concept": "second_moment_spread",
+      "mean_abs_contrib": 0.022039342671632767,
+      "share": 0.054934218525886536
+    },
+    {
+      "concept": "peak_count",
+      "mean_abs_contrib": 0.01903901994228363,
+      "share": 0.04745575413107872
+    },
+    {
+      "concept": "spatial_entropy",
+      "mean_abs_contrib": 0.014696255326271057,
+      "share": 0.03663118556141853
+    },
+    {
+      "concept": "window_norm_global_std",
+      "mean_abs_contrib": 0.008811932057142258,
+      "share": 0.02196420356631279
+    }
+  ],
+  "depth_local_examples": [
+    {
+      "kind": "correct",
+      "true_depth": "shallow",
+      "pred_depth": "shallow",
+      "size_text": "1.5cm大",
+      "depth_text": "0.5cm深",
+      "group_key": "1.5cm大|0.5cm深|3.CSV",
+      "center_row": 253,
+      "confidence": 0.483772873878479
+    },
+    {
+      "kind": "correct",
+      "true_depth": "middle",
+      "pred_depth": "middle",
+      "size_text": "0.25cm大",
+      "depth_text": "1.5cm深",
+      "group_key": "0.25cm大|1.5cm深|3.CSV",
+      "center_row": 139,
+      "confidence": 0.5186071991920471
+    },
+    {
+      "kind": "correct",
+      "true_depth": "deep",
+      "pred_depth": "deep",
+      "size_text": "0.25cm大",
+      "depth_text": "2.5cm深",
+      "group_key": "0.25cm大|2.5cm深|3.CSV",
+      "center_row": 5,
+      "confidence": 0.5280234217643738
+    },
+    {
+      "kind": "misclassified",
+      "true_depth": "middle",
+      "pred_depth": "shallow",
+      "size_text": "1.25cm大",
+      "depth_text": "1.5cm深",
+      "group_key": "1.25cm大|1.5cm深|3.CSV",
+      "center_row": 49,
+      "confidence": 0.5292273163795471
+    }
+  ],
+  "depth_local_examples_tbme": [
+    {
+      "group_key": "1.5cm大|0.5cm深|3.CSV",
+      "true_depth": "shallow",
+      "pred_depth": "shallow",
+      "size_cm": 1.5,
+      "depth_cm": 0.5,
+      "confidence": 0.483772873878479
+    },
+    {
+      "group_key": "0.25cm大|1.5cm深|3.CSV",
+      "true_depth": "middle",
+      "pred_depth": "middle",
+      "size_cm": 0.25,
+      "depth_cm": 1.5,
+      "confidence": 0.5186071991920471
+    },
+    {
+      "group_key": "0.25cm大|2.5cm深|3.CSV",
+      "true_depth": "deep",
+      "pred_depth": "deep",
+      "size_cm": 0.25,
+      "depth_cm": 2.5,
+      "confidence": 0.5280234217643738
+    },
+    {
+      "group_key": "1.25cm大|1.5cm深|3.CSV",
+      "true_depth": "middle",
+      "pred_depth": "shallow",
+      "size_cm": 1.25,
+      "depth_cm": 1.5,
+      "confidence": 0.5292273163795471
+    }
+  ]
+}

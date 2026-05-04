@@ -1,0 +1,56 @@
+{
+  "device": "cuda",
+  "threshold": 0.463,
+  "detector_run": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\shared_cnn_mstcn_cascade_file3_20260426_active_best",
+  "residual_run": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\latest_algorithm\\runs\\residual_tune_R5_hybrid_20260427",
+  "cases": [
+    {
+      "case_type": "Successful positive",
+      "group_key": "1.75cm大|2.5cm深|3.CSV",
+      "end_row": 203,
+      "label": 1,
+      "true_size_cm": 1.75,
+      "true_depth_cm": 2.5,
+      "base_det": 0.848609983921051,
+      "base_size": 1.75,
+      "base_depth_name": "deep",
+      "base_depth_conf": 0.9186552166938782
+    },
+    {
+      "case_type": "False negative",
+      "group_key": "0.25cm大|2.0cm深|3.CSV",
+      "end_row": 303,
+      "label": 1,
+      "true_size_cm": 0.25,
+      "true_depth_cm": 2.0,
+      "base_det": 0.027302240952849388,
+      "base_size": 0.25,
+      "base_depth_name": "middle",
+      "base_depth_conf": 0.9999983310699463
+    },
+    {
+      "case_type": "False positive",
+      "group_key": "1.5cm大|2.0cm深|3.CSV",
+      "end_row": 583,
+      "label": 0,
+      "true_size_cm": 1.5,
+      "true_depth_cm": 2.0,
+      "base_det": 0.8829441666603088,
+      "base_size": 1.500562071800232,
+      "base_depth_name": "middle",
+      "base_depth_conf": 0.9951967597007751
+    },
+    {
+      "case_type": "Size-boundary failure",
+      "group_key": "1.25cm大|1.5cm深|3.CSV",
+      "end_row": 67,
+      "label": 1,
+      "true_size_cm": 1.25,
+      "true_depth_cm": 1.5,
+      "base_det": 0.8303502202033997,
+      "base_size": 0.702796995639801,
+      "base_depth_name": "middle",
+      "base_depth_conf": 0.9993380904197693
+    }
+  ]
+}

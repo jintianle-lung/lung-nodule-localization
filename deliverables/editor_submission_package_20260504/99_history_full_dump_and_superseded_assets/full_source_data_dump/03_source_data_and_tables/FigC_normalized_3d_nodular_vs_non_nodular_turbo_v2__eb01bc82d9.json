@@ -1,0 +1,15 @@
+{
+  "figure": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\FigC_normalized_3d_nodular_vs_non_nodular_turbo_v2.png",
+  "nodular_condition": [
+    1.25,
+    1.0
+  ],
+  "non_nodular_condition": [
+    0.25,
+    2.5
+  ],
+  "nodular_n": 269,
+  "non_nodular_n": 1653,
+  "nodular_base_group": "1.25cm大|1cm深",
+  "non_nodular_base_group": "0.25cm大|2.5cm深"
+}

@@ -1,0 +1,55 @@
+﻿embedding,embedding_label,feature,feature_label,spearman_rho,p,test_r2,n_train_positive,n_test_positive,q
+detector_z,"Frozen detector
+embedding",center_border_contrast_center,"Center-border
+contrast",0.8526991424355798,0.0,0.7862795891406759,1968,1385,0.0
+detector_z,"Frozen detector
+embedding",raw_p95_mean,"High-response
+amplitude",0.9153681345373328,0.0,0.8220976452142219,1968,1385,0.0
+detector_z,"Frozen detector
+embedding",hotspot_radius_max,"Hotspot
+radius",0.8797848912577103,0.0,0.7429911965080456,1968,1385,0.0
+detector_z,"Frozen detector
+embedding",second_moment_spread_max,"Spatial
+spread",0.881300946272503,0.0,0.7284938164297005,1968,1385,0.0
+detector_z,"Frozen detector
+embedding",window_raw_global_std,"Temporal
+fluctuation",0.9284050201309857,0.0,0.8515455689659195,1968,1385,0.0
+detector_z,"Frozen detector
+embedding",center_border_contrast_last,"Late center-border
+contrast",0.8407643325192065,0.0,0.7669844895795895,1968,1385,0.0
+morph_z,"Residual morphology
+embedding",center_border_contrast_center,"Center-border
+contrast",0.6586199597731005,5.02971572291388e-173,0.4146319175335812,1968,1385,5.3255813536735206e-173
+morph_z,"Residual morphology
+embedding",raw_p95_mean,"High-response
+amplitude",0.6502751322496171,2.786320071898759e-167,0.3424338781600672,1968,1385,2.786320071898759e-167
+morph_z,"Residual morphology
+embedding",hotspot_radius_max,"Hotspot
+radius",0.7422273131732906,1.1348934555535808e-242,0.5477637884292712,1968,1385,1.4591487285688896e-242
+morph_z,"Residual morphology
+embedding",second_moment_spread_max,"Spatial
+spread",0.7480002868176817,1.7493683523760653e-248,0.5332811966572775,1968,1385,2.422202334059167e-248
+morph_z,"Residual morphology
+embedding",window_raw_global_std,"Temporal
+fluctuation",0.6735403126953804,9.12574323229795e-184,0.39201187029852835,1968,1385,1.0950891878757541e-183
+morph_z,"Residual morphology
+embedding",center_border_contrast_last,"Late center-border
+contrast",0.6709631600650084,7.253593278243022e-182,0.40738674476162906,1968,1385,8.1602924380234e-182
+fused_h,"Fused inversion
+embedding",center_border_contrast_center,"Center-border
+contrast",0.8438257125629309,0.0,0.752081313532322,1968,1385,0.0
+fused_h,"Fused inversion
+embedding",raw_p95_mean,"High-response
+amplitude",0.8991035361487802,0.0,0.7814685958613489,1968,1385,0.0
+fused_h,"Fused inversion
+embedding",hotspot_radius_max,"Hotspot
+radius",0.8217247589150647,0.0,0.6606087796571871,1968,1385,0.0
+fused_h,"Fused inversion
+embedding",second_moment_spread_max,"Spatial
+spread",0.8334543801802242,0.0,0.6568594312235948,1968,1385,0.0
+fused_h,"Fused inversion
+embedding",window_raw_global_std,"Temporal
+fluctuation",0.9068697841532296,0.0,0.8122825493095549,1968,1385,0.0
+fused_h,"Fused inversion
+embedding",center_border_contrast_last,"Late center-border
+contrast",0.8224477650528745,0.0,0.7202784095484014,1968,1385,0.0

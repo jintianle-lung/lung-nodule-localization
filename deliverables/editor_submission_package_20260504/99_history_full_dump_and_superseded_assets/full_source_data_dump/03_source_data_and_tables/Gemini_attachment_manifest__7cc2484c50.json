@@ -1,0 +1,5744 @@
+[
+  {
+    "category": "deliverable",
+    "role": "main_docx",
+    "source_path": "",
+    "attachment_path": "Gemini_深度研究材料总包_清洁版_无黑底图.docx",
+    "size_bytes": 86880768,
+    "mtime": "2026-04-30T23:15:43",
+    "notes": "清洁版主文档"
+  },
+  {
+    "category": "deliverable",
+    "role": "readme",
+    "source_path": "",
+    "attachment_path": "README_FOR_GEMINI.md",
+    "size_bytes": 558,
+    "mtime": "2026-04-30T23:15:43",
+    "notes": "清洁版说明"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_01_img_029_xref_51.png",
+    "size_bytes": 1170783,
+    "mtime": "2026-04-30T21:20:17",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_01_img_039_xref_80.png",
+    "size_bytes": 162666,
+    "mtime": "2026-04-30T21:20:17",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_01_img_041_xref_83.png",
+    "size_bytes": 31053,
+    "mtime": "2026-04-30T21:20:17",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_01_img_044_xref_89.png",
+    "size_bytes": 912630,
+    "mtime": "2026-04-30T21:20:17",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_001_xref_138.png",
+    "size_bytes": 666064,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_003_xref_142.png",
+    "size_bytes": 1093365,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_009_xref_153.png",
+    "size_bytes": 40432,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_010_xref_154.png",
+    "size_bytes": 307529,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_011_xref_155.png",
+    "size_bytes": 322764,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_012_xref_156.png",
+    "size_bytes": 223103,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_013_xref_157.png",
+    "size_bytes": 345803,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_014_xref_158.png",
+    "size_bytes": 55131,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_015_xref_159.png",
+    "size_bytes": 41397,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_026_xref_180.png",
+    "size_bytes": 58376,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_027_xref_181.png",
+    "size_bytes": 403657,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_028_xref_182.png",
+    "size_bytes": 894460,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_030_xref_185.png",
+    "size_bytes": 504249,
+    "mtime": "2026-04-30T21:20:19",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_031_xref_187.png",
+    "size_bytes": 163766,
+    "mtime": "2026-04-30T21:20:19",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_032_xref_194.png",
+    "size_bytes": 165102,
+    "mtime": "2026-04-30T21:20:19",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_02_img_033_xref_196.png",
+    "size_bytes": 354302,
+    "mtime": "2026-04-30T21:20:19",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_003_xref_215.png",
+    "size_bytes": 628674,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_004_xref_216.png",
+    "size_bytes": 64353,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_005_xref_218.png",
+    "size_bytes": 1288497,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_006_xref_219.png",
+    "size_bytes": 253169,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_007_xref_220.png",
+    "size_bytes": 259885,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_008_xref_221.png",
+    "size_bytes": 362773,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_009_xref_222.png",
+    "size_bytes": 345057,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_010_xref_223.png",
+    "size_bytes": 373445,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_011_xref_224.png",
+    "size_bytes": 402163,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_012_xref_225.png",
+    "size_bytes": 149903,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_013_xref_226.png",
+    "size_bytes": 180008,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_021_xref_246.png",
+    "size_bytes": 1721416,
+    "mtime": "2026-04-30T21:20:20",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_036_xref_275.png",
+    "size_bytes": 3339333,
+    "mtime": "2026-04-30T21:20:21",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_042_xref_287.png",
+    "size_bytes": 1173187,
+    "mtime": "2026-04-30T21:20:21",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_043_xref_288.png",
+    "size_bytes": 285844,
+    "mtime": "2026-04-30T21:20:21",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_044_xref_289.png",
+    "size_bytes": 497,
+    "mtime": "2026-04-30T21:20:21",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_03_img_054_xref_311.png",
+    "size_bytes": 114590,
+    "mtime": "2026-04-30T21:20:21",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_002_xref_335.png",
+    "size_bytes": 205366,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_003_xref_342.png",
+    "size_bytes": 188705,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_004_xref_355.png",
+    "size_bytes": 3288,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_006_xref_359.png",
+    "size_bytes": 2525,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_008_xref_362.png",
+    "size_bytes": 2592,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_010_xref_366.png",
+    "size_bytes": 2591,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_012_xref_370.png",
+    "size_bytes": 2202,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_014_xref_373.png",
+    "size_bytes": 2277,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_016_xref_377.png",
+    "size_bytes": 2669,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_017_xref_379.png",
+    "size_bytes": 2904,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_018_xref_381.png",
+    "size_bytes": 2466,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_020_xref_385.png",
+    "size_bytes": 2629,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_022_xref_389.png",
+    "size_bytes": 2460,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_024_xref_392.png",
+    "size_bytes": 2285,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_026_xref_396.png",
+    "size_bytes": 2312,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_027_xref_398.png",
+    "size_bytes": 2457,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_029_xref_402.png",
+    "size_bytes": 162174,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_033_xref_409.png",
+    "size_bytes": 25279,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_034_xref_410.png",
+    "size_bytes": 42625,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_035_xref_411.png",
+    "size_bytes": 25177,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_041_xref_427.png",
+    "size_bytes": 616356,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_04_img_042_xref_428.png",
+    "size_bytes": 290109,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_05_img_018_xref_451.png",
+    "size_bytes": 1915853,
+    "mtime": "2026-04-30T21:20:23",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_05_img_019_xref_452.png",
+    "size_bytes": 2219850,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_05_img_020_xref_453.png",
+    "size_bytes": 292513,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_embedded_image",
+    "role": "raw_image_block",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_image_blocks/page_05_img_021_xref_454.png",
+    "size_bytes": 1337873,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "保留的非黑底 PDF 图块"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_01_table_01.csv",
+    "size_bytes": 1532,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_01_table_02.csv",
+    "size_bytes": 133,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_01.csv",
+    "size_bytes": 98,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_02.csv",
+    "size_bytes": 14,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_03.csv",
+    "size_bytes": 93,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_04.csv",
+    "size_bytes": 32,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_05.csv",
+    "size_bytes": 16,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_06.csv",
+    "size_bytes": 11,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_07.csv",
+    "size_bytes": 45,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_08.csv",
+    "size_bytes": 93,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_09.csv",
+    "size_bytes": 20,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_10.csv",
+    "size_bytes": 10,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_11.csv",
+    "size_bytes": 6,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_12.csv",
+    "size_bytes": 16,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_13.csv",
+    "size_bytes": 48,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_14.csv",
+    "size_bytes": 6,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_15.csv",
+    "size_bytes": 22,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_16.csv",
+    "size_bytes": 17,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_17.csv",
+    "size_bytes": 18,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_18.csv",
+    "size_bytes": 12,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_19.csv",
+    "size_bytes": 13,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_20.csv",
+    "size_bytes": 58,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_02_table_21.csv",
+    "size_bytes": 7,
+    "mtime": "2026-04-30T21:20:25",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_04_table_01.csv",
+    "size_bytes": 371,
+    "mtime": "2026-04-30T21:20:31",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_extracted_table",
+    "role": "raw_pdf_table",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_pdf_tables/page_05_table_01.csv",
+    "size_bytes": 15,
+    "mtime": "2026-04-30T21:20:31",
+    "notes": "PDF 自动抽表"
+  },
+  {
+    "category": "pdf_text",
+    "role": "context_text",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_text/all_pages_extracted_text.txt",
+    "size_bytes": 3555,
+    "mtime": "2026-04-30T21:20:24",
+    "notes": "PDF 抽取文本"
+  },
+  {
+    "category": "pdf_text",
+    "role": "context_text",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_text/page_01.txt",
+    "size_bytes": 1610,
+    "mtime": "2026-04-30T21:20:16",
+    "notes": "PDF 抽取文本"
+  },
+  {
+    "category": "pdf_text",
+    "role": "context_text",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_text/page_02.txt",
+    "size_bytes": 501,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "PDF 抽取文本"
+  },
+  {
+    "category": "pdf_text",
+    "role": "context_text",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_text/page_03.txt",
+    "size_bytes": 828,
+    "mtime": "2026-04-30T21:20:19",
+    "notes": "PDF 抽取文本"
+  },
+  {
+    "category": "pdf_text",
+    "role": "context_text",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_text/page_04.txt",
+    "size_bytes": 408,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "PDF 抽取文本"
+  },
+  {
+    "category": "pdf_text",
+    "role": "context_text",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/extracted_text/page_05.txt",
+    "size_bytes": 90,
+    "mtime": "2026-04-30T21:20:23",
+    "notes": "PDF 抽取文本"
+  },
+  {
+    "category": "pdf_page_render",
+    "role": "context_page",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/rendered_pages/page_01.png",
+    "size_bytes": 2169748,
+    "mtime": "2026-04-30T21:20:16",
+    "notes": "PDF 页面浅底渲染"
+  },
+  {
+    "category": "pdf_page_render",
+    "role": "context_page",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/rendered_pages/page_02.png",
+    "size_bytes": 5425532,
+    "mtime": "2026-04-30T21:20:18",
+    "notes": "PDF 页面浅底渲染"
+  },
+  {
+    "category": "pdf_page_render",
+    "role": "context_page",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/rendered_pages/page_03.png",
+    "size_bytes": 5756777,
+    "mtime": "2026-04-30T21:20:19",
+    "notes": "PDF 页面浅底渲染"
+  },
+  {
+    "category": "pdf_page_render",
+    "role": "context_page",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/rendered_pages/page_04.png",
+    "size_bytes": 1149026,
+    "mtime": "2026-04-30T21:20:22",
+    "notes": "PDF 页面浅底渲染"
+  },
+  {
+    "category": "pdf_page_render",
+    "role": "context_page",
+    "source_path": "",
+    "attachment_path": "attachments/01_source_pdf/rendered_pages/page_05.png",
+    "size_bytes": 2627151,
+    "mtime": "2026-04-30T21:20:23",
+    "notes": "PDF 页面浅底渲染"
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/FIGURE_TABLE_PLAN_TBME.md",
+    "size_bytes": 7293,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/main.tex",
+    "size_bytes": 659,
+    "mtime": "2026-04-27T16:18:58",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/manuscript_sections/abstract.tex",
+    "size_bytes": 2548,
+    "mtime": "2026-04-12T16:09:29",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/manuscript_sections/discussion.tex",
+    "size_bytes": 4246,
+    "mtime": "2026-04-12T16:10:23",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/manuscript_sections/methods.tex",
+    "size_bytes": 15461,
+    "mtime": "2026-04-27T16:29:01",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/manuscript_sections/results.tex",
+    "size_bytes": 5372,
+    "mtime": "2026-04-27T16:29:01",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/paper_main.pdf",
+    "size_bytes": 20805577,
+    "mtime": "2026-04-27T16:59:23",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/references.bib",
+    "size_bytes": 5866,
+    "mtime": "2026-04-09T12:53:27",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/sections/abstract.tex",
+    "size_bytes": 2989,
+    "mtime": "2026-04-27T16:18:58",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/sections/conclusion.tex",
+    "size_bytes": 1415,
+    "mtime": "2026-04-27T16:18:58",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/sections/discussion.tex",
+    "size_bytes": 5174,
+    "mtime": "2026-04-27T16:26:47",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/sections/introduction.tex",
+    "size_bytes": 5800,
+    "mtime": "2026-04-27T16:18:58",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/sections/methods.tex",
+    "size_bytes": 15939,
+    "mtime": "2026-04-27T16:58:56",
+    "notes": ""
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "attachments/02_project_paper/sections/results.tex",
+    "size_bytes": 13986,
+    "mtime": "2026-04-27T16:56:35",
+    "notes": ""
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig1_positive_mean_files12_compact_turbo.png",
+    "size_bytes": 829294,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig2_negative_mean_files12_compact_turbo.png",
+    "size_bytes": 756977,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig2_selected_feature_significance_tnr.png",
+    "size_bytes": 1115774,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig2b_grouped_positive_trends_tnr.png",
+    "size_bytes": 922850,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig3_best_detected_test_windows_compact_turbo.png",
+    "size_bytes": 923485,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig3_quantitative_comparison_tnr.png",
+    "size_bytes": 884845,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig3a_xgb_shap_detection.png",
+    "size_bytes": 299506,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig3b_xgb_shap_size.png",
+    "size_bytes": 377807,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig3c_xgb_shap_depth.png",
+    "size_bytes": 253063,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig4_interpretability_tnr.png",
+    "size_bytes": 650638,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig5_stage3_depth_gt_route.png",
+    "size_bytes": 121255,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/Fig5_topjournal_realtime_evidence_20260430.pdf",
+    "size_bytes": 636834,
+    "mtime": "2026-04-30T17:27:14",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v3.pdf",
+    "size_bytes": 120057,
+    "mtime": "2026-04-28T19:38:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v3.png",
+    "size_bytes": 717067,
+    "mtime": "2026-04-28T19:38:37",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v3.svg",
+    "size_bytes": 236053,
+    "mtime": "2026-04-28T19:38:37",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v4.pdf",
+    "size_bytes": 123232,
+    "mtime": "2026-04-28T19:46:09",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v4.png",
+    "size_bytes": 703476,
+    "mtime": "2026-04-28T19:46:08",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v4.svg",
+    "size_bytes": 235068,
+    "mtime": "2026-04-28T19:46:08",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v5.pdf",
+    "size_bytes": 114380,
+    "mtime": "2026-04-28T19:52:20",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v5.png",
+    "size_bytes": 632489,
+    "mtime": "2026-04-28T19:52:19",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigD_V5_R5_algorithm_publication_v5.svg",
+    "size_bytes": 222330,
+    "mtime": "2026-04-28T19:52:19",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigI_intro_overview_from_master.png",
+    "size_bytes": 2958726,
+    "mtime": "2026-04-09T11:42:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM1_method_experiment_ab_20260409.png",
+    "size_bytes": 5163545,
+    "mtime": "2026-04-09T11:19:22",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM1_method_experiment_from_master.png",
+    "size_bytes": 5163545,
+    "mtime": "2026-04-09T11:42:18",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM2_method_model_c_20260409.png",
+    "size_bytes": 1994784,
+    "mtime": "2026-04-09T11:19:56",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM2_method_model_from_master.png",
+    "size_bytes": 1994784,
+    "mtime": "2026-04-09T11:42:19",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM3_R5_hybrid_architecture.pdf",
+    "size_bytes": 35759,
+    "mtime": "2026-04-27T21:08:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM3_R5_hybrid_architecture.png",
+    "size_bytes": 709448,
+    "mtime": "2026-04-27T21:08:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigM3_R5_hybrid_architecture.svg",
+    "size_bytes": 41944,
+    "mtime": "2026-04-27T21:08:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigR1_top_tactile_stats_from_master.png",
+    "size_bytes": 8522613,
+    "mtime": "2026-04-09T11:42:26",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigR2_mid_quant_confusion_from_master.png",
+    "size_bytes": 1615002,
+    "mtime": "2026-04-09T11:42:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/FigR3_bottom_cam_from_master.png",
+    "size_bytes": 653529,
+    "mtime": "2026-04-09T11:42:29",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/ai_v5r5_modular_topjournal_candidate.png",
+    "size_bytes": 1419852,
+    "mtime": "2026-04-28T20:46:44",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/algorithm_flow_abc_topjournal.pdf",
+    "size_bytes": 71505,
+    "mtime": "2026-04-29T20:22:34",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/algorithm_flow_abc_topjournal.png",
+    "size_bytes": 748468,
+    "mtime": "2026-04-29T20:22:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/algorithm_flow_abc_topjournal.svg",
+    "size_bytes": 91435,
+    "mtime": "2026-04-29T20:22:34",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/fig5_individual_evidence_20260430/A_realtime_gate_sequence.pdf",
+    "size_bytes": 66287,
+    "mtime": "2026-04-30T17:37:32",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/fig5_individual_evidence_20260430/B_gated_cascade_decision.pdf",
+    "size_bytes": 51024,
+    "mtime": "2026-04-30T17:37:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/fig5_individual_evidence_20260430/C_task_guided_scorecam_mechanism.pdf",
+    "size_bytes": 214432,
+    "mtime": "2026-04-30T17:37:36",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/fig5_individual_evidence_20260430/D_locked_quantitative_evidence.pdf",
+    "size_bytes": 174205,
+    "mtime": "2026-04-30T17:37:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/fig5_individual_evidence_20260430/E_physical_matrix_generalization.pdf",
+    "size_bytes": 136421,
+    "mtime": "2026-04-30T17:37:47",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/fig5_individual_evidence_20260430/F_boundary_failure_audit.pdf",
+    "size_bytes": 54559,
+    "mtime": "2026-04-30T17:37:50",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_combined_inference_and_modules_20260430.pdf",
+    "size_bytes": 389377,
+    "mtime": "2026-04-30T09:02:06",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_combined_inference_and_modules_20260430.png",
+    "size_bytes": 2979034,
+    "mtime": "2026-04-30T09:02:06",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_combined_inference_and_modules_times_20260430.pdf",
+    "size_bytes": 306035,
+    "mtime": "2026-04-30T09:16:49",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_combined_inference_and_modules_times_20260430.png",
+    "size_bytes": 1784181,
+    "mtime": "2026-04-30T09:16:48",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_fig4B_data_format_20260430.pdf",
+    "size_bytes": 300132,
+    "mtime": "2026-04-30T17:15:54",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_forward_propagation_cnn_mstcn.png",
+    "size_bytes": 344807,
+    "mtime": "2026-04-29T10:33:30",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_module_details_times_20260430.png",
+    "size_bytes": 225594,
+    "mtime": "2026-04-30T09:16:48",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_real_modules_final_algorithm.png",
+    "size_bytes": 488738,
+    "mtime": "2026-04-29T12:49:59",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_real_tactile_window_3d.pdf",
+    "size_bytes": 3096900,
+    "mtime": "2026-04-29T13:15:48",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_real_tactile_window_3d_clean.pdf",
+    "size_bytes": 2167089,
+    "mtime": "2026-04-29T13:16:04",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_selected_two_panel_combined_20260430.pdf",
+    "size_bytes": 374903,
+    "mtime": "2026-04-30T09:20:48",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_selected_two_panel_combined_20260430.png",
+    "size_bytes": 2864647,
+    "mtime": "2026-04-30T09:20:48",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_top_journal_algorithm_20260429.pdf",
+    "size_bytes": 524425,
+    "mtime": "2026-04-29T22:54:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_top_journal_algorithm_20260429.png",
+    "size_bytes": 312564,
+    "mtime": "2026-04-29T22:54:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_topjournal_variants/image2A_two_level_topjournal.pdf",
+    "size_bytes": 40293,
+    "mtime": "2026-04-29T15:49:26",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_topjournal_variants/image2A_two_level_topjournal.svg",
+    "size_bytes": 149829,
+    "mtime": "2026-04-29T15:49:26",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_topjournal_variants/image2B_evidence_architecture_topjournal.pdf",
+    "size_bytes": 42392,
+    "mtime": "2026-04-29T15:49:27",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_topjournal_variants/image2B_evidence_architecture_topjournal.svg",
+    "size_bytes": 158730,
+    "mtime": "2026-04-29T15:49:27",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_topjournal_variants/image2C_compact_topjournal.pdf",
+    "size_bytes": 37732,
+    "mtime": "2026-04-29T15:49:27",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_topjournal_variants/image2C_compact_topjournal.svg",
+    "size_bytes": 124727,
+    "mtime": "2026-04-29T15:49:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_v5r5_hybrid_borrowed_style.pdf",
+    "size_bytes": 322879,
+    "mtime": "2026-04-29T14:02:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/image2_v5r5_hybrid_borrowed_style.png",
+    "size_bytes": 209493,
+    "mtime": "2026-04-29T14:02:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/master_from_user/intro_master.png",
+    "size_bytes": 3145001,
+    "mtime": "2026-04-06T04:10:14",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/master_from_user/method_master.png",
+    "size_bytes": 8056438,
+    "mtime": "2026-04-07T19:51:56",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/master_from_user/result_master.png",
+    "size_bytes": 10453342,
+    "mtime": "2026-04-08T16:55:42",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_dpanel_clean.pdf",
+    "size_bytes": 1704530,
+    "mtime": "2026-04-29T21:27:32",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_dpanel_clean.png",
+    "size_bytes": 895205,
+    "mtime": "2026-04-29T21:27:24",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_evidence_metadata.json",
+    "size_bytes": 1583,
+    "mtime": "2026-04-29T21:27:51",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_clean.pdf",
+    "size_bytes": 93892,
+    "mtime": "2026-04-29T21:27:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_clean.png",
+    "size_bytes": 226174,
+    "mtime": "2026-04-29T21:27:34",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_depth.pdf",
+    "size_bytes": 53363,
+    "mtime": "2026-04-29T21:27:51",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_depth.png",
+    "size_bytes": 70330,
+    "mtime": "2026-04-29T21:27:49",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_detection.pdf",
+    "size_bytes": 54030,
+    "mtime": "2026-04-29T21:27:42",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_detection.png",
+    "size_bytes": 73587,
+    "mtime": "2026-04-29T21:27:40",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_size.pdf",
+    "size_bytes": 55900,
+    "mtime": "2026-04-29T21:27:47",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_front_stack_size.png",
+    "size_bytes": 74715,
+    "mtime": "2026-04-29T21:27:44",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_task_evidence.pdf",
+    "size_bytes": 1720579,
+    "mtime": "2026-04-29T21:26:09",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_task_evidence.png",
+    "size_bytes": 1287402,
+    "mtime": "2026-04-29T21:26:00",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_temporal_stack_depth.pdf",
+    "size_bytes": 2938479,
+    "mtime": "2026-04-29T21:27:19",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_temporal_stack_depth.png",
+    "size_bytes": 842734,
+    "mtime": "2026-04-29T21:27:05",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_temporal_stack_detection.pdf",
+    "size_bytes": 3104393,
+    "mtime": "2026-04-29T21:26:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_temporal_stack_detection.png",
+    "size_bytes": 821948,
+    "mtime": "2026-04-29T21:26:19",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_temporal_stack_size.pdf",
+    "size_bytes": 3160656,
+    "mtime": "2026-04-29T21:26:56",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/scorecam_3d_temporal_stack_size.png",
+    "size_bytes": 845249,
+    "mtime": "2026-04-29T21:26:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_depth_aligned_mean_sem.pdf",
+    "size_bytes": 47125,
+    "mtime": "2026-04-28T21:48:30",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_depth_aligned_mean_sem.png",
+    "size_bytes": 175904,
+    "mtime": "2026-04-28T21:48:30",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_depth_aligned_mean_sem.svg",
+    "size_bytes": 38698,
+    "mtime": "2026-04-28T21:48:30",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_feature_decomposition.pdf",
+    "size_bytes": 42121,
+    "mtime": "2026-04-28T21:48:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_feature_decomposition.png",
+    "size_bytes": 181481,
+    "mtime": "2026-04-28T21:48:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_feature_decomposition.svg",
+    "size_bytes": 20564,
+    "mtime": "2026-04-28T21:48:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_size_depth_peak_contrast.pdf",
+    "size_bytes": 40482,
+    "mtime": "2026-04-28T21:48:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_size_depth_peak_contrast.png",
+    "size_bytes": 143120,
+    "mtime": "2026-04-28T21:48:30",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_size_depth_peak_contrast.svg",
+    "size_bytes": 17185,
+    "mtime": "2026-04-28T21:48:30",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_smoothed_representative_units.pdf",
+    "size_bytes": 47940,
+    "mtime": "2026-04-28T21:48:29",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_smoothed_representative_units.png",
+    "size_bytes": 229714,
+    "mtime": "2026-04-28T21:48:29",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_smoothed_representative_units.svg",
+    "size_bytes": 42291,
+    "mtime": "2026-04-28T21:48:29",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_useful_smoothed_curve_gallery.pdf",
+    "size_bytes": 65143,
+    "mtime": "2026-04-28T21:48:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_useful_smoothed_curve_gallery.png",
+    "size_bytes": 635920,
+    "mtime": "2026-04-28T21:48:32",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_curve_options/v5r5_useful_smoothed_curve_gallery.svg",
+    "size_bytes": 94171,
+    "mtime": "2026-04-28T21:48:32",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_representative_response_curves.pdf",
+    "size_bytes": 53905,
+    "mtime": "2026-04-28T21:42:40",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_representative_response_curves.png",
+    "size_bytes": 308297,
+    "mtime": "2026-04-28T21:42:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_representative_response_curves.svg",
+    "size_bytes": 53591,
+    "mtime": "2026-04-28T21:42:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_by_coarse_depth.pdf",
+    "size_bytes": 49574,
+    "mtime": "2026-04-28T21:54:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_by_coarse_depth.png",
+    "size_bytes": 176497,
+    "mtime": "2026-04-28T21:54:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_by_coarse_depth.svg",
+    "size_bytes": 45960,
+    "mtime": "2026-04-28T21:54:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_by_size.pdf",
+    "size_bytes": 41304,
+    "mtime": "2026-04-28T21:54:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_by_size.png",
+    "size_bytes": 214195,
+    "mtime": "2026-04-28T21:54:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_by_size.svg",
+    "size_bytes": 25642,
+    "mtime": "2026-04-28T21:54:39",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_curve_gallery.pdf",
+    "size_bytes": 73330,
+    "mtime": "2026-04-28T21:54:42",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_curve_gallery.png",
+    "size_bytes": 694212,
+    "mtime": "2026-04-28T21:54:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_curve_gallery.svg",
+    "size_bytes": 126200,
+    "mtime": "2026-04-28T21:54:42",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_curve_manifest.json",
+    "size_bytes": 530,
+    "mtime": "2026-04-28T21:54:42",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_peak_size_depth_lines.pdf",
+    "size_bytes": 42794,
+    "mtime": "2026-04-28T21:54:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_peak_size_depth_lines.png",
+    "size_bytes": 246432,
+    "mtime": "2026-04-28T21:54:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_peak_size_depth_lines.svg",
+    "size_bytes": 23327,
+    "mtime": "2026-04-28T21:54:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_positive_vs_nonpositive.pdf",
+    "size_bytes": 44762,
+    "mtime": "2026-04-28T21:54:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_positive_vs_nonpositive.png",
+    "size_bytes": 149382,
+    "mtime": "2026-04-28T21:54:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_positive_vs_nonpositive.svg",
+    "size_bytes": 30873,
+    "mtime": "2026-04-28T21:54:38",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_size_curves_by_depth_panel.pdf",
+    "size_bytes": 60082,
+    "mtime": "2026-04-28T21:54:40",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_size_curves_by_depth_panel.png",
+    "size_bytes": 695556,
+    "mtime": "2026-04-28T21:54:40",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/figures_workspace/v5r5_total_pressure_options/v5r5_total_pressure_size_curves_by_depth_panel.svg",
+    "size_bytes": 100969,
+    "mtime": "2026-04-28T21:54:40",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig1_positive_mean_files12_compact_turbo.png",
+    "size_bytes": 829294,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig2_negative_mean_files12_compact_turbo.png",
+    "size_bytes": 756977,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig2_selected_feature_significance_tnr.png",
+    "size_bytes": 1115774,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig2b_grouped_positive_trends_tnr.png",
+    "size_bytes": 922850,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig3_best_detected_test_windows_compact_turbo.png",
+    "size_bytes": 923485,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig3_quantitative_comparison_tnr.png",
+    "size_bytes": 884845,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig3a_xgb_shap_detection.png",
+    "size_bytes": 299506,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig3b_xgb_shap_size.png",
+    "size_bytes": 377807,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig3c_xgb_shap_depth.png",
+    "size_bytes": 253063,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig4_interpretability_tnr.png",
+    "size_bytes": 650638,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig4_physics_evidence_tbme_20260409.png",
+    "size_bytes": 456989,
+    "mtime": "2026-04-24T14:23:47",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig5_stage3_depth_gt_route.png",
+    "size_bytes": 121255,
+    "mtime": "2026-04-09T10:52:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig5_topjournal_realtime_evidence_20260430.pdf",
+    "size_bytes": 636834,
+    "mtime": "2026-04-30T17:27:14",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig6_residual_inversion_scorecam_20260427.pdf",
+    "size_bytes": 296023,
+    "mtime": "2026-04-27T16:47:43",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/Fig6_residual_inversion_scorecam_20260427.png",
+    "size_bytes": 879519,
+    "mtime": "2026-04-27T16:47:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigI_intro_overview_from_master.png",
+    "size_bytes": 2958726,
+    "mtime": "2026-04-09T11:42:31",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigM1_method_experiment_ab_20260409.png",
+    "size_bytes": 5163545,
+    "mtime": "2026-04-09T11:19:22",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigM1_method_experiment_from_master.png",
+    "size_bytes": 5163545,
+    "mtime": "2026-04-09T11:42:18",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigM2_method_model_c_20260409.png",
+    "size_bytes": 1994784,
+    "mtime": "2026-04-09T11:19:56",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigM2_method_model_from_master.png",
+    "size_bytes": 1994784,
+    "mtime": "2026-04-09T11:42:19",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigR1_top_tactile_stats_from_master.png",
+    "size_bytes": 8522613,
+    "mtime": "2026-04-09T11:42:26",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigR2_mid_quant_confusion_from_master.png",
+    "size_bytes": 1615002,
+    "mtime": "2026-04-09T11:42:28",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/FigR3_bottom_cam_from_master.png",
+    "size_bytes": 653529,
+    "mtime": "2026-04-09T11:42:29",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/fig5_individual_evidence_20260430/A_realtime_gate_sequence.pdf",
+    "size_bytes": 66287,
+    "mtime": "2026-04-30T17:37:32",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/fig5_individual_evidence_20260430/B_gated_cascade_decision.pdf",
+    "size_bytes": 51024,
+    "mtime": "2026-04-30T17:37:33",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/fig5_individual_evidence_20260430/C_task_guided_scorecam_mechanism.pdf",
+    "size_bytes": 214432,
+    "mtime": "2026-04-30T17:37:36",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/fig5_individual_evidence_20260430/D_locked_quantitative_evidence.pdf",
+    "size_bytes": 174205,
+    "mtime": "2026-04-30T17:37:41",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/fig5_individual_evidence_20260430/E_physical_matrix_generalization.pdf",
+    "size_bytes": 136421,
+    "mtime": "2026-04-30T17:37:47",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/paper_figures/fig5_individual_evidence_20260430/F_boundary_failure_audit.pdf",
+    "size_bytes": 54559,
+    "mtime": "2026-04-30T17:37:50",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/source_photos/微信图片_20250925124327_71_2.jpg",
+    "size_bytes": 116346,
+    "mtime": "2026-04-09T16:09:34",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_figure",
+    "role": "clean_original_figure",
+    "source_path": "",
+    "attachment_path": "attachments/03_original_figures/source_photos/微信图片_20250925124328_72_2.jpg",
+    "size_bytes": 55133,
+    "mtime": "2026-04-09T16:09:34",
+    "notes": "保留的非黑底原图"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_algorithm_hparams.csv",
+    "size_bytes": 1237,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_algorithm_hparams.txt",
+    "size_bytes": 1342,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_baseline_shortlist_compact25.csv",
+    "size_bytes": 350,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_baseline_shortlist_compact25.txt",
+    "size_bytes": 441,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_dataset_split_stagewise.csv",
+    "size_bytes": 257,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_dataset_split_stagewise.txt",
+    "size_bytes": 332,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_feature_significance_summary.csv",
+    "size_bytes": 1046,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_feature_significance_summary.txt",
+    "size_bytes": 1145,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_protocol.csv",
+    "size_bytes": 805,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_protocol.txt",
+    "size_bytes": 849,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_stage3_route_comparison.csv",
+    "size_bytes": 255,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_stage3_route_comparison.txt",
+    "size_bytes": 339,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_triplet_head_error_summary.csv",
+    "size_bytes": 226,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_triplet_head_error_summary.txt",
+    "size_bytes": 354,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_xgb_vs_dl_tbme.csv",
+    "size_bytes": 616,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/converted_previews/table_xgb_vs_dl_tbme.txt",
+    "size_bytes": 748,
+    "mtime": "2026-04-30T21:20:32",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/manuscript_tables/table_algorithm_hparams.tex",
+    "size_bytes": 2304,
+    "mtime": "2026-04-12T16:10:48",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/manuscript_tables/table_stage3_route_comparison.tex",
+    "size_bytes": 552,
+    "mtime": "2026-04-12T16:10:52",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_algorithm_hparams.tex",
+    "size_bytes": 1705,
+    "mtime": "2026-04-27T16:58:12",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_baseline_shortlist_compact25.tex",
+    "size_bytes": 721,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_dataset_split_stagewise.tex",
+    "size_bytes": 572,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_feature_significance_summary.tex",
+    "size_bytes": 1455,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_protocol.tex",
+    "size_bytes": 1122,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_stage3_route_comparison.tex",
+    "size_bytes": 566,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_triplet_head_error_summary.tex",
+    "size_bytes": 567,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "original_table",
+    "role": "paper_original_table",
+    "source_path": "",
+    "attachment_path": "attachments/04_original_tables/paper_tables/table_xgb_vs_dl_tbme.tex",
+    "size_bytes": 1064,
+    "mtime": "2026-04-09T10:52:24",
+    "notes": "原表/转写预览"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/label_review_0426_added_segments/manual_keyframe_labels_file3.0426_added_segments_review_working.json",
+    "size_bytes": 11295,
+    "mtime": "2026-04-26T21:34:30",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/label_review_0426_added_segments/proposed_applied_add_only_20260426_105044.csv",
+    "size_bytes": 7730,
+    "mtime": "2026-04-26T21:30:09",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/label_review_0426_auc083_vs_auc09_diff/auc083_vs_auc09_added_intervals_for_manual_selector.csv",
+    "size_bytes": 7821,
+    "mtime": "2026-04-26T21:32:39",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/label_review_0426_auc083_vs_auc09_diff/auc083_vs_auc09_changed_groups.csv",
+    "size_bytes": 2371,
+    "mtime": "2026-04-26T21:32:39",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/label_review_0426_auc083_vs_auc09_diff/manual_keyframe_labels_file3.auc09_vs_auc083_review_working.json",
+    "size_bytes": 11295,
+    "mtime": "2026-04-26T21:33:31",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/manual_keyframe_labels_file3.0407_review_working.json",
+    "size_bytes": 10680,
+    "mtime": "2026-04-09T16:09:34",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_grouped_mean_0407_per_group_normalized.png",
+    "size_bytes": 472212,
+    "mtime": "2026-04-26T21:07:10",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_grouped_mean_0407_per_group_normalized_clean.png",
+    "size_bytes": 448019,
+    "mtime": "2026-04-26T21:09:14",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_grouped_mean_0407_raw_shared_scale.png",
+    "size_bytes": 423524,
+    "mtime": "2026-04-26T21:07:16",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_grouped_mean_0407_raw_shared_scale_clean.png",
+    "size_bytes": 465220,
+    "mtime": "2026-04-26T21:09:26",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_grouped_mean_0407_summary.csv",
+    "size_bytes": 4671,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407.png",
+    "size_bytes": 165068,
+    "mtime": "2026-04-26T21:02:56",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_by_file.csv",
+    "size_bytes": 3864,
+    "mtime": "2026-04-26T21:02:55",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:02:55",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:02:55",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth0.5_raw_12x8.csv",
+    "size_bytes": 2413,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth1.5_raw_12x8.csv",
+    "size_bytes": 2413,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth1_raw_12x8.csv",
+    "size_bytes": 2414,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth2.5_raw_12x8.csv",
+    "size_bytes": 2414,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth2_raw_12x8.csv",
+    "size_bytes": 2413,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.25_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth0.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth1.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth1_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth2.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth2_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth3_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.5_depth3_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth0.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth1.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth1_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth2.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth2_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth3_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size0.75_depth3_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth0.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth1.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth1_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth2.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth2_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth3_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.25_depth3_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth0.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth1.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth1_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth2.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth2_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth3_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.5_depth3_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth0.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth1.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth1_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth2.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth2_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth3_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1.75_depth3_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth0.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth0.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth1.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth1.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth1_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth1_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth2.5_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth2.5_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth2_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth2_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth3_raw_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_size1_depth3_selfnorm_12x8.csv",
+    "size_bytes": 2412,
+    "mtime": "2026-04-26T21:07:06",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/positive_frame_mean_0407/positive_frame_mean_0407_summary.json",
+    "size_bytes": 715,
+    "mtime": "2026-04-26T21:02:55",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/stage1_locked_roc_20260425/stage1_locked_mainline_metrics.json",
+    "size_bytes": 2191,
+    "mtime": "2026-04-25T01:07:37",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/stage1_locked_roc_20260425/stage1_locked_mainline_roc.png",
+    "size_bytes": 157714,
+    "mtime": "2026-04-25T01:07:37",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/stage1_locked_roc_20260425/stage1_locked_mainline_roc_points.csv",
+    "size_bytes": 66595,
+    "mtime": "2026-04-25T01:07:37",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/analysis_outputs/stage1_locked_roc_20260425/stage1_locked_mainline_test_predictions.csv",
+    "size_bytes": 401337,
+    "mtime": "2026-04-25T01:07:37",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/XGBOOST_BASELINE_REPORT.md",
+    "size_bytes": 804,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/depth_classification_mlogloss_curve.png",
+    "size_bytes": 69115,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/detection_aucpr_curve.png",
+    "size_bytes": 60509,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/detection_logloss_curve.png",
+    "size_bytes": 80322,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/feature_importance/depth_coarse_top_features.png",
+    "size_bytes": 137867,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/feature_importance/detection_top_features.png",
+    "size_bytes": 117151,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/feature_importance/size_classification_top_features.png",
+    "size_bytes": 149094,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/size_classification_mlogloss_curve.png",
+    "size_bytes": 75650,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/size_regression_rmse_curve.png",
+    "size_bytes": 66248,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/xgboost_baseline_summary.json",
+    "size_bytes": 5850,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/xgboost_condition_manifest.csv",
+    "size_bytes": 2925,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_baselines/xgboost_window_feature_table.csv",
+    "size_bytes": 56205650,
+    "mtime": "2026-03-11T21:36:21",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/Fig_XGB_depth_explainability_tbme.png",
+    "size_bytes": 402262,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/XGBOOST_EXPLAINABILITY_REPORT.md",
+    "size_bytes": 4846,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_classwise_concept_heatmap_tbme.png",
+    "size_bytes": 165275,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_concept_contrib.csv",
+    "size_bytes": 1197,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_concept_share.png",
+    "size_bytes": 78843,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_confusion_matrix.png",
+    "size_bytes": 47850,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_family_contrib.csv",
+    "size_bytes": 267,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_family_share.png",
+    "size_bytes": 41783,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_family_share_tbme.png",
+    "size_bytes": 72414,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_global_contrib.csv",
+    "size_bytes": 22420,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_global_contrib_deep.csv",
+    "size_bytes": 21169,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_global_contrib_middle.csv",
+    "size_bytes": 21629,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_global_contrib_shallow.csv",
+    "size_bytes": 21960,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_local_explanations.png",
+    "size_bytes": 217800,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_partial_dependence_top4.png",
+    "size_bytes": 179960,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_representative_cases_tbme.png",
+    "size_bytes": 497409,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/depth_top_contrib.png",
+    "size_bytes": 102343,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/detection_family_contrib.csv",
+    "size_bytes": 253,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/detection_family_share.png",
+    "size_bytes": 39199,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/detection_global_contrib.csv",
+    "size_bytes": 21147,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/detection_partial_dependence_top4.png",
+    "size_bytes": 129267,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/detection_top_contrib.png",
+    "size_bytes": 95551,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_classification_family_contrib.csv",
+    "size_bytes": 266,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_classification_global_contrib.csv",
+    "size_bytes": 24765,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_confusion_matrix.png",
+    "size_bytes": 64180,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_family_share.png",
+    "size_bytes": 43226,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_regression_family_contrib.csv",
+    "size_bytes": 266,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_regression_family_share.png",
+    "size_bytes": 42546,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_regression_global_contrib.csv",
+    "size_bytes": 24061,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_regression_partial_dependence_top4.png",
+    "size_bytes": 146843,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_regression_top_contrib.png",
+    "size_bytes": 111244,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/size_top_contrib.png",
+    "size_bytes": 109444,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/baselines/outputs_xgboost_explainability/xgboost_explainability_summary.json",
+    "size_bytes": 7042,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/curated_dataset_key_files/detection_config.json",
+    "size_bytes": 134,
+    "mtime": "2026-04-09T16:09:34",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/curated_dataset_key_files/manual_keyframe_labels_file2.json",
+    "size_bytes": 11632,
+    "mtime": "2026-04-09T16:09:34",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/curated_dataset_key_files/manual_keyframe_labels_file3.backup_before_auc_guided_20260426_110217.json",
+    "size_bytes": 10655,
+    "mtime": "2026-04-26T10:47:03",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/curated_dataset_key_files/manual_keyframe_labels_file3.backup_before_restore_20260407.json",
+    "size_bytes": 10680,
+    "mtime": "2026-04-09T16:09:34",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/curated_dataset_key_files/manual_keyframe_labels_file3.json",
+    "size_bytes": 11295,
+    "mtime": "2026-04-26T10:50:44",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/agreement_consistency.csv",
+    "size_bytes": 447,
+    "mtime": "2026-04-27T16:44:52",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/cam_residual_inversion_contact_sheet.png",
+    "size_bytes": 118662,
+    "mtime": "2026-04-27T16:44:56",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/cam_scorecam_taskguided_R5_auto.json",
+    "size_bytes": 937,
+    "mtime": "2026-04-27T16:47:43",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/cam_scorecam_taskguided_R5_auto.pdf",
+    "size_bytes": 296023,
+    "mtime": "2026-04-27T16:47:43",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/cam_scorecam_taskguided_R5_auto.png",
+    "size_bytes": 879519,
+    "mtime": "2026-04-27T16:47:41",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/confusion_deep_vs_rest.png",
+    "size_bytes": 58133,
+    "mtime": "2026-04-27T16:44:54",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/confusion_depth_3class.png",
+    "size_bytes": 72260,
+    "mtime": "2026-04-27T16:44:54",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/confusion_size_3bin.png",
+    "size_bytes": 69510,
+    "mtime": "2026-04-27T16:44:53",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/confusion_size_7class.png",
+    "size_bytes": 92653,
+    "mtime": "2026-04-27T16:44:53",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/history.csv",
+    "size_bytes": 13403,
+    "mtime": "2026-04-27T16:44:49",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/manifest.json",
+    "size_bytes": 1533,
+    "mtime": "2026-04-27T16:43:53",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/roc_frozen_detector_file3.png",
+    "size_bytes": 97402,
+    "mtime": "2026-04-27T16:44:55",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/roc_inversion_tasks.png",
+    "size_bytes": 177130,
+    "mtime": "2026-04-27T16:44:54",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/summary.json",
+    "size_bytes": 5736,
+    "mtime": "2026-04-27T16:44:56",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/residual_tune_R5_hybrid_20260427/test_positive_predictions.csv",
+    "size_bytes": 280324,
+    "mtime": "2026-04-27T16:44:52",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/attention/paper_stage1_dualstream_mstcn_curves.png",
+    "size_bytes": 368798,
+    "mtime": "2026-04-26T21:57:34",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/attention/paper_stage1_dualstream_mstcn_split_manifest.json",
+    "size_bytes": 17837,
+    "mtime": "2026-04-26T21:57:36",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/attention/paper_stage1_dualstream_mstcn_summary.json",
+    "size_bytes": 11924,
+    "mtime": "2026-04-26T21:57:36",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/attention/pid.txt",
+    "size_bytes": 7,
+    "mtime": "2026-04-26T21:56:29",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/center/paper_stage1_dualstream_mstcn_curves.png",
+    "size_bytes": 360159,
+    "mtime": "2026-04-26T22:06:54",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/center/paper_stage1_dualstream_mstcn_split_manifest.json",
+    "size_bytes": 17837,
+    "mtime": "2026-04-26T22:06:56",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/center/paper_stage1_dualstream_mstcn_summary.json",
+    "size_bytes": 13871,
+    "mtime": "2026-04-26T22:06:56",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/center/pid.txt",
+    "size_bytes": 7,
+    "mtime": "2026-04-26T22:05:39",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/last/paper_stage1_dualstream_mstcn_curves.png",
+    "size_bytes": 348120,
+    "mtime": "2026-04-26T22:07:51",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/last/paper_stage1_dualstream_mstcn_split_manifest.json",
+    "size_bytes": 17837,
+    "mtime": "2026-04-26T22:07:53",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/last/paper_stage1_dualstream_mstcn_summary.json",
+    "size_bytes": 11332,
+    "mtime": "2026-04-26T22:07:53",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/last/pid.txt",
+    "size_bytes": 7,
+    "mtime": "2026-04-26T22:07:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/mean/paper_stage1_dualstream_mstcn_curves.png",
+    "size_bytes": 384102,
+    "mtime": "2026-04-26T22:03:40",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/mean/paper_stage1_dualstream_mstcn_split_manifest.json",
+    "size_bytes": 17837,
+    "mtime": "2026-04-26T22:03:43",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/mean/paper_stage1_dualstream_mstcn_summary.json",
+    "size_bytes": 13919,
+    "mtime": "2026-04-26T22:03:44",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/mean/pid.txt",
+    "size_bytes": 7,
+    "mtime": "2026-04-26T21:59:21",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/latest_algorithm/stage1_pooling_ablation_20260426/pooling_ablation_summary.csv",
+    "size_bytes": 1204,
+    "mtime": "2026-04-26T22:08:22",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/0.5cm深/1.CSV",
+    "size_bytes": 165945,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/0.5cm深/2.CSV",
+    "size_bytes": 429300,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/0.5cm深/3.CSV",
+    "size_bytes": 429036,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/1.0cm深/1.CSV",
+    "size_bytes": 163868,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/1.0cm深/2.CSV",
+    "size_bytes": 425444,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/1.0cm深/3.CSV",
+    "size_bytes": 425732,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/1.5cm深/1.CSV",
+    "size_bytes": 469743,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/1.5cm深/2.CSV",
+    "size_bytes": 1207518,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/1.5cm深/3.CSV",
+    "size_bytes": 1209853,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/2.0cm深/1.CSV",
+    "size_bytes": 125750,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/2.0cm深/2.CSV",
+    "size_bytes": 306085,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/2.0cm深/3.CSV",
+    "size_bytes": 306066,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/2.5cm深/1.CSV",
+    "size_bytes": 263166,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/2.5cm深/2.CSV",
+    "size_bytes": 681236,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/2.5cm深/3.CSV",
+    "size_bytes": 680934,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/3.0cm深/1.CSV",
+    "size_bytes": 110041,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/3.0cm深/2.CSV",
+    "size_bytes": 279553,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.25cm大/3.0cm深/3.CSV",
+    "size_bytes": 279523,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/0.5cm深/1.CSV",
+    "size_bytes": 86789,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/0.5cm深/2.CSV",
+    "size_bytes": 100681,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/0.5cm深/3.CSV",
+    "size_bytes": 74769,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/1.0cm深/1.CSV",
+    "size_bytes": 249613,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/1.0cm深/2.CSV",
+    "size_bytes": 66864,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/1.0cm深/3.CSV",
+    "size_bytes": 484197,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/1.5cm深/1.CSV",
+    "size_bytes": 125620,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/1.5cm深/2.CSV",
+    "size_bytes": 98017,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/1.5cm深/3.CSV",
+    "size_bytes": 150343,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/2.0cm深/1.CSV",
+    "size_bytes": 218691,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/2.0cm深/2.CSV",
+    "size_bytes": 590758,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/2.0cm深/3.CSV",
+    "size_bytes": 171455,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/2.5cm深/1.CSV",
+    "size_bytes": 179681,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/2.5cm深/2.CSV",
+    "size_bytes": 194670,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/2.5cm深/3.CSV",
+    "size_bytes": 183060,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/3.0cm深/1.CSV",
+    "size_bytes": 104144,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/3.0cm深/2.CSV",
+    "size_bytes": 163153,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.5cm大/3.0cm深/3.CSV",
+    "size_bytes": 80318,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/0.5cm深/1.CSV",
+    "size_bytes": 112857,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/0.5cm深/2.CSV",
+    "size_bytes": 122765,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/0.5cm深/3.CSV",
+    "size_bytes": 111992,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/1.0cm深/1.CSV",
+    "size_bytes": 105832,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/1.0cm深/2.CSV",
+    "size_bytes": 97096,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/1.0cm深/3.CSV",
+    "size_bytes": 88659,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/1.5cm深/1.CSV",
+    "size_bytes": 108236,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/1.5cm深/2.CSV",
+    "size_bytes": 102225,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/1.5cm深/3.CSV",
+    "size_bytes": 96120,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/2.5cm深/1.CSV",
+    "size_bytes": 118708,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/2.5cm深/2.CSV",
+    "size_bytes": 112196,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/2.5cm深/3.CSV",
+    "size_bytes": 136113,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/2cm深/1.CSV",
+    "size_bytes": 108041,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/2cm深/2.CSV",
+    "size_bytes": 103963,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/2cm深/3.CSV",
+    "size_bytes": 233562,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/3.0cm深/1.CSV",
+    "size_bytes": 99421,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/3.0cm深/2.CSV",
+    "size_bytes": 108320,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/0.75cm大/3.0cm深/3.CSV",
+    "size_bytes": 86306,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/0.5cm深/1.CSV",
+    "size_bytes": 113758,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/0.5cm深/2.CSV",
+    "size_bytes": 116165,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/0.5cm深/3.CSV",
+    "size_bytes": 108302,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/1.5cm深/1.CSV",
+    "size_bytes": 100841,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/1.5cm深/2.CSV",
+    "size_bytes": 93515,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/1.5cm深/3.CSV",
+    "size_bytes": 101336,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/1cm深/1.CSV",
+    "size_bytes": 105537,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/1cm深/2.CSV",
+    "size_bytes": 105345,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/1cm深/3.CSV",
+    "size_bytes": 114662,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/2.5cm深/1.CSV",
+    "size_bytes": 96399,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/2.5cm深/2.CSV",
+    "size_bytes": 97280,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/2.5cm深/3.CSV",
+    "size_bytes": 96018,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/2cm深/1.CSV",
+    "size_bytes": 96211,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/2cm深/2.CSV",
+    "size_bytes": 104592,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/2cm深/3.CSV",
+    "size_bytes": 90287,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/3cm深/1.CSV",
+    "size_bytes": 100398,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/3cm深/2.CSV",
+    "size_bytes": 104086,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.25cm大/3cm深/3.CSV",
+    "size_bytes": 95084,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/0.5cm深/1.CSV",
+    "size_bytes": 178702,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/0.5cm深/2.CSV",
+    "size_bytes": 109853,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/0.5cm深/3.CSV",
+    "size_bytes": 129107,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/1.0cm深/1.CSV",
+    "size_bytes": 131087,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/1.0cm深/2.CSV",
+    "size_bytes": 125934,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/1.0cm深/3.CSV",
+    "size_bytes": 113824,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/1.5cm深/1.CSV",
+    "size_bytes": 121523,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/1.5cm深/2.CSV",
+    "size_bytes": 104623,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/1.5cm深/3.CSV",
+    "size_bytes": 116793,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/2.0cm深/1.CSV",
+    "size_bytes": 108227,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/2.0cm深/2.CSV",
+    "size_bytes": 112301,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/2.0cm深/3.CSV",
+    "size_bytes": 308061,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/2.5cm深/1.CSV",
+    "size_bytes": 105073,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/2.5cm深/2.CSV",
+    "size_bytes": 94753,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/2.5cm深/3.CSV",
+    "size_bytes": 113624,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/3.0cm深/1.CSV",
+    "size_bytes": 105096,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/3.0cm深/2.CSV",
+    "size_bytes": 91984,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.5cm大/3.0cm深/3.CSV",
+    "size_bytes": 93300,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/0.5cm深/1.CSV",
+    "size_bytes": 82389,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/0.5cm深/2.CSV",
+    "size_bytes": 83448,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/0.5cm深/3.CSV",
+    "size_bytes": 81972,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/1.5cm深/1.CSV",
+    "size_bytes": 98749,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/1.5cm深/2.CSV",
+    "size_bytes": 102478,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/1.5cm深/3.CSV",
+    "size_bytes": 102679,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/1cm深/1.CSV",
+    "size_bytes": 87028,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/1cm深/2.CSV",
+    "size_bytes": 89011,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/1cm深/3.CSV",
+    "size_bytes": 85354,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/2.5cm深/1.CSV",
+    "size_bytes": 103729,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/2.5cm深/2.CSV",
+    "size_bytes": 100893,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/2.5cm深/3.CSV",
+    "size_bytes": 109472,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/2cm深/1.CSV",
+    "size_bytes": 156335,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/2cm深/2.CSV",
+    "size_bytes": 218019,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/2cm深/3.CSV",
+    "size_bytes": 95400,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/3cm深/1.CSV",
+    "size_bytes": 104833,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/3cm深/2.CSV",
+    "size_bytes": 100839,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1.75cm大/3cm深/3.CSV",
+    "size_bytes": 102617,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/0.5cm深/1.CSV",
+    "size_bytes": 131896,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/0.5cm深/2.CSV",
+    "size_bytes": 167633,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/0.5cm深/3.CSV",
+    "size_bytes": 110496,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/1.0cm深/1.CSV",
+    "size_bytes": 62974,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/1.0cm深/2.CSV",
+    "size_bytes": 78995,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/1.0cm深/3.CSV",
+    "size_bytes": 51941,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/1.5cm深/1.CSV",
+    "size_bytes": 159335,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/1.5cm深/2.CSV",
+    "size_bytes": 165377,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/1.5cm深/3.CSV",
+    "size_bytes": 163949,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/2.0cm深/1.CSV",
+    "size_bytes": 169021,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/2.0cm深/2.CSV",
+    "size_bytes": 165200,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/2.0cm深/3.CSV",
+    "size_bytes": 174761,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/2.5cm深/1.CSV",
+    "size_bytes": 90103,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/2.5cm深/2.CSV",
+    "size_bytes": 93992,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/2.5cm深/3.CSV",
+    "size_bytes": 87641,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/3.0cm深/1.CSV",
+    "size_bytes": 123227,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/3.0cm深/2.CSV",
+    "size_bytes": 103501,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/1cm大/3.0cm深/3.CSV",
+    "size_bytes": 139072,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/detection_config.json",
+    "size_bytes": 134,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/manual_keyframe_labels_file2.json",
+    "size_bytes": 11632,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/manual_keyframe_labels_file3.backup_before_restore_20260407.json",
+    "size_bytes": 10680,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/raw_tactile_data/manual_keyframe_labels_file3.json",
+    "size_bytes": 41958,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/cases/neg_no_nodule/neg_no_nodule.json",
+    "size_bytes": 2717,
+    "mtime": "2026-04-19T12:38:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/cases/pos_s01_d01/pos_s01_d01.json",
+    "size_bytes": 2723,
+    "mtime": "2026-04-19T12:38:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/cases/pos_s01_d02/pos_s01_d02.json",
+    "size_bytes": 2718,
+    "mtime": "2026-04-19T12:38:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/cases/pos_s01_d03/pos_s01_d03.json",
+    "size_bytes": 2722,
+    "mtime": "2026-04-19T12:38:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/dataset_report.md",
+    "size_bytes": 637,
+    "mtime": "2026-04-19T12:38:03",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/grid_summary.json",
+    "size_bytes": 2898,
+    "mtime": "2026-04-19T12:38:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/grid_summary.png",
+    "size_bytes": 199693,
+    "mtime": "2026-04-19T12:38:03",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "data_and_metrics",
+    "role": "data_metric_file",
+    "source_path": "",
+    "attachment_path": "attachments/05_data_and_metrics/simulation/lung_synthetic_dataset_smoke/manifest.csv",
+    "size_bytes": 1315,
+    "mtime": "2026-04-19T12:38:00",
+    "notes": "数据、指标或分析输出"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/ALGORITHM_STEP_BY_STEP_20260429_CN.md",
+    "size_bytes": 44453,
+    "mtime": "2026-04-29T20:11:55",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/DATAFLOW_REPORT.md",
+    "size_bytes": 598,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/FILE_MAP.md",
+    "size_bytes": 930,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/MODEL_AND_ALGO.md",
+    "size_bytes": 800,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/MODEL_AND_SYSTEM_BLUEPRINT.md",
+    "size_bytes": 3899,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/ORIGINAL_MODEL_MATH.md",
+    "size_bytes": 2998,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/ORIGINAL_MODEL_REPORT.md",
+    "size_bytes": 1111,
+    "mtime": "2026-04-09T16:09:32",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/PAPER_STORYLINE_AND_TASKS.md",
+    "size_bytes": 5104,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/PROJECT_REQUIREMENTS.md",
+    "size_bytes": 7323,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/README.md",
+    "size_bytes": 11529,
+    "mtime": "2026-04-27T20:07:28",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/REPRODUCIBILITY.md",
+    "size_bytes": 2998,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/TASK_DEFINITION_AND_LABEL_PROTOCOL.md",
+    "size_bytes": 5609,
+    "mtime": "2026-04-09T16:09:33",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/code/dual_stream_mstcn_detection.py",
+    "size_bytes": 17114,
+    "mtime": "2026-04-27T20:07:28",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/code/fusion_real_time_detection.py",
+    "size_bytes": 2882,
+    "mtime": "2026-04-27T19:51:06",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/code/paper_architecture_contract_v1.py",
+    "size_bytes": 10525,
+    "mtime": "2026-04-11T21:32:47",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/code/realtime_detector.py",
+    "size_bytes": 2671,
+    "mtime": "2026-04-27T19:51:06",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/code/sequence_dataset.py",
+    "size_bytes": 1947,
+    "mtime": "2026-04-27T19:51:06",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "project_context",
+    "role": "context_doc_code",
+    "source_path": "",
+    "attachment_path": "attachments/06_docs_and_code_context/code/train_stage1_dualstream_mstcn.py",
+    "size_bytes": 23153,
+    "mtime": "2026-04-27T20:07:28",
+    "notes": "项目文档或关键代码"
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "figure_table_references_from_tex.csv",
+    "size_bytes": 6744,
+    "mtime": "2026-04-30T21:20:34",
+    "notes": ""
+  },
+  {
+    "category": "cleanup_report",
+    "role": "removed_black_background_report",
+    "source_path": "",
+    "attachment_path": "removed_black_background_files.csv",
+    "size_bytes": 24143,
+    "mtime": "2026-04-30T23:10:51",
+    "notes": "已删除黑底图片明细"
+  },
+  {
+    "category": "package_file",
+    "role": "package_file",
+    "source_path": "",
+    "attachment_path": "~$mini_深度研究材料总包.docx",
+    "size_bytes": 162,
+    "mtime": "2026-04-30T23:06:22",
+    "notes": ""
+  }
+]

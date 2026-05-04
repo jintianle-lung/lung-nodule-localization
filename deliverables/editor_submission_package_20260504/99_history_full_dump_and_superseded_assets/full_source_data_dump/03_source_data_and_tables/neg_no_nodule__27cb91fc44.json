@@ -1,0 +1,132 @@
+{
+  "case_id": "neg_no_nodule",
+  "with_nodule": false,
+  "size_cm": 0.0,
+  "depth_cm": 0.0,
+  "size_index": -1,
+  "depth_index": -1,
+  "size_class_name": null,
+  "depth_coarse_name": null,
+  "protocol": {
+    "input_shape": [
+      10,
+      1,
+      12,
+      8
+    ],
+    "window_stride": 2,
+    "size_values_cm": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75
+    ],
+    "depth_values_cm": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "coarse_depth_to_values": {
+      "shallow": [
+        0.5,
+        1.0
+      ],
+      "middle": [
+        1.5,
+        2.0
+      ],
+      "deep": [
+        2.5,
+        3.0
+      ]
+    },
+    "outputs": [
+      "y_det_prob",
+      "y_size_cls",
+      "y_size_reg",
+      "y_depth_cls_coarse"
+    ],
+    "task_priority": [
+      "detection",
+      "size_inversion",
+      "coarse_depth_training_and_interpretation"
+    ],
+    "runtime_policy": {
+      "always_visible": [
+        "y_det_prob"
+      ],
+      "gated": [
+        "y_size_cls",
+        "y_size_reg",
+        "y_depth_cls_coarse"
+      ]
+    }
+  },
+  "metrics": {
+    "peak_pressure_kpa": 2.981433868408203,
+    "integrated_pressure_kpa_cm2": 26.108571790158745,
+    "equivalent_force_n": 2.6108571790158748,
+    "spread_radius_cm": 1.4842622349673569,
+    "edge_center_ratio": 0.30161672796923245,
+    "mean_voltage_v": 1.1579251779864232,
+    "peak_voltage_v": 1.4612880945205688
+  },
+  "config": {
+    "n_frames": 10,
+    "sensor": {
+      "rows": 12,
+      "cols": 8,
+      "pitch_cm": 0.42,
+      "standoff_cm": 0.25,
+      "surface_x_cm": 6.45,
+      "center_y_cm": 0.0,
+      "center_z_cm": 0.55,
+      "thickness_mm": 0.9
+    },
+    "mechanical": {
+      "base_stiffness_kpa": 7.0,
+      "coupling_kpa": 1.55,
+      "nodule_amp_kpa": 26.0,
+      "nodule_depth_decay_cm": 2.4,
+      "loading_peak_kpa": 3.2,
+      "load_sigma_y_cm": 1.1,
+      "load_sigma_z_cm": 1.48,
+      "load_offset_y_cm": 0.08,
+      "load_offset_z_cm": 0.15,
+      "blur_sigma_cells": 0.45
+    },
+    "electrical": {
+      "mode": "hybrid",
+      "r0_ohm": 12000.0,
+      "c0_pf": 24.0,
+      "resistance_gauge": 1.75,
+      "capacitance_gain": 0.18,
+      "vin_v": 3.3,
+      "r_ref_ohm": 12000.0,
+      "pressure_ref_kpa": 2.5,
+      "crosstalk_sigma_cells": 0.3,
+      "noise_std_v": 0.006
+    },
+    "nodule": {
+      "center": [
+        4.95,
+        0.05,
+        0.6
+      ],
+      "radii": [
+        0.58,
+        0.46,
+        0.62
+      ],
+      "stiffness_kpa": 72.0,
+      "color": "#d64b4b",
+      "alpha": 0.58
+    }
+  }
+}

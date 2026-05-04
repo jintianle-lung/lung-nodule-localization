@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="583.56pt" height="144.684pt" viewBox="0 0 583.56 144.684" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-04-26T01:03:02.829962</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 144.684 
+L 583.56 144.684 
+L 583.56 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 7.2 137.484 
+L 576.36 137.484 
+L 576.36 7.2 
+L 7.2 7.2 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 19.72152 136.962864 
+L 563.83848 136.962864 
+Q 574.08336 136.962864 574.08336 134.617752 
+L 574.08336 10.066248 
+Q 574.08336 7.721136 563.83848 7.721136 
+L 19.72152 7.721136 
+Q 9.47664 7.721136 9.47664 10.066248 
+L 9.47664 134.617752 
+Q 9.47664 136.962864 19.72152 136.962864 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #ffffff; stroke: #cbd5e1; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_4">
+    <path d="M 51.02532 77.292792 
+L 185.34708 77.292792 
+Q 199.57608 77.292792 199.57608 74.035692 
+L 199.57608 32.865948 
+Q 199.57608 29.608848 185.34708 29.608848 
+L 51.02532 29.608848 
+Q 36.79632 29.608848 36.79632 32.865948 
+L 36.79632 74.035692 
+Q 36.79632 77.292792 51.02532 77.292792 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #ffffff; stroke: #2563eb; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 224.61912 77.292792 
+L 358.94088 77.292792 
+Q 373.16988 77.292792 373.16988 74.035692 
+L 373.16988 32.865948 
+Q 373.16988 29.608848 358.94088 29.608848 
+L 224.61912 29.608848 
+Q 210.39012 29.608848 210.39012 32.865948 
+L 210.39012 74.035692 
+Q 210.39012 77.292792 224.61912 77.292792 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #ffffff; stroke: #16a34a; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 398.21292 77.292792 
+L 532.53468 77.292792 
+Q 546.76368 77.292792 546.76368 74.035692 
+L 546.76368 32.865948 
+Q 546.76368 29.608848 532.53468 29.608848 
+L 398.21292 29.608848 
+Q 383.98392 29.608848 383.98392 32.865948 
+L 383.98392 74.035692 
+Q 383.98392 77.292792 398.21292 77.292792 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #ffffff; stroke: #f97316; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12.2px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="27.1206" y="23.098151" transform="rotate(-0 27.1206 23.098151)">E</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9.6px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="68.66928" y="21.88854" transform="rotate(-0 68.66928 21.88854)">Held-out validation endpoints</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 41.3496 34.820208 
+L 195.0228 34.820208 
+L 195.0228 30.65112 
+L 41.3496 30.65112 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #2563eb"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 9.4px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="52.7328" y="45.196504" transform="rotate(-0 52.7328 45.196504)">Detection</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: start; fill: #475569" x="52.7328" y="51.803933" transform="rotate(-0 52.7328 51.803933)">File-3 held-out, n=3678 windows</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #2563eb" x="75.4992" y="56.901803" transform="rotate(-0 75.4992 56.901803)">0.665</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="75.4992" y="65.709001" transform="rotate(-0 75.4992 65.709001)">F1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #2563eb" x="118.1862" y="56.901803" transform="rotate(-0 118.1862 56.901803)">0.831</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="118.1862" y="65.709001" transform="rotate(-0 118.1862 65.709001)">AUC</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #2563eb" x="160.8732" y="56.901803" transform="rotate(-0 160.8732 56.901803)">0.890</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="160.8732" y="65.709001" transform="rotate(-0 160.8732 65.709001)">Recall</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: end; fill: #475569" x="183.6396" y="69.948228" transform="rotate(-0 183.6396 69.948228)">XGB F1 0.619</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 214.9434 34.820208 
+L 368.6166 34.820208 
+L 368.6166 30.65112 
+L 214.9434 30.65112 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #16a34a"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 9.4px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="226.3266" y="45.196504" transform="rotate(-0 226.3266 45.196504)">Size estimation</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: start; fill: #475569" x="226.3266" y="51.803933" transform="rotate(-0 226.3266 51.803933)">Positive windows, n=958</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #16a34a" x="249.093" y="56.901803" transform="rotate(-0 249.093 56.901803)">0.664</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="249.093" y="65.71954" transform="rotate(-0 249.093 65.71954)">Top-1</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #16a34a" x="291.78" y="56.901803" transform="rotate(-0 291.78 56.901803)">0.822</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="291.78" y="65.71954" transform="rotate(-0 291.78 65.71954)">Top-2</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #16a34a" x="334.467" y="56.901803" transform="rotate(-0 334.467 56.901803)">0.134 cm</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="334.467" y="65.709001" transform="rotate(-0 334.467 65.709001)">MAE</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: end; fill: #475569" x="357.2334" y="69.948228" transform="rotate(-0 357.2334 69.948228)">XGB MAE 0.147 cm</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 388.5372 34.820208 
+L 542.2104 34.820208 
+L 542.2104 30.65112 
+L 388.5372 30.65112 
+z
+" clip-path="url(#p4f76b234e8)" style="fill: #f97316"/>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 9.4px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="399.9204" y="45.311066" transform="rotate(-0 399.9204 45.311066)">Coarse depth</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: start; fill: #475569" x="399.9204" y="51.803933" transform="rotate(-0 399.9204 51.803933)">Auxiliary, size-conditioned</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #f97316" x="422.6868" y="56.901803" transform="rotate(-0 422.6868 56.901803)">0.614</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="422.6868" y="65.709001" transform="rotate(-0 422.6868 65.709001)">Acc.</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #f97316" x="465.3738" y="56.901803" transform="rotate(-0 465.3738 56.901803)">0.625</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="465.3738" y="65.709001" transform="rotate(-0 465.3738 65.709001)">BAcc.</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Arial'; text-anchor: middle; fill: #f97316" x="508.0608" y="57.553223" transform="rotate(-0 508.0608 57.553223)">aux.</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.1px; font-family: 'Arial'; text-anchor: middle; fill: #475569" x="508.0608" y="65.709001" transform="rotate(-0 508.0608 65.709001)">Role</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 6.8px; font-family: 'Arial'; text-anchor: end; fill: #475569" x="530.8272" y="69.86854" transform="rotate(-0 530.8272 69.86854)">secondary analysis</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="47.0412" y="102.30732" transform="rotate(-0 47.0412 102.30732)">Report in main text:</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8.2px; font-family: 'Arial'; text-anchor: start; fill: #475569" x="143.7984" y="102.30732" transform="rotate(-0 143.7984 102.30732)">detection ROC/PR + confusion matrix; size Top-1/Top-2/MAE; depth as auxiliary.</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Arial'; text-anchor: start; fill: #0f172a" x="47.0412" y="117.9414" transform="rotate(-0 47.0412 117.9414)">Sensitivity analysis:</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 8.2px; font-family: 'Arial'; text-anchor: start; fill: #475569" x="149.49" y="117.9414" transform="rotate(-0 149.49 117.9414)">overlap labels, strict center-frame labels, and clean-label/core-positive subset.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4f76b234e8">
+   <rect x="7.2" y="7.2" width="569.16" height="130.284"/>
+  </clipPath>
+ </defs>
+</svg>

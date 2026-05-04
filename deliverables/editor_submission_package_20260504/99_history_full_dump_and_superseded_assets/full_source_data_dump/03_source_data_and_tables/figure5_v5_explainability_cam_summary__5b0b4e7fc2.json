@@ -1,0 +1,77 @@
+{
+  "inputs": {
+    "feature_image": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\figure5_v5_learned_features_candidate.png",
+    "cam_image": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\task_guided_scorecam_overlay_20260503\\G_task_guided_scorecam_overlay_full.png",
+    "alignment_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\v5_output_descriptor_alignment.csv",
+    "perturbation_csv": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\v5_targeted_perturbation_response.csv",
+    "manifest_json": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\task_guided_scorecam_overlay_20260503\\scorecam_overlay_manifest.json"
+  },
+  "feature_summary": {
+    "detection": {
+      "label": "Detection probability",
+      "best_feature": "Temporal fluctuation",
+      "best_rho": "+0.73",
+      "second_feature": "High-response amplitude",
+      "second_rho": "+0.73"
+    },
+    "size": {
+      "label": "Size estimate",
+      "best_feature": "Hotspot radius",
+      "best_rho": "-0.79",
+      "second_feature": "Spatial spread",
+      "second_rho": "-0.79"
+    },
+    "depth": {
+      "label": "Depth expected",
+      "best_feature": "Hotspot radius",
+      "best_rho": "+0.29",
+      "second_feature": "Spatial spread",
+      "second_rho": "+0.29"
+    }
+  },
+  "perturbation_summary": {
+    "detection": {
+      "metric_label": "p_det",
+      "worst_perturbation": "Blur hotspot\nmorphology",
+      "mean_delta": "-0.162",
+      "ci95": "0.007"
+    },
+    "size": {
+      "metric_label": "size",
+      "worst_perturbation": "Blur hotspot\nmorphology",
+      "mean_delta": "-0.217",
+      "ci95": "0.020"
+    },
+    "depth": {
+      "metric_label": "depth_conf",
+      "worst_perturbation": "Blur hotspot\nmorphology",
+      "mean_delta": "-0.047",
+      "ci95": "0.010"
+    }
+  },
+  "task_digest": {
+    "detection": {
+      "headline": "center-border / high-response core",
+      "evidence": "Best ρ: Temporal fluctuation (+0.73)\n2nd: High-response amplitude (+0.73)",
+      "causal": "Worst perturbation: Blur hotspot\nmorphology\n(-0.162 p_det)",
+      "verdict": "High"
+    },
+    "size": {
+      "headline": "hotspot radius / spatial spread",
+      "evidence": "Best ρ: Hotspot radius (-0.79)\n2nd: Spatial spread (-0.79)",
+      "causal": "Worst perturbation: Blur hotspot\nmorphology\n(-0.217 size)",
+      "verdict": "Very high"
+    },
+    "depth": {
+      "headline": "broader morphology / weak contrast relation",
+      "evidence": "Best ρ: Hotspot radius (+0.29)\n2nd: Spatial spread (+0.29)",
+      "causal": "Worst perturbation: Blur hotspot\nmorphology\n(-0.047 depth_conf)",
+      "verdict": "Moderate"
+    }
+  },
+  "outputs": {
+    "png": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\figure5_v5_explainability_cam_summary.png",
+    "pdf": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\figure5_v5_explainability_cam_summary.pdf",
+    "svg": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\deliverables\\v5_feature_learning_20260503\\figure5_v5_explainability_cam_summary.svg"
+  }
+}
