@@ -6,8 +6,11 @@ Repository:
 Branch:
 `codex/editor-submission-package-20260504`
 
-Uploaded commit before this audit note:
+Initial package upload commit:
 `a9ac3b63aca6486b0f59b6c2e852326124ed29b6`
+
+Push-audit commit:
+`86d8d1d`
 
 Push result:
 The editor submission package branch was accepted by GitHub.
@@ -22,6 +25,5 @@ Local-only archive:
 The complete ZIP archive is intentionally kept outside git at:
 `C:\Users\SWH\Desktop\GitHub_Docs_Package\deliverables\_local_zip_archives_not_for_git_20260504\editor_submission_package_20260504.zip`
 
-ZIP SHA256:
-`5054a3c5ca86e910fd72fffbddc5e1a959613e123f2b2f1f05c64f1c39914132`
-
+ZIP checksum:
+The ZIP SHA256 is written next to the ZIP archive as `editor_submission_package_20260504.zip.sha256.txt`. It is not embedded inside the package to avoid a self-referential hash.

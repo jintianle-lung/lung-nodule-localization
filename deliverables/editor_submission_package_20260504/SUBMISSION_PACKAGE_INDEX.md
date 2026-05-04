@@ -1,6 +1,6 @@
 # Editor Submission Package Index
 
-Created/updated: 2026-05-04T17:17:09
+Created/updated: 2026-05-04T21:36:19
 
 ## Package Summary
 
@@ -8,10 +8,10 @@ Created/updated: 2026-05-04T17:17:09
 - Preferred figure SVGs: 14
 - Curated source data files: 15
 - All SVG files in package: 193
-- All package files: 1307
-- Package size: 368.34 MB
+- All package files: 1310
+- Package size: 368.36 MB
 - ZIP archive: `C:\Users\SWH\Desktop\GitHub_Docs_Package\deliverables\_local_zip_archives_not_for_git_20260504\editor_submission_package_20260504.zip`
-- ZIP SHA256: `5054a3c5ca86e910fd72fffbddc5e1a959613e123f2b2f1f05c64f1c39914132`
+- ZIP checksum sidecar: `C:\Users\SWH\Desktop\GitHub_Docs_Package\deliverables\_local_zip_archives_not_for_git_20260504\editor_submission_package_20260504.zip.sha256.txt`
 
 ## Recommended Figure Entry Points
 
@@ -62,5 +62,7 @@ Created/updated: 2026-05-04T17:17:09
 - `09_integrity_audit/svg_validation_report.csv`
 - `09_integrity_audit/curated_csv_readability_report.csv`
 - `09_integrity_audit/final_package_summary.json`
+
+The SHA256 inventory excludes `SUBMISSION_PACKAGE_INDEX.md`, `final_package_summary.json`, and the inventory CSV itself to avoid self-referential hashes. The ZIP checksum is written next to the ZIP archive as an external sidecar file.
 
 PNG-only assets wrapped in SVG are visually preserved raster images, not true vector traces. Native SVG files should be used whenever available.

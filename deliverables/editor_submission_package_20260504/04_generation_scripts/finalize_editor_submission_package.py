@@ -27,6 +27,18 @@ DOCS = PKG / "05_captions_SI_references"
 PREFERRED = PKG / "07_preferred_main_and_si_figures"
 CURATED = PKG / "08_curated_source_data_for_figures"
 AUDIT = PKG / "09_integrity_audit"
+SUMMARY_FILE = AUDIT / "final_package_summary.json"
+INVENTORY_FILE = AUDIT / "package_file_inventory_sha256.csv"
+INDEX_FILE = PKG / "SUBMISSION_PACKAGE_INDEX.md"
+ZIP_DIR = ROOT / "deliverables" / "_local_zip_archives_not_for_git_20260504"
+ZIP_PATH = ZIP_DIR / "editor_submission_package_20260504.zip"
+ZIP_SHA_PATH = ZIP_DIR / "editor_submission_package_20260504.zip.sha256.txt"
+ZIP_META_PATH = ZIP_DIR / "editor_submission_package_20260504.zip.manifest.json"
+INVENTORY_EXCLUDED = {
+    Path("SUBMISSION_PACKAGE_INDEX.md"),
+    Path("09_integrity_audit") / "final_package_summary.json",
+    Path("09_integrity_audit") / "package_file_inventory_sha256.csv",
+}
 
 
 PREFERRED_FIGURES = [
@@ -167,6 +179,9 @@ def audit_tables() -> list[dict[str, str]]:
 def package_inventory() -> list[dict[str, str]]:
     rows = []
     for path in sorted(p for p in PKG.rglob("*") if p.is_file()):
+        rel = path.relative_to(PKG)
+        if rel in INVENTORY_EXCLUDED:
+            continue
         try:
             size = file_size(path)
             digest = sha256_file(path)
@@ -175,7 +190,7 @@ def package_inventory() -> list[dict[str, str]]:
             digest = f"ERROR: {exc}"
         rows.append(
             {
-                "relative_path": str(path.relative_to(PKG)),
+                "relative_path": str(rel),
                 "size_bytes": str(size),
                 "sha256": digest,
             }
@@ -192,19 +207,34 @@ def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> 
 
 
 def make_zip() -> tuple[Path, int, str]:
-    zip_dir = ROOT / "deliverables" / "_local_zip_archives_not_for_git_20260504"
-    zip_dir.mkdir(parents=True, exist_ok=True)
-    zip_path = zip_dir / "editor_submission_package_20260504.zip"
-    if zip_path.exists():
+    ZIP_DIR.mkdir(parents=True, exist_ok=True)
+    if ZIP_PATH.exists():
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        zip_path.replace(zip_dir / f"editor_submission_package_20260504_previous_{stamp}.zip")
-    with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
+        ZIP_PATH.replace(ZIP_DIR / f"editor_submission_package_20260504_previous_{stamp}.zip")
+    with zipfile.ZipFile(ZIP_PATH, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
         for path in sorted(p for p in PKG.rglob("*") if p.is_file()):
             try:
                 zf.write(native_path(path), path.relative_to(PKG.parent))
             except FileNotFoundError:
                 continue
-    return zip_path, zip_path.stat().st_size, sha256_file(zip_path)
+    zip_size = ZIP_PATH.stat().st_size
+    zip_sha = sha256_file(ZIP_PATH)
+    ZIP_SHA_PATH.write_text(f"{zip_sha}  {ZIP_PATH.name}\n", encoding="utf-8")
+    ZIP_META_PATH.write_text(
+        json.dumps(
+            {
+                "zip_path": str(ZIP_PATH),
+                "zip_size_bytes": zip_size,
+                "zip_size_mb": round(zip_size / 1024 / 1024, 2),
+                "zip_sha256": zip_sha,
+                "note": "This checksum is stored outside the ZIP to avoid self-referential hash changes.",
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    return ZIP_PATH, zip_size, zip_sha
 
 
 def write_index_md(summary: dict[str, object], preferred_rows: list[dict[str, str]], data_rows: list[dict[str, str]]) -> None:
@@ -222,7 +252,7 @@ def write_index_md(summary: dict[str, object], preferred_rows: list[dict[str, st
         f"- All package files: {summary['total_file_count']}",
         f"- Package size: {summary['total_size_mb']} MB",
         f"- ZIP archive: `{summary['zip_path']}`",
-        f"- ZIP SHA256: `{summary['zip_sha256']}`",
+        f"- ZIP checksum sidecar: `{summary['zip_checksum_sidecar']}`",
         "",
         "## Recommended Figure Entry Points",
         "",
@@ -250,11 +280,13 @@ def write_index_md(summary: dict[str, object], preferred_rows: list[dict[str, st
             "- `09_integrity_audit/curated_csv_readability_report.csv`",
             "- `09_integrity_audit/final_package_summary.json`",
             "",
+            "The SHA256 inventory excludes `SUBMISSION_PACKAGE_INDEX.md`, `final_package_summary.json`, and the inventory CSV itself to avoid self-referential hashes. The ZIP checksum is written next to the ZIP archive as an external sidecar file.",
+            "",
             "PNG-only assets wrapped in SVG are visually preserved raster images, not true vector traces. Native SVG files should be used whenever available.",
             "",
         ]
     )
-    (PKG / "SUBMISSION_PACKAGE_INDEX.md").write_text("\n".join(lines), encoding="utf-8")
+    INDEX_FILE.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> None:
@@ -266,11 +298,6 @@ def main() -> None:
 
     table_rows = audit_tables()
     write_csv(AUDIT / "curated_csv_readability_report.csv", table_rows, ["file", "rows_excluding_header", "columns", "status", "error"])
-
-    inventory_rows = package_inventory()
-    write_csv(AUDIT / "package_file_inventory_sha256.csv", inventory_rows, ["relative_path", "size_bytes", "sha256"])
-
-    zip_path, zip_size, zip_sha = make_zip()
 
     all_files = [p for p in PKG.rglob("*") if p.is_file()]
     total_size = 0
@@ -292,15 +319,28 @@ def main() -> None:
         "total_file_count": len(all_files),
         "total_size_bytes": total_size,
         "total_size_mb": round(total_size / 1024 / 1024, 2),
-        "zip_path": str(zip_path),
-        "zip_size_bytes": zip_size,
-        "zip_size_mb": round(zip_size / 1024 / 1024, 2),
-        "zip_sha256": zip_sha,
+        "zip_path": str(ZIP_PATH),
+        "zip_checksum_sidecar": str(ZIP_SHA_PATH),
         "git_note": "ZIP may exceed preferred GitHub size. Commit folder assets and audit files; keep ZIP local unless explicitly needed.",
+        "inventory_note": "package_file_inventory_sha256.csv excludes SUBMISSION_PACKAGE_INDEX.md, final_package_summary.json, and itself to avoid self-referential hashes.",
     }
-    (AUDIT / "final_package_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    SUMMARY_FILE.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     write_index_md(summary, preferred_rows, data_rows)
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
+
+    inventory_rows = package_inventory()
+    write_csv(INVENTORY_FILE, inventory_rows, ["relative_path", "size_bytes", "sha256"])
+
+    zip_path, zip_size, zip_sha = make_zip()
+    output = dict(summary)
+    output.update(
+        {
+            "zip_size_bytes": zip_size,
+            "zip_size_mb": round(zip_size / 1024 / 1024, 2),
+            "zip_sha256": zip_sha,
+            "zip_manifest": str(ZIP_META_PATH),
+        }
+    )
+    print(json.dumps(output, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
